@@ -27,7 +27,7 @@ export interface SiteConfig {
     hackerrank: string;
     geeksforgeeks: string;
     instagram: string;
-    email: string | null;
+    email: string;
   };
   navItems: NavItem[];
   verifiedTechnicalInterests: string[];
@@ -56,7 +56,7 @@ export const siteConfig: SiteConfig = {
     hackerrank: "https://www.hackerrank.com/profile/at_dvd123",
     geeksforgeeks: "https://www.geeksforgeeks.org/profile/atdvdk0dh?tab=activity",
     instagram: "https://www.instagram.com/_arthik_22/",
-    email: null, // Omitted per instructions: do not invent email
+    email: "arthikdwivedi07@gmail.com",
   },
   navItems: [
     { label: "Home", href: "#hero" },

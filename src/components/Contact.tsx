@@ -1,6 +1,6 @@
 // src/components/Contact.tsx
 import React from 'react';
-import { ArrowUpRight, MessageSquare } from 'lucide-react';
+import { ArrowUpRight, Mail, MessageSquare } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
 import { GithubIcon, LinkedinIcon } from './icons/BrandIcons';
 
@@ -61,6 +61,14 @@ export const Contact: React.FC = () => {
             <GithubIcon className="w-4 h-4 fill-[#263238]" />
             <span>Explore Repositories</span>
             <ArrowUpRight className="w-4 h-4 text-[#B89246] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+          </a>
+
+          <a
+            href={`mailto:${siteConfig.profiles.email}`}
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-[#263238] bg-white hover:bg-[#FFFDF8] border border-[#D6B574]/50 hover:border-[#D6B574] transition-all shadow-xs hover:scale-105 group"
+          >
+            <Mail className="w-4 h-4 text-[#B89246]" />
+            <span>Email Me</span>
           </a>
         </div>
 
