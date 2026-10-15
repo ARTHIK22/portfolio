@@ -1,14 +1,12 @@
 // src/components/Navbar.tsx
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
-import { useMotion } from '../context/MotionContext';
 
 export const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('hero');
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-  const { isMotionEnabled, toggleMotion } = useMotion();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,9 +82,7 @@ export const Navbar: React.FC = () => {
         >
           <span className="relative flex h-2.5 w-2.5">
             <span
-              className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-[#82DAD1] opacity-75 ${
-                !isMotionEnabled ? 'hidden' : ''
-              }`}
+              className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#82DAD1] opacity-75"
             />
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D6B574]" />
           </span>
@@ -115,17 +111,6 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={toggleMotion}
-            type="button"
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#5B646B] hover:text-[#263238] rounded-full border border-[#D6B574]/30 hover:border-[#D6B574]/60 bg-white/60 hover:bg-white transition-all shadow-xs"
-            title={isMotionEnabled ? 'Disable decorative animations' : 'Enable animations'}
-            aria-label={isMotionEnabled ? 'Disable animations' : 'Enable animations'}
-          >
-            <Sparkles className={`w-3.5 h-3.5 ${isMotionEnabled ? 'text-[#D6B574]' : 'text-gray-400'}`} />
-            <span>Motion: {isMotionEnabled ? 'On' : 'Off'}</span>
-          </button>
-
           <a
             href={siteConfig.profiles.github}
             target="_blank"
@@ -138,14 +123,6 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={toggleMotion}
-            type="button"
-            className="p-2 text-[#5B646B] hover:text-[#263238] rounded-full border border-[#D6B574]/30 bg-white/60"
-            aria-label={isMotionEnabled ? 'Disable animations' : 'Enable animations'}
-          >
-            <Sparkles className={`w-4 h-4 ${isMotionEnabled ? 'text-[#D6B574]' : 'text-gray-400'}`} />
-          </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             type="button"

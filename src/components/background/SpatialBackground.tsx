@@ -1,10 +1,8 @@
 // src/components/background/SpatialBackground.tsx
 import React, { useEffect, useRef } from 'react';
-import { useMotion } from '../../context/MotionContext';
 
 export const SpatialBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const { isMotionEnabled } = useMotion();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -97,15 +95,13 @@ export const SpatialBackground: React.FC = () => {
       // Draw and update nodes
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
-        if (isMotionEnabled) {
-          node.x += node.vx;
-          node.y += node.vy;
+        node.x += node.vx;
+        node.y += node.vy;
 
-          if (node.x < 0) node.x = width;
-          if (node.x > width) node.x = 0;
-          if (node.y < 0) node.y = height;
-          if (node.y > height) node.y = 0;
-        }
+        if (node.x < 0) node.x = width;
+        if (node.x > width) node.x = 0;
+        if (node.y < 0) node.y = height;
+        if (node.y > height) node.y = 0;
 
         const currentAlpha = node.alpha + Math.sin(time * node.pulseSpeed * 20 + node.pulseOffset) * 0.15;
         ctx.beginPath();
@@ -114,9 +110,7 @@ export const SpatialBackground: React.FC = () => {
         ctx.fill();
       }
 
-      if (isMotionEnabled) {
-        animationFrameId = requestAnimationFrame(render);
-      }
+      animationFrameId = requestAnimationFrame(render);
     };
 
     // Render initial frame
@@ -126,7 +120,7 @@ export const SpatialBackground: React.FC = () => {
     const handleVisibility = () => {
       if (document.hidden) {
         cancelAnimationFrame(animationFrameId);
-      } else if (isMotionEnabled) {
+      } else {
         animationFrameId = requestAnimationFrame(render);
       }
     };
@@ -138,7 +132,7 @@ export const SpatialBackground: React.FC = () => {
       document.removeEventListener('visibilitychange', handleVisibility);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [isMotionEnabled]);
+  }, []);
 
   return (
     <div
@@ -148,17 +142,13 @@ export const SpatialBackground: React.FC = () => {
       {/* LAYER 1: AURORA ATMOSPHERE */}
       <div className="absolute inset-0 opacity-70">
         <div
-          className={`absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full blur-[120px] transition-transform duration-1000 ${
-            isMotionEnabled ? 'animate-pulse' : ''
-          }`}
+          className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full blur-[120px] transition-transform duration-1000 animate-pulse"
           style={{
             background: 'radial-gradient(circle, rgba(130, 218, 209, 0.25) 0%, rgba(200, 233, 215, 0.15) 50%, transparent 75%)',
           }}
         />
         <div
-          className={`absolute top-1/3 -right-40 w-[650px] h-[650px] rounded-full blur-[140px] transition-transform duration-1000 ${
-            isMotionEnabled ? 'animate-pulse' : ''
-          }`}
+          className="absolute top-1/3 -right-40 w-[650px] h-[650px] rounded-full blur-[140px] transition-transform duration-1000 animate-pulse"
           style={{
             background: 'radial-gradient(circle, rgba(214, 181, 116, 0.2) 0%, rgba(242, 191, 167, 0.15) 50%, transparent 75%)',
             animationDelay: '2s',

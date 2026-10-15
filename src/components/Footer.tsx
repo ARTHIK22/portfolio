@@ -1,13 +1,10 @@
 // src/components/Footer.tsx
 import React from 'react';
-import { Sparkles, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
-import { useMotion } from '../context/MotionContext';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './icons/BrandIcons';
 
 export const Footer: React.FC = () => {
-  const { isMotionEnabled, toggleMotion } = useMotion();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -49,17 +46,7 @@ export const Footer: React.FC = () => {
             </a>
           </div>
 
-          <div className="md:col-span-3 flex items-center md:justify-end gap-3">
-            <button
-              onClick={toggleMotion}
-              type="button"
-              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium text-[#263238] bg-white border border-[#D6B574]/40 hover:border-[#D6B574] shadow-xs transition-all"
-              aria-label={isMotionEnabled ? 'Turn decorative motion off' : 'Turn decorative motion on'}
-            >
-              <Sparkles className={`w-3.5 h-3.5 ${isMotionEnabled ? 'text-[#D6B574]' : 'text-gray-400'}`} />
-              <span>Motion: {isMotionEnabled ? 'Active' : 'Disabled'}</span>
-            </button>
-
+          <div className="md:col-span-3 flex items-center md:justify-end">
             <button
               onClick={scrollToTop}
               type="button"

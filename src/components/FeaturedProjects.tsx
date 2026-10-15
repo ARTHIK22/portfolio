@@ -4,18 +4,16 @@ import { Code2 } from 'lucide-react';
 import { projects, Project } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
 import { ProjectDialog } from './ProjectDialog';
-import { useMotion } from '../context/MotionContext';
 import { animate, stagger } from '../lib/motion';
 
 export const FeaturedProjects: React.FC = () => {
-  const { isMotionEnabled } = useMotion();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!isMotionEnabled || !sectionRef.current) return;
+    if (!sectionRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -40,7 +38,7 @@ export const FeaturedProjects: React.FC = () => {
 
     observer.observe(sectionRef.current);
     return () => observer.disconnect();
-  }, [isMotionEnabled, selectedCategory]);
+  }, [selectedCategory]);
 
   const categories = ['All', 'Generative AI', 'Graph & Risk Systems', 'Applied ML', 'Unsupervised Analytics', 'Agentic Systems'];
 

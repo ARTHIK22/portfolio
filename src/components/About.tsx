@@ -1,18 +1,16 @@
 // src/components/About.tsx
 import React, { useRef, useEffect } from 'react';
 import { BookOpen, FlaskConical, Hammer } from 'lucide-react';
-import { useMotion } from '../context/MotionContext';
 import { animate, stagger } from '../lib/motion';
 
 export const About: React.FC = () => {
-  const { isMotionEnabled } = useMotion();
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
   const photoRef = useRef<HTMLDivElement>(null);
   const bioRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!isMotionEnabled || !sectionRef.current) return;
+    if (!sectionRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -61,7 +59,7 @@ export const About: React.FC = () => {
 
     observer.observe(sectionRef.current);
     return () => observer.disconnect();
-  }, [isMotionEnabled]);
+  }, []);
 
   const principles = [
     {

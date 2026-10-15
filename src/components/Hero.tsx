@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { ArrowDownRight, Compass, Cpu, Network } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
-import { useMotion } from '../context/MotionContext';
 import { animate, createTimeline, stagger } from '../lib/motion';
 
 // ─── Neural-Network Canvas Visualization ────────────────────────────────────
@@ -123,11 +122,7 @@ function buildGraph(w: number, h: number): { nodes: NNNode[]; edges: NNEdge[] } 
   return { nodes, edges };
 }
 
-interface NeuralOrbProps {
-  isMotionEnabled: boolean;
-}
-
-const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
+const NeuralOrb: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const frameRef = useRef<number>(0);
   const timeRef = useRef<number>(0);
@@ -184,26 +179,24 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
     ctx.setLineDash([]);
 
     // ── Animate node positions (gentle drift, bounded) ───────────────────────
-    if (isMotionEnabled) {
-      for (let i = 1; i < nodes.length; i++) {
-        const nd = nodes[i];
-        nd.x += nd.vx;
-        nd.y += nd.vy;
-        const dx = nd.x - cx;
-        const dy = nd.y - cy;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const maxDist = i < 8 ? 100 : i < 20 ? 165 : 215;
-        if (dist > maxDist) {
-          nd.vx -= dx / dist * 0.04;
-          nd.vy -= dy / dist * 0.04;
-        }
-        // Gentle damping
-        nd.vx *= 0.995;
-        nd.vy *= 0.995;
-        // Tiny random nudge to keep movement alive
-        nd.vx += (Math.random() - 0.5) * 0.025;
-        nd.vy += (Math.random() - 0.5) * 0.025;
+    for (let i = 1; i < nodes.length; i++) {
+      const nd = nodes[i];
+      nd.x += nd.vx;
+      nd.y += nd.vy;
+      const dx = nd.x - cx;
+      const dy = nd.y - cy;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const maxDist = i < 8 ? 100 : i < 20 ? 165 : 215;
+      if (dist > maxDist) {
+        nd.vx -= dx / dist * 0.04;
+        nd.vy -= dy / dist * 0.04;
       }
+      // Gentle damping
+      nd.vx *= 0.995;
+      nd.vy *= 0.995;
+      // Tiny random nudge to keep movement alive
+      nd.vx += (Math.random() - 0.5) * 0.025;
+      nd.vy += (Math.random() - 0.5) * 0.025;
     }
 
     // ── Draw edges ──────────────────────────────────────────────────────────
@@ -216,9 +209,7 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
       if (dist > EDGE_MAX_DIST + 30) continue;
 
       // Pulse alpha along edge
-      const pulse = isMotionEnabled
-        ? 0.5 + 0.5 * Math.sin(t * edge.pulseSpeed * 0.04 + edge.pulseOffset)
-        : 0.6;
+      const pulse = 0.5 + 0.5 * Math.sin(t * edge.pulseSpeed * 0.04 + edge.pulseOffset);
       const alpha = edge.opacity * pulse;
 
       const grad = ctx.createLinearGradient(na.x, na.y, nb.x, nb.y);
@@ -236,9 +227,7 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
     // ── Draw nodes ──────────────────────────────────────────────────────────
     for (let i = 0; i < nodes.length; i++) {
       const nd = nodes[i];
-      const pulse = isMotionEnabled
-        ? 0.6 + 0.4 * Math.sin(t * nd.pulseSpeed * 0.04 + nd.pulsePhase)
-        : 0.8;
+      const pulse = 0.6 + 0.4 * Math.sin(t * nd.pulseSpeed * 0.04 + nd.pulsePhase);
       const r = nd.r * (0.9 + 0.15 * pulse);
 
       // Glow halo
@@ -267,7 +256,7 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
     }
 
     // ── Traveling data pulse on a random edge ────────────────────────────────
-    if (isMotionEnabled && edges.length > 0) {
+    if (edges.length > 0) {
       const edgeIdx = Math.floor((t * 0.004) % edges.length);
       const edge = edges[edgeIdx];
       const progress = (t * 0.003 + edge.pulseOffset) % 1;
@@ -284,7 +273,7 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
       ctx.arc(px, py, 8, 0, Math.PI * 2);
       ctx.fill();
     }
-  }, [isMotionEnabled]);
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -334,7 +323,6 @@ const NeuralOrb: React.FC<NeuralOrbProps> = ({ isMotionEnabled }) => {
 
 // ─── Hero Section ────────────────────────────────────────────────────────────
 export const Hero: React.FC = () => {
-  const { isMotionEnabled } = useMotion();
   const heroRef = useRef<HTMLDivElement>(null);
   const orbRef = useRef<HTMLDivElement>(null);
   const kickerRef = useRef<HTMLDivElement>(null);
@@ -346,8 +334,6 @@ export const Hero: React.FC = () => {
   const floatCard2Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!isMotionEnabled) return;
-
     // Anime.js coordinated entrance timeline
     const tl = createTimeline({
       defaults: {
@@ -451,7 +437,7 @@ export const Hero: React.FC = () => {
       float1?.pause();
       float2?.pause();
     };
-  }, [isMotionEnabled]);
+  }, []);
 
   return (
     <section
@@ -564,7 +550,7 @@ export const Hero: React.FC = () => {
               />
 
               {/* Canvas neural network */}
-              <NeuralOrb isMotionEnabled={isMotionEnabled} />
+              <NeuralOrb />
 
               {/* SVG decorative orbital arcs layered over canvas */}
               <svg
