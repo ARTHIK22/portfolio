@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ['hero', 'about', 'projects', 'skills', 'github', 'contact'];
+    const sectionIds = ['hero', 'about', 'projects', 'skills', 'resume', 'certifications', 'github', 'contact'];
     const observers: IntersectionObserver[] = [];
 
     sectionIds.forEach((id) => {
@@ -61,6 +61,8 @@ export const Navbar: React.FC = () => {
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Projects', href: '#projects', id: 'projects' },
     { label: 'Skills', href: '#skills', id: 'skills' },
+    { label: 'Resume', href: '#resume', id: 'resume' },
+    { label: 'Certifications', href: '#certifications', id: 'certifications' },
     { label: 'GitHub', href: '#github', id: 'github' },
     { label: 'Contact', href: '#contact', id: 'contact' },
   ];
