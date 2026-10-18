@@ -58,7 +58,7 @@ export const Resume: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 sm:w-auto sm:min-w-[17rem] sm:flex-row">
+      <div className="resume-actions flex flex-col gap-2 sm:w-auto sm:min-w-[17rem] sm:flex-row">
         <a
           href={resumeUrl}
           target="_blank"

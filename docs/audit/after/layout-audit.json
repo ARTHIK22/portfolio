@@ -2,7 +2,7 @@
   {
     "width": 360,
     "documentWidth": 360,
-    "height": 21657,
+    "height": 21785,
     "overflowing": [
       {
         "selector": "svg.hero-streak-hand",
@@ -186,12 +186,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 637,
-        "right": 939,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 637,
         "right": 939,
         "clipped": true
@@ -402,12 +396,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 955,
-        "right": 1258,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 955,
         "right": 1258,
         "clipped": true
@@ -792,55 +780,56 @@
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -117,
-        "right": 1121,
+        "left": -131,
+        "right": 1264,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -117,
-        "right": 186,
+        "left": -131,
+        "right": 172,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 192,
-        "right": 495,
+        "left": 223,
+        "right": 526,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 495,
-        "right": 502,
+        "left": 549,
+        "right": 555,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 502,
-        "right": 805,
+        "left": 578,
+        "right": 881,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 805,
-        "right": 812,
+        "left": 903,
+        "right": 910,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 812,
-        "right": 1115,
+        "left": 932,
+        "right": 1235,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1115,
-        "right": 1121,
+        "left": 1257,
+        "right": 1264,
         "clipped": true
       }
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -924,7 +913,7 @@
   {
     "width": 390,
     "documentWidth": 390,
-    "height": 21969,
+    "height": 22042,
     "overflowing": [
       {
         "selector": "svg.hero-streak-hand",
@@ -1108,12 +1097,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 687,
-        "right": 1015,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 687,
         "right": 1015,
         "clipped": true
@@ -1324,12 +1307,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 1031,
-        "right": 1359,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1031,
         "right": 1359,
         "clipped": true
@@ -1714,55 +1691,56 @@
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -117,
-        "right": 1121,
+        "left": -132,
+        "right": 1263,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -117,
-        "right": 186,
+        "left": -132,
+        "right": 171,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 192,
-        "right": 495,
+        "left": 223,
+        "right": 526,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 495,
-        "right": 502,
+        "left": 548,
+        "right": 555,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 502,
-        "right": 805,
+        "left": 577,
+        "right": 880,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 805,
-        "right": 812,
+        "left": 902,
+        "right": 909,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 812,
-        "right": 1115,
+        "left": 931,
+        "right": 1234,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1115,
-        "right": 1121,
+        "left": 1257,
+        "right": 1263,
         "clipped": true
       }
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -1846,7 +1824,7 @@
   {
     "width": 768,
     "documentWidth": 768,
-    "height": 27406,
+    "height": 27534,
     "overflowing": [
       {
         "selector": "div.showcase-track",
@@ -1922,12 +1900,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 814,
-        "right": 1175,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 814,
         "right": 1175,
         "clipped": true
@@ -2138,12 +2110,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 1194,
-        "right": 1555,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1194,
         "right": 1555,
         "clipped": true
@@ -2565,6 +2531,7 @@
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -2579,14 +2546,14 @@
       },
       {
         "section": "skills",
-        "foreground": "rgb(28, 26, 29)",
+        "foreground": "rgb(94, 91, 93)",
         "theme": "light",
         "expectedTheme": "light",
         "background": "rgb(243, 241, 239)",
         "ratios": [
-          15.342696981065624
+          5.95427265387157
         ],
-        "ratio": 15.342696981065624
+        "ratio": 5.95427265387157
       },
       {
         "section": "certifications",
@@ -2648,7 +2615,7 @@
   {
     "width": 1024,
     "documentWidth": 1024,
-    "height": 22016,
+    "height": 22033,
     "overflowing": [
       {
         "selector": "div.showcase-track",
@@ -2736,12 +2703,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1085,
-        "right": 1567,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1085,
         "right": 1567,
         "clipped": true
@@ -2952,12 +2913,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 1592,
-        "right": 2074,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1592,
         "right": 2074,
         "clipped": true
@@ -3342,31 +3297,32 @@
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -132,
-        "right": 1263,
+        "left": -131,
+        "right": 1264,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -132,
-        "right": 171,
+        "left": -131,
+        "right": 172,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 931,
-        "right": 1234,
+        "left": 932,
+        "right": 1235,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1256,
-        "right": 1263,
+        "left": 1257,
+        "right": 1264,
         "clipped": true
       }
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -3381,14 +3337,14 @@
       },
       {
         "section": "skills",
-        "foreground": "rgb(37, 35, 37)",
+        "foreground": "rgb(49, 47, 49)",
         "theme": "light",
         "expectedTheme": "light",
         "background": "rgb(243, 241, 239)",
         "ratios": [
-          13.850196295612628
+          11.785562836228518
         ],
-        "ratio": 13.850196295612628
+        "ratio": 11.785562836228518
       },
       {
         "section": "certifications",
@@ -3450,7 +3406,7 @@
   {
     "width": 1440,
     "documentWidth": 1440,
-    "height": 21020,
+    "height": 21072,
     "overflowing": [
       {
         "selector": "div.showcase-track",
@@ -3514,12 +3470,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1493,
-        "right": 2153,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1493,
         "right": 2153,
         "clipped": true
@@ -3730,12 +3680,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2189,
-        "right": 2849,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 2189,
         "right": 2849,
         "clipped": true
@@ -4133,6 +4077,7 @@
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -4147,14 +4092,14 @@
       },
       {
         "section": "skills",
-        "foreground": "rgb(40, 38, 40)",
+        "foreground": "rgb(49, 46, 49)",
         "theme": "light",
         "expectedTheme": "light",
         "background": "rgb(243, 241, 239)",
         "ratios": [
-          13.331906226057328
+          11.90455218010064
         ],
-        "ratio": 13.331906226057328
+        "ratio": 11.90455218010064
       },
       {
         "section": "certifications",
@@ -4216,7 +4161,7 @@
   {
     "width": 1920,
     "documentWidth": 1920,
-    "height": 20541,
+    "height": 20650,
     "overflowing": [
       {
         "selector": "div.showcase-track",
@@ -4232,12 +4177,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1512,
-        "right": 2172,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 1512,
         "right": 2172,
         "clipped": true
@@ -4316,12 +4255,6 @@
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2212,
-        "right": 2872,
-        "clipped": true
-      },
-      {
-        "selector": "img.project-screenshot",
         "left": 2212,
         "right": 2872,
         "clipped": true
@@ -4719,6 +4652,7 @@
     ],
     "textOverlaps": [],
     "textClipped": [],
+    "excessiveRadii": [],
     "headerContrast": [
       {
         "section": "light-story",
@@ -4733,14 +4667,14 @@
       },
       {
         "section": "skills",
-        "foreground": "rgb(34, 32, 35)",
+        "foreground": "rgb(49, 47, 49)",
         "theme": "light",
         "expectedTheme": "light",
         "background": "rgb(243, 241, 239)",
         "ratios": [
-          14.35028615101234
+          11.785562836228518
         ],
-        "ratio": 14.35028615101234
+        "ratio": 11.785562836228518
       },
       {
         "section": "certifications",

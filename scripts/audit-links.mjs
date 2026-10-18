@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 
 const baseUrl = process.env.AUDIT_BASE_URL || 'http://127.0.0.1:4173/';
-const browser = await chromium.launch({ headless: true, channel: process.env.AUDIT_CHANNEL || 'msedge' });
+const browser = await chromium.launch({ headless: true });
 const failures = [];
 try {
   const context = await browser.newContext({ acceptDownloads: true, viewport: { width: 1440, height: 900 } });

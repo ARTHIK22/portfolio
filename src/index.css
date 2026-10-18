@@ -240,17 +240,14 @@ main { position: relative; z-index: 1; }
 #github article:hover, #profiles a.pearl-card:hover { transform: translateY(-4px); border-color: #ba536d !important; }
 #github h3, #profiles h3, #resume h3 { color: #171518 !important; }
 #github article > div:last-child { border-color: var(--line-light) !important; }
-#github a[href^="https://github.com"]:not(article a) { border-radius: 999px !important; background: #19171a !important; color: #fff !important; }
-#resume article > div:last-child a { border-radius: 999px !important; background: #1b191c !important; color: white !important; }
-#resume article > div:last-child a:last-child { background: transparent !important; color: #1b191c !important; }
+#resume .resume-actions a { border-radius: 999px !important; background: #1b191c !important; color: white !important; }
+#resume .resume-actions a:last-child { background: transparent !important; color: #1b191c !important; }
 
 /* Contact and footer close the experience on the pale paper surface. */
-footer { margin: 0 !important; border-color: var(--line-dark) !important; background: #0b0b0d !important; color: var(--text); }
-footer > div { max-width: 1500px !important; }
-footer a:hover { color: var(--accent) !important; }
-footer p { color: #a9a2a4 !important; }
-.site-footer { padding: 2rem clamp(1.2rem, 7vw, 7rem); }
-.site-footer > div { padding: 0 !important; }
+.site-footer { margin: 0 !important; padding: 2rem clamp(1.2rem, 7vw, 7rem); border-color: var(--line-dark) !important; background: #0b0b0d !important; color: var(--text); }
+.site-footer > div { max-width: 1500px !important; padding: 0 !important; }
+.site-footer a:hover { color: var(--accent) !important; }
+.site-footer p { color: #a9a2a4 !important; }
 .footer-top, .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .footer-top { padding-bottom: 1.5rem !important; border-bottom: 1px solid var(--line-dark); }
 .footer-wordmark { color: var(--accent) !important; font: 2.1rem var(--font-mark); }
@@ -260,6 +257,8 @@ footer p { color: #a9a2a4 !important; }
 .back-to-top svg { width: 16px; height: 16px; }
 .footer-bottom { padding-top: 1.2rem; }
 .footer-bottom p { margin: 0; font: .58rem var(--font-code); }
+.build-stamp { color: #8b8386; font: .48rem var(--font-code); letter-spacing: .06em; text-transform: uppercase; }
+.build-stamp code { color: #c6bec0; }
 
 /* Scroll reveals are progressive and reversible; content remains visible without JS. */
 .reveal-pending [data-scroll-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .75s cubic-bezier(.2,.7,.1,1), transform .75s cubic-bezier(.2,.7,.1,1); }
@@ -270,11 +269,11 @@ html[data-cursor-active="true"] a:hover ~ .cursor-ring, html[data-cursor-active=
 html[data-cursor-hover="true"] .cursor-ring { width: 34px; height: 34px; background: rgba(246,141,166,.08); }
 
 /* Project detail dialog keeps its native internal scroll. */
-[role="dialog"][data-lenis-prevent] { background: rgba(0,0,0,.78) !important; backdrop-filter: blur(10px); }
-[role="dialog"][data-lenis-prevent] > div { max-height: 90dvh; overflow-y: auto; border: 1px solid rgba(246,141,166,.4) !important; border-radius: 0 !important; background: #151417 !important; color: var(--text) !important; }
-[role="dialog"][data-lenis-prevent] h2, [role="dialog"][data-lenis-prevent] h3 { color: var(--text) !important; }
-[role="dialog"][data-lenis-prevent] p, [role="dialog"][data-lenis-prevent] li { color: #b5aeb0 !important; }
-[role="dialog"][data-lenis-prevent] > div > div > div > div, [role="dialog"][data-lenis-prevent] li, [role="dialog"][data-lenis-prevent] .bg-white, [role="dialog"][data-lenis-prevent] .bg-white\/70, [role="dialog"][data-lenis-prevent] .bg-white\/80 { border-color: var(--line-dark) !important; background: #1c1a1e !important; }
+.project-dialog { background: rgba(0,0,0,.78) !important; backdrop-filter: blur(10px); }
+.project-dialog > div { max-height: 90dvh; overflow-y: auto; border: 1px solid rgba(246,141,166,.4) !important; border-radius: 0 !important; background: #151417 !important; color: var(--text) !important; }
+.project-dialog h2, .project-dialog h3 { color: var(--text) !important; }
+.project-dialog p, .project-dialog li { color: #b5aeb0 !important; }
+.project-dialog > div > div > div > div, .project-dialog li, .project-dialog .bg-white, .project-dialog .bg-white\/70, .project-dialog .bg-white\/80 { border-color: var(--line-dark) !important; background: #1c1a1e !important; }
 
 @media (max-width: 900px) {
   .nav-bar { grid-template-columns: 1fr 2.5rem 1fr; }
@@ -355,7 +354,7 @@ html[data-cursor-hover="true"] .cursor-ring { width: 34px; height: 34px; backgro
   #github, #profiles, #resume { padding: 4.5rem 1.2rem !important; }
   #contact { padding: 5rem 1.2rem !important; }
   #contact h2 { font-size: clamp(3.4rem, 16vw, 6rem) !important; }
-  footer > div > div:first-child { display: block !important; }
+  .site-footer > .footer-top { display: block !important; }
   .footer-top, .footer-bottom { align-items: flex-start; flex-direction: column; }
   .back-to-top { align-self: flex-end; margin-top: -3.7rem; }
   .footer-socials { gap: .6rem .9rem; }
@@ -508,8 +507,8 @@ html { scroll-padding-top: 5rem; }
 #profiles h3, #resume h3 { color: #171518 !important; font-family: var(--font-display) !important; }
 #profiles a.pearl-card > div:last-child { border-color: rgba(23,21,24,.2) !important; }
 #resume article { padding: clamp(1.1rem,2vw,1.5rem) !important; }
-#resume article > div:last-child a { border: 1px solid #171518 !important; border-radius: 999px !important; background: #171518 !important; color: #fff !important; }
-#resume article > div:last-child a:last-child { border-color: rgba(23,21,24,.45) !important; background: transparent !important; color: #171518 !important; }
+#resume .resume-actions a { border: 1px solid #171518 !important; border-radius: 999px !important; background: #171518 !important; color: #fff !important; }
+#resume .resume-actions a:last-child { border-color: rgba(23,21,24,.45) !important; background: transparent !important; color: #171518 !important; }
 
 /* Final contact block: hierarchy, editorial two-column close, and all existing links. */
 #contact { display: block; width: 100%; max-width: none !important; margin: 0 !important; padding: clamp(4.5rem,9vw,8rem) clamp(1.2rem,7.5vw,7rem) 1.5rem !important; background: radial-gradient(ellipse at 79% 18%, rgba(246,141,166,.18), transparent 34%), linear-gradient(120deg,#f3f1ef,#e8e4e3); color: #171518; }

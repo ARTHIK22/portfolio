@@ -32,7 +32,7 @@ function contrastRatio(foreground, background) {
   return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
 }
 
-const browser = await chromium.launch({ headless: true, channel: process.env.AUDIT_CHANNEL || 'msedge' });
+const browser = await chromium.launch({ headless: true });
 try {
   for (const width of viewports) {
     const page = await browser.newPage({ viewport: { width, height: 900 }, deviceScaleFactor: 1 });
@@ -76,8 +76,21 @@ try {
         if (element.scrollWidth <= element.clientWidth + 2 || style.overflowX === 'visible') return [];
         return [{ text: element.innerText.trim().slice(0, 70), left: Math.round(rect.left), right: Math.round(rect.right), scrollWidth: element.scrollWidth, clientWidth: element.clientWidth }];
       }),
+      excessiveRadii: [...document.querySelectorAll('body *')].flatMap((element) => {
+        const rect = element.getBoundingClientRect(); const style = getComputedStyle(element);
+        if (style.display === 'none' || style.visibility === 'hidden' || rect.width === 0 || rect.height === 0) return [];
+        const radii = [style.borderTopLeftRadius, style.borderTopRightRadius, style.borderBottomRightRadius, style.borderBottomLeftRadius]
+          .map((radius) => Number.parseFloat(radius) || 0);
+        const maximum = Math.max(...radii);
+        if (maximum <= 24) return [];
+        // A true capsule or circle uses a radius at least half its short side.
+        const isPercentageCircle = style.borderTopLeftRadius.includes('%') && Math.abs(rect.width - rect.height) <= 2;
+        const isPillOrCircle = isPercentageCircle || maximum >= Math.min(rect.width, rect.height) / 2 - 1;
+        if (isPillOrCircle) return [];
+        return [{ selector: element.id ? `#${element.id}` : element.tagName.toLowerCase() + (element.classList.length ? `.${[...element.classList].join('.')}` : ''), radius: Math.round(maximum), size: [Math.round(rect.width), Math.round(rect.height)] }];
+      }),
     }));
-    console.log(`\n[${width}px] document ${rootLayout.documentWidth}/${rootLayout.width}; out-of-view: ${rootLayout.overflowing.length}; text overlaps: ${rootLayout.textOverlaps.length}; clipped text: ${rootLayout.textClipped.length}`);
+    console.log(`\n[${width}px] document ${rootLayout.documentWidth}/${rootLayout.width}; out-of-view: ${rootLayout.overflowing.length}; text overlaps: ${rootLayout.textOverlaps.length}; clipped text: ${rootLayout.textClipped.length}; non-pill radii >24px: ${rootLayout.excessiveRadii.length}`);
     if (rootLayout.documentWidth > rootLayout.width) failures.push(`${width}px horizontal page overflow: ${rootLayout.documentWidth}px`);
     report.push({ width, ...rootLayout, headerContrast: [] });
     if (rootLayout.overflowing.length) console.log(`  out-of-view elements: ${rootLayout.overflowing.slice(0, 8).map((element) => element.selector).join(', ')}${rootLayout.overflowing.length > 8 ? `, … (${rootLayout.overflowing.length} total in report)` : ''}`);
@@ -88,6 +101,10 @@ try {
     if (rootLayout.textClipped.length) {
       for (const clipped of rootLayout.textClipped) console.log(`  clipped text ${JSON.stringify(clipped)}`);
       failures.push(`${width}px text clipped: ${rootLayout.textClipped.length}`);
+    }
+    if (rootLayout.excessiveRadii.length) {
+      for (const element of rootLayout.excessiveRadii) console.log(`  excessive non-pill radius ${JSON.stringify(element)}`);
+      failures.push(`${width}px non-pill elements with computed border-radius above 24px: ${rootLayout.excessiveRadii.length}`);
     }
 
     await page.evaluate(async () => {

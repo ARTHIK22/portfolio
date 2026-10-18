@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import { Star, ArrowUpRight, Calendar, Code } from 'lucide-react';
 import snapshotData from '../data/generated/github-snapshot.json';
+import { projects } from '../data/projects';
 import { GithubIcon } from './icons/BrandIcons';
 import { useScrollReveal } from '../lib/useScrollReveal';
 
@@ -67,7 +68,11 @@ export const GitHubSection: React.FC = () => {
       </div>
 
       <div className="github-grid">
-        {publicRepos.map((repo) => (
+        {publicRepos.map((repo) => {
+          const description = String(repo.description ?? '').trim()
+            || projects.find((project) => project.repositoryUrl === repo.htmlUrl)?.description;
+
+          return (
           <a
             key={repo.id}
             data-scroll-reveal
@@ -91,9 +96,7 @@ export const GitHubSection: React.FC = () => {
               <h3 className="github-repo-name">
                 {repo.name}
               </h3>
-              <p className="github-repo-description">
-                {repo.description || 'No description provided on GitHub.'}
-              </p>
+              {description && <p className="github-repo-description">{description}</p>}
             </div>
 
             <div className="github-card-footer">
@@ -104,7 +107,8 @@ export const GitHubSection: React.FC = () => {
               <span>PUBLIC</span>
             </div>
           </a>
-        ))}
+          );
+        })}
       </div>
 
       <div className="mt-8 text-center text-xs text-[#5B646B]">

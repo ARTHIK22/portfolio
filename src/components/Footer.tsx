@@ -19,6 +19,9 @@ export const Footer: React.FC = () => (
         {developerProfiles.map((profile) => <a key={profile.id} href={profile.url} target="_blank" rel="noopener noreferrer">{profile.platform}</a>)}
         <a href={`mailto:${siteConfig.profiles.email}`}>Email</a>
       </div>
+      <span className="build-stamp" aria-label={`Build ${import.meta.env.VITE_BUILD_ID || 'development'}`}>
+        Build <code>{import.meta.env.VITE_BUILD_ID || 'development'}</code>
+      </span>
     </div>
   </footer>
 );
