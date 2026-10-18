@@ -33,7 +33,7 @@ const CertificateCard: React.FC<{ item: DocumentCardItem }> = ({ item }) => {
   const viewLabel = item.kind === 'certificate' ? 'View Certificate' : 'View Document';
 
   return (
-    <article data-scroll-reveal className="certificate-card">
+    <article data-scroll-reveal={item.id !== 'odnest-letter-of-recommendation' ? '' : undefined} className={`certificate-card certificate-card--${item.id}`}>
       <a className="certificate-preview" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${viewLabel}: ${item.title}`}>
         {!previewMissing ? (
           <img src={previewUrl} alt={`First-page preview of ${item.title}`} loading="lazy" decoding="async" onError={() => setPreviewMissing(true)} />

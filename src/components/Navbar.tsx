@@ -22,7 +22,11 @@ export const Navbar: React.FC = () => {
     <header className="site-header" data-theme="dark">
       <nav aria-label="Main navigation" className="nav-bar">
         <div className="nav-side nav-side--left">{navLinks.slice(0, 3).map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}</div>
-        <a className="nav-mark" href="#hero" aria-label="Arthik Dwivedi home">/</a>
+        <a className="nav-mark" href="#hero" aria-label="Arthik Dwivedi, back to top">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <text x="50%" y="79%" textAnchor="middle" fontFamily="'Pirata One', serif" fontSize="55" fill="#111114">A</text>
+          </svg>
+        </a>
         <div className="nav-side nav-side--right">{navLinks.slice(3).map((link) => <a key={link.href} href={link.href}>{link.label}</a>)}</div>
         <button className="nav-menu-button" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}>
           {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}

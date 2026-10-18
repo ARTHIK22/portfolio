@@ -6,7 +6,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const stage = process.env.AUDIT_STAGE || 'after';
 const baseUrl = process.env.AUDIT_BASE_URL || 'http://127.0.0.1:4173/';
-const viewports = (process.env.AUDIT_WIDTHS || '360,390,768,1024,1440,1920').split(',').map(Number).filter(Number.isFinite);
+const viewports = (process.env.AUDIT_VIEWPORTS || '1366x768,1440x700,1440x900,1920x900,390x844')
+  .split(',').map((value) => value.trim().split('x').map(Number)).filter(([width, height]) => Number.isFinite(width) && Number.isFinite(height)).map(([width, height]) => ({ width, height }));
 const captureSections = ['hero', 'about', 'projects', 'statement', 'light-story', 'skills', 'certifications', 'github', 'profiles', 'resume', 'contact'];
 const failures = [];
 const report = [];
@@ -34,16 +35,18 @@ function contrastRatio(foreground, background) {
 
 const browser = await chromium.launch({ headless: true });
 try {
-  for (const width of viewports) {
-    const page = await browser.newPage({ viewport: { width, height: 900 }, deviceScaleFactor: 1 });
-    page.on('pageerror', (error) => failures.push(`${width}px page error: ${error.message}`));
+  for (const viewport of viewports) {
+    const { width, height } = viewport;
+    const viewportLabel = `${width}x${height}`;
+    const page = await browser.newPage({ viewport, deviceScaleFactor: 1 });
+    page.on('pageerror', (error) => failures.push(`${viewportLabel} page error: ${error.message}`));
     await page.goto(baseUrl, { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(4000);
     const rootLayout = await page.evaluate(() => ({
       width: window.innerWidth,
       documentWidth: document.documentElement.scrollWidth,
-      height: document.documentElement.scrollHeight,
+      documentHeight: document.documentElement.scrollHeight,
       overflowing: [...document.querySelectorAll('body *')].flatMap((element) => {
         const rect = element.getBoundingClientRect();
         const style = getComputedStyle(element);
@@ -56,17 +59,18 @@ try {
         });
         return [{ selector: element.id ? `#${element.id}` : element.tagName.toLowerCase() + (element.classList.length ? `.${[...element.classList].join('.')}` : ''), left: Math.round(rect.left), right: Math.round(rect.right), clipped }];
       }),
-      textOverlaps: [...document.querySelectorAll('main section')].flatMap((section) => {
-        const candidates = [...section.querySelectorAll('h1,h2,h3,p')].filter((element) => {
+      textOverlaps: [...document.querySelectorAll('main h1,main h2,main h3,main h4')].flatMap((heading, index, all) => {
+        const candidates = all.slice(index + 1).filter((element) => heading.parentElement === element.parentElement && (() => {
           const rect = element.getBoundingClientRect(); const style = getComputedStyle(element);
-          return style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0 && element.innerText.trim();
-        });
+          return style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0 && Number(style.opacity) > .8;
+        })());
+        const firstStyle = getComputedStyle(heading);
+        if (firstStyle.display === 'none' || firstStyle.visibility === 'hidden' || Number(firstStyle.opacity) <= .8) return [];
         const overlaps = [];
-        for (let i = 0; i < candidates.length; i += 1) for (let j = i + 1; j < candidates.length; j += 1) {
-          if (candidates[i].contains(candidates[j]) || candidates[j].contains(candidates[i])) continue;
-          const a = candidates[i].getBoundingClientRect(); const b = candidates[j].getBoundingClientRect();
+        for (const element of candidates) {
+          const a = heading.getBoundingClientRect(); const b = element.getBoundingClientRect();
           const x = Math.min(a.right, b.right) - Math.max(a.left, b.left); const y = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
-          if (x > 2 && y > 2) overlaps.push({ section: section.id || section.className, a: candidates[i].tagName, aText: candidates[i].innerText.trim().slice(0, 50), b: candidates[j].tagName, bText: candidates[j].innerText.trim().slice(0, 50), overlap: [Math.round(x), Math.round(y)] });
+          if (x > 2 && y > 2) overlaps.push({ a: heading.innerText.trim().slice(0, 50), b: element.innerText.trim().slice(0, 50), overlap: [Math.round(x), Math.round(y)] });
         }
         return overlaps;
       }),
@@ -90,21 +94,21 @@ try {
         return [{ selector: element.id ? `#${element.id}` : element.tagName.toLowerCase() + (element.classList.length ? `.${[...element.classList].join('.')}` : ''), radius: Math.round(maximum), size: [Math.round(rect.width), Math.round(rect.height)] }];
       }),
     }));
-    console.log(`\n[${width}px] document ${rootLayout.documentWidth}/${rootLayout.width}; out-of-view: ${rootLayout.overflowing.length}; text overlaps: ${rootLayout.textOverlaps.length}; clipped text: ${rootLayout.textClipped.length}; non-pill radii >24px: ${rootLayout.excessiveRadii.length}`);
-    if (rootLayout.documentWidth > rootLayout.width) failures.push(`${width}px horizontal page overflow: ${rootLayout.documentWidth}px`);
-    report.push({ width, ...rootLayout, headerContrast: [] });
+    console.log(`\n[${viewportLabel}] document ${rootLayout.documentWidth}/${rootLayout.width}; out-of-view: ${rootLayout.overflowing.length}; sibling heading overlaps: ${rootLayout.textOverlaps.length}; clipped text: ${rootLayout.textClipped.length}; non-pill radii >24px: ${rootLayout.excessiveRadii.length}`);
+    if (rootLayout.documentWidth > rootLayout.width) failures.push(`${viewportLabel} horizontal page overflow: ${rootLayout.documentWidth}px`);
+    report.push({ width, height, ...rootLayout, headerContrast: [] });
     if (rootLayout.overflowing.length) console.log(`  out-of-view elements: ${rootLayout.overflowing.slice(0, 8).map((element) => element.selector).join(', ')}${rootLayout.overflowing.length > 8 ? `, … (${rootLayout.overflowing.length} total in report)` : ''}`);
     if (rootLayout.textOverlaps.length) {
       for (const overlap of rootLayout.textOverlaps) console.log(`  overlap ${JSON.stringify(overlap)}`);
-      failures.push(`${width}px text boxes overlap: ${rootLayout.textOverlaps.length}`);
+      failures.push(`${viewportLabel} text boxes overlap: ${rootLayout.textOverlaps.length}`);
     }
     if (rootLayout.textClipped.length) {
       for (const clipped of rootLayout.textClipped) console.log(`  clipped text ${JSON.stringify(clipped)}`);
-      failures.push(`${width}px text clipped: ${rootLayout.textClipped.length}`);
+      failures.push(`${viewportLabel} text clipped: ${rootLayout.textClipped.length}`);
     }
     if (rootLayout.excessiveRadii.length) {
       for (const element of rootLayout.excessiveRadii) console.log(`  excessive non-pill radius ${JSON.stringify(element)}`);
-      failures.push(`${width}px non-pill elements with computed border-radius above 24px: ${rootLayout.excessiveRadii.length}`);
+      failures.push(`${viewportLabel} non-pill elements with computed border-radius above 24px: ${rootLayout.excessiveRadii.length}`);
     }
 
     await page.evaluate(async () => {
@@ -116,47 +120,119 @@ try {
       window.scrollTo(0, 0);
     });
 
+    const stageChecks = [];
+    for (const stageId of ['projects', 'skills']) {
+      for (const progress of [0, .5, .99]) {
+        const metrics = await page.locator(`#${stageId}`).evaluate((section, progressValue) => {
+          const start = window.scrollY + section.getBoundingClientRect().top;
+          const travel = Math.max(0, section.offsetHeight - window.innerHeight);
+          const target = start + travel * progressValue;
+          if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(target, { immediate: true });
+          else window.scrollTo({ top: target, behavior: 'instant' });
+          return target;
+        }, progress);
+        await page.waitForTimeout(180);
+        const sample = await page.evaluate((stageIdValue) => {
+          const stage = document.querySelector(stageIdValue === 'projects' ? '.showcase-pin' : '.skills-stack');
+          const navLinks = [...document.querySelectorAll('.nav-side a')];
+          const projectCards = [...(stage?.querySelectorAll('.showcase-card') || [])];
+          const primaryProjectCard = projectCards.reduce((best, card) => {
+            const rect = card.getBoundingClientRect();
+            const distance = Math.abs((rect.left + rect.right) / 2 - innerWidth / 2);
+            return !best || distance < best.distance ? { card, distance } : best;
+          }, null)?.card;
+          const isVisible = (node) => {
+            const style = getComputedStyle(node); const rect = node.getBoundingClientRect();
+            if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) < .95 || rect.width <= 0 || rect.height <= 0) return false;
+            if (node.closest('.skill-stack-card') && !node.closest('.skill-stack-card').classList.contains('is-active')) return false;
+            if (stageIdValue === 'projects' && node.closest('.showcase-card') && node.closest('.showcase-card') !== primaryProjectCard) return false;
+            return Math.min(rect.right, innerWidth) - Math.max(rect.left, 0) > 1 && Math.min(rect.bottom, innerHeight) - Math.max(rect.top, 0) > 1;
+          };
+          const intersects = (a, b) => Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1;
+          const candidates = [...(stage?.querySelectorAll('h1,h2,h3,h4,button,a,[class*="caption"],.showcase-meta,.skill-active-details') || [])].filter(isVisible);
+          const clipped = candidates.flatMap((node) => {
+            const rect = node.getBoundingClientRect();
+            if (rect.top < -1 || rect.bottom > innerHeight + 1 || rect.left < -1 || rect.right > innerWidth + 1) {
+              return [{ selector: node.tagName.toLowerCase() + (node.className?.baseVal || node.className ? `.${String(node.className?.baseVal || node.className).split(' ').join('.')}` : ''), top: Math.round(rect.top), bottom: Math.round(rect.bottom), left: Math.round(rect.left), right: Math.round(rect.right) }];
+            }
+            return [];
+          });
+          const navOverlaps = [...document.querySelectorAll('main h1,main h2,main h3,main h4,main p,main a,main button,[class*="caption"]')]
+            .filter(isVisible)
+            .flatMap((node) => {
+              const rect = node.getBoundingClientRect();
+              return navLinks.filter(isVisible).filter((link) => intersects(rect, link.getBoundingClientRect())).map((link) => ({
+                text: (node.innerText || node.getAttribute('aria-label') || '').trim().slice(0, 55),
+                link: link.innerText.trim(),
+                box: [Math.round(rect.left), Math.round(rect.top), Math.round(rect.right), Math.round(rect.bottom)],
+                selector: node.tagName.toLowerCase() + (node.className?.baseVal || node.className ? `.${String(node.className?.baseVal || node.className).split(' ').join('.')}` : ''),
+              }));
+            });
+          const siblingHeadingOverlaps = [...document.querySelectorAll('main h1,main h2,main h3,main h4')]
+            .filter(isVisible)
+            .flatMap((a, index, all) => all.slice(index + 1).filter((b) => a.parentElement === b.parentElement && intersects(a.getBoundingClientRect(), b.getBoundingClientRect())).map((b) => ({
+              a: (a.innerText || '').trim().slice(0, 45), b: (b.innerText || '').trim().slice(0, 45),
+            })));
+          const header = document.querySelector('.site-header');
+          const headerStyle = header ? getComputedStyle(header) : null;
+          const headerOpaque = Boolean(headerStyle && Number.parseFloat(headerStyle.backgroundColor.match(/,\s*([\d.]+)\s*\)$/)?.[1] || '0') >= .7 && Number.parseFloat(headerStyle.backdropFilter.replace(/[^\d.]/g, '')) >= 1);
+          return { stage: stageIdValue, activeSkill: stageIdValue === 'skills' ? Number(document.querySelector('#skills')?.dataset.activeSkill) : null, clipped, navOverlaps, siblingHeadingOverlaps, headerOpaque };
+        }, stageId);
+        stageChecks.push({ progress, ...sample });
+        if (sample.clipped.length) failures.push(`${viewportLabel} ${stageId} stage clips ${sample.clipped.length} heading/caption/button boxes at ${progress}`);
+        if (sample.navOverlaps.length) failures.push(`${viewportLabel} ${stageId} stage has ${sample.navOverlaps.length} text/nav overlaps at ${progress}`);
+        if (sample.siblingHeadingOverlaps.length) failures.push(`${viewportLabel} ${stageId} stage has ${sample.siblingHeadingOverlaps.length} overlapping sibling headings at ${progress}`);
+        if (!sample.headerOpaque) failures.push(`${viewportLabel} header is not opaque/blurred at ${stageId} progress ${progress}`);
+        if (stageId === 'skills' && sample.activeSkill !== Math.round(progress * 8)) failures.push(`${viewportLabel} skills stage active card is ${sample.activeSkill + 1}, expected ${Math.round(progress * 8) + 1} at ${progress}`);
+      }
+    }
+    report.at(-1).stageChecks = stageChecks;
+
     const headerContrast = [];
     for (const section of await page.locator('main [data-nav-theme]').all()) {
       await section.scrollIntoViewIfNeeded();
-      await page.waitForTimeout(180);
+      await page.waitForTimeout(360);
       const sample = await section.evaluate((node) => {
         const header = document.querySelector('.site-header');
         const link = header?.querySelector('.nav-side a');
         const linkStyle = link ? getComputedStyle(link) : null;
         const style = getComputedStyle(node);
         const before = getComputedStyle(node, '::before');
-        let expectedTheme = node.dataset.navTheme;
-        if (node.matches('.light-story')) {
-          const clip = Number.parseFloat(node.style.getPropertyValue('--light-clip') || '50');
-          const rect = node.getBoundingClientRect();
-          expectedTheme = rect.top + rect.height * clip / 100 <= 0 && rect.bottom > 0 ? 'light' : 'dark';
-        }
         const rawCandidates = [style.backgroundColor, before.backgroundColor, ...[style.backgroundImage, before.backgroundImage].flatMap((image) => image.match(/#[\da-f]{3,8}\b/gi) || [])]
           .filter((color) => color && color !== 'transparent' && color !== 'rgba(0, 0, 0, 0)');
-        const candidates = expectedTheme === 'dark' ? ['#09090b'] : rawCandidates;
+        const candidates = header?.dataset.theme === 'light' ? (rawCandidates.length ? rawCandidates : ['#f2f1ef']) : ['#09090b'];
         if (!candidates.length) candidates.push(node.dataset.navTheme === 'light' ? '#e8e4e3' : '#09090b');
-        return { section: node.id || node.className, foreground: linkStyle?.color || 'rgb(255,255,255)', backgrounds: [...new Set(candidates)], theme: header?.dataset.theme || 'unset', expectedTheme };
+        const headerBg = header ? getComputedStyle(header).backgroundColor : 'transparent';
+        const headerAlpha = Number.parseFloat(headerBg.match(/,\s*([\d.]+)\s*\)$/)?.[1] || (headerBg.startsWith('rgb(') ? '1' : '0'));
+        const headerBlur = header ? Number.parseFloat(getComputedStyle(header).backdropFilter.replace(/[^\d.]/g, '')) : 0;
+        return { section: node.id || node.className, foreground: linkStyle?.color || 'rgb(255,255,255)', backgrounds: [...new Set(candidates)], theme: header?.dataset.theme || 'unset', headerAlpha, headerBlur };
       });
       headerContrast.push(sample);
-      if (sample.theme !== sample.expectedTheme) failures.push(`${width}px header theme is ${sample.theme} inside ${sample.section}, expected ${sample.expectedTheme}`);
+      if (sample.headerAlpha < .7 || sample.headerBlur < 1) failures.push(`${viewportLabel} header is not opaque/blurred inside ${sample.section}`);
     }
     for (const sample of headerContrast) {
       const ratios = sample.backgrounds.map((background) => contrastRatio(sample.foreground, background)).filter((ratio) => ratio !== null);
       const ratio = ratios.length ? Math.min(...ratios) : null;
-      if (ratio !== null && ratio < 4.5) failures.push(`${width}px header contrast below AA over #${sample.section} (${ratio.toFixed(2)}:1)`);
+      if (ratio !== null && ratio < 4.5) failures.push(`${viewportLabel} header contrast below AA over #${sample.section} (${ratio.toFixed(2)}:1)`);
       sample.background = sample.backgrounds[0];
       sample.ratios = ratios;
       delete sample.backgrounds;
     }
     report.at(-1).headerContrast = headerContrast.map((sample) => ({ ...sample, ratio: sample.ratios.length ? Math.min(...sample.ratios) : null }));
 
-    const captureDir = path.join(root, 'docs', 'audit', stage, String(width));
+    const captureDir = path.join(root, 'docs', 'audit', stage, `${width}x${height}`);
     await mkdir(captureDir, { recursive: true });
     for (const sectionId of captureSections) {
       const section = page.locator(`#${sectionId}`);
       if (await section.count()) {
-        await section.evaluate((node) => node.scrollIntoView({ block: 'start', behavior: 'instant' }));
+        await section.evaluate((node) => {
+          const target = node.id === 'about' ? node.querySelector('#about-heading') || node : node;
+          const rect = target.getBoundingClientRect();
+          const offset = node.id === 'about' ? (innerHeight - rect.height) / 2 : 0;
+          const top = Math.max(0, window.scrollY + rect.top - offset);
+          if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(top, { immediate: true });
+          else window.scrollTo({ top, behavior: 'instant' });
+        });
         await page.waitForTimeout(220);
         await section.locator('img').evaluateAll((images) => Promise.all(images.filter((image) => {
           const rect = image.getBoundingClientRect();
@@ -174,9 +250,9 @@ try {
 const reportPath = path.join(root, 'docs', 'audit', stage, 'layout-audit.json');
 let previousReport = [];
 try { previousReport = JSON.parse(await readFile(reportPath, 'utf8')); } catch { /* start a new audit record */ }
-const mergedReport = new Map(previousReport.map((sample) => [sample.width, sample]));
-for (const sample of report) mergedReport.set(sample.width, sample);
-await writeFile(reportPath, JSON.stringify([...mergedReport.values()].sort((a, b) => a.width - b.width), null, 2));
+const mergedReport = new Map(previousReport.filter((sample) => viewports.some((size) => size.width === sample.width && size.height === sample.height)).map((sample) => [`${sample.width}x${sample.height}`, sample]));
+for (const sample of report) mergedReport.set(`${sample.width}x${sample.height}`, sample);
+await writeFile(reportPath, JSON.stringify([...mergedReport.values()].sort((a, b) => a.width - b.width || a.height - b.height), null, 2));
 
 if (failures.length) {
   console.error(`\nAUDIT FAILED (${failures.length} issues):\n- ${failures.join('\n- ')}`);

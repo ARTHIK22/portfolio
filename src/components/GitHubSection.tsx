@@ -9,7 +9,7 @@ import { useScrollReveal } from '../lib/useScrollReveal';
 export const GitHubSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   useScrollReveal(sectionRef);
-  const { username, repositories, fetchedAt } = snapshotData;
+  const { username, repositories } = snapshotData;
 
   const publicRepos = repositories.filter(
     (r) => r.name !== 'ARTHIK22' && r.name !== 'portfolio'
@@ -111,9 +111,6 @@ export const GitHubSection: React.FC = () => {
         })}
       </div>
 
-      <div className="mt-8 text-center text-xs text-[#5B646B]">
-        <span>Snapshot verified via GitHub REST API • Last synchronized: {new Date(fetchedAt).toLocaleDateString()}</span>
-      </div>
     </section>
   );
 };

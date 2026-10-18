@@ -1,6 +1,8 @@
 // src/App.tsx
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -14,15 +16,40 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { StoryBreak } from './components/StoryBreak';
 
+declare global {
+  interface Window { __portfolioLenis?: Lenis }
+}
+
 export const App: React.FC = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const lenis = new Lenis({
-      autoRaf: true,
-      lerp: 0.085,
-      wheelMultiplier: 0.95,
+      autoRaf: false,
+      wheel: { lerp: 0.085, multiplier: 0.95 },
+      programmatic: { duration: 1.05 },
       anchors: { offset: -72, duration: 1.05 },
       respectReducedMotion: true,
-      prevent: (node) => node.closest('[data-lenis-prevent]') !== null,
+    });
+    window.__portfolioLenis = lenis;
+    const animateLenis = (time: number) => lenis.raf(time * 1000);
+    const updateScrollTriggers = () => ScrollTrigger.update();
+    gsap.ticker.add(animateLenis);
+    gsap.ticker.lagSmoothing(0);
+    lenis.on('scroll', updateScrollTriggers);
+
+    const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const titleContext = gsap.context(() => {
+      if (!motionAllowed) return;
+      gsap.utils.toArray<HTMLElement>(
+        '#about-heading, #projects-heading, #light-story-heading, #certifications-heading, #contact-heading',
+      ).forEach((heading) => {
+        gsap.fromTo(heading, { y: 46, opacity: 0.35 }, {
+          y: 0,
+          opacity: 1,
+          ease: 'none',
+          scrollTrigger: { trigger: heading, start: 'top 88%', end: 'top 55%', scrub: 0.8 },
+        });
+      });
     });
     const projectSection = document.getElementById('projects');
     const projectTrack = projectSection?.querySelector<HTMLElement>('.showcase-track');
@@ -33,6 +60,7 @@ export const App: React.FC = () => {
     const activeLightSections = new Set<Element>();
     const applyHeaderTheme = () => {
       if (!siteHeader) return;
+      siteHeader.dataset.scrolled = lenis.scroll > 6 ? 'true' : 'false';
       const sectionLight = [...activeLightSections].some((section) => section !== storySection);
       const storyRect = storySection?.getBoundingClientRect();
       const storyClip = Number.parseFloat(storySection?.style.getPropertyValue('--light-clip') || '50');
@@ -90,12 +118,12 @@ export const App: React.FC = () => {
       document.documentElement.style.setProperty('--scroll-progress', `${instance.progress * 100}%`);
       const velocity = Math.min(1, Math.abs(instance.velocity) / 45);
       document.documentElement.style.setProperty('--marquee-duration', `${24 - velocity * 15}s`);
-      const heroProgress = Math.min(1, Math.max(0, instance.animatedScroll / Math.max(window.innerHeight, 1)));
+      const heroProgress = Math.min(1, Math.max(0, instance.scroll / Math.max(window.innerHeight, 1)));
       document.documentElement.style.setProperty('--hero-progress', String(heroProgress));
-      const projectProgress = Math.min(1, Math.max(0, (instance.animatedScroll - projectStart) / projectTravel));
+      const projectProgress = Math.min(1, Math.max(0, (instance.scroll - projectStart) / projectTravel));
       projectSection?.style.setProperty('--project-progress', String(projectProgress));
       projectSection?.style.setProperty('--project-x', `${-projectDistance * projectProgress}px`);
-      const storyProgress = Math.min(1, Math.max(0, (instance.animatedScroll - storyStart) / storyTravel));
+      const storyProgress = Math.min(1, Math.max(0, (instance.scroll - storyStart) / storyTravel));
       storySection?.style.setProperty('--light-clip', `${50 * (1 - storyProgress)}%`);
       storySection?.style.setProperty('--hand-angle', `${storyProgress * 18 - 9}deg`);
       applyHeaderTheme();
@@ -104,9 +132,18 @@ export const App: React.FC = () => {
 
     return () => {
       themeObserver.disconnect();
-      if (siteHeader) delete siteHeader.dataset.theme;
+      titleContext.revert();
+      if (siteHeader) {
+        delete siteHeader.dataset.theme;
+        delete siteHeader.dataset.scrolled;
+      }
       lenis.off('scroll', syncScrollProgress);
+      lenis.off('scroll', updateScrollTriggers);
       lenis.destroy();
+      if (window.__portfolioLenis === lenis) delete window.__portfolioLenis;
+      gsap.ticker.remove(animateLenis);
+      gsap.ticker.lagSmoothing(500, 33);
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       resizeObserver.disconnect();
       window.removeEventListener('resize', updateGeometry);
       window.removeEventListener('pointermove', onPointerMove);
