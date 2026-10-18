@@ -1,11 +1,12 @@
-import React from 'react';
-import { Award, BriefcaseBusiness, CalendarDays, Download, ExternalLink, FileText } from 'lucide-react';
+import React, { useRef, useState } from 'react';
+import { Award, BriefcaseBusiness, CalendarDays, Download, ExternalLink } from 'lucide-react';
 import {
   certificates,
   professionalDocuments,
   type CertificateRecord,
   type ProfessionalDocumentRecord,
 } from '../data/certificates';
+import { useScrollReveal } from '../lib/useScrollReveal';
 
 type DocumentCardItem = Pick<CertificateRecord, 'id' | 'title' | 'issuer' | 'type' | 'pdfPath'> & {
   date?: string;
@@ -26,79 +27,44 @@ const toProfessionalCard = (document: ProfessionalDocumentRecord): DocumentCardI
 });
 
 const CertificateCard: React.FC<{ item: DocumentCardItem }> = ({ item }) => {
+  const [previewMissing, setPreviewMissing] = useState(false);
   const url = assetUrl(item.pdfPath);
-  const isCertificate = item.kind === 'certificate';
-  const viewLabel = isCertificate ? 'View Certificate' : 'View Document';
+  const previewUrl = `${import.meta.env.BASE_URL}document-previews/${encodeURIComponent(item.id)}.png`;
+  const viewLabel = item.kind === 'certificate' ? 'View Certificate' : 'View Document';
 
   return (
-    <article className="pearl-card flex h-full min-w-0 flex-col rounded-3xl p-5 sm:p-6">
-      <div className="flex min-w-0 items-start gap-3.5">
-        <div
-          role="img"
-          aria-label={`PDF document icon for ${item.title}`}
-          className="grid h-14 w-12 shrink-0 place-items-center rounded-xl border border-[#D6B574]/35 bg-gradient-to-br from-[#FFFDF8] via-white to-[#DCD7F5]/30 shadow-xs"
-        >
-          <FileText className="h-7 w-7 text-[#B89246]" strokeWidth={1.6} aria-hidden="true" />
+    <article data-scroll-reveal className="certificate-card">
+      <a className="certificate-preview" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${viewLabel}: ${item.title}`}>
+        {!previewMissing ? (
+          <img src={previewUrl} alt={`First-page preview of ${item.title}`} loading="lazy" decoding="async" onError={() => setPreviewMissing(true)} />
+        ) : (
+          <span className="certificate-preview-fallback" aria-hidden="true">PDF · FIRST PAGE</span>
+        )}
+        <span className="certificate-preview-label">OPEN ORIGINAL PDF ↗</span>
+      </a>
+      <div className="certificate-card-body">
+        <div className="certificate-card-heading">
+          <h3 title={item.title}>{item.title}</h3>
+          {item.type && <p className="certificate-type">{item.type}</p>}
         </div>
-
-        <div className="min-w-0 flex-1">
-          <h3 className="text-base font-serif font-bold leading-snug text-[#263238] sm:text-lg">
-            {item.title}
-          </h3>
-          {item.type && (
-            <p className="mt-1.5 inline-flex rounded-full border border-[#82DAD1]/35 bg-[#82DAD1]/10 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-[#368F83]">
-              <span className="sr-only">Type: </span>{item.type}
-            </p>
-          )}
-          <dl className="mt-2 space-y-1.5 text-xs leading-relaxed text-[#5B646B]">
-            {item.issuer && (
-              <div className="flex items-start gap-2">
-                <Award className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#B89246]" aria-hidden="true" />
-                <div>
-                  <dt className="sr-only">Issuing organization</dt>
-                  <dd>{item.issuer}</dd>
-                </div>
-              </div>
-            )}
-            {item.date && (
-              <div className="flex items-start gap-2">
-                <CalendarDays className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#368F83]" aria-hidden="true" />
-                <div>
-                  <dt className="sr-only">{item.dateLabel || 'Date'}</dt>
-                  <dd>{item.dateLabel ? `${item.dateLabel} · ` : ''}{item.date}</dd>
-                </div>
-              </div>
-            )}
-          </dl>
-          {(item.trainingDuration || item.grade) && (
-            <p className="mt-2 text-[11px] leading-relaxed text-[#5B646B]">
-              {item.trainingDuration && <span>Duration · {item.trainingDuration}</span>}
-              {item.trainingDuration && item.grade && <span aria-hidden="true"> · </span>}
-              {item.grade && <span>Grade · {item.grade}</span>}
-            </p>
-          )}
-        </div>
+        <dl>
+          {item.issuer && <div><dt>Issuer</dt><dd><Award aria-hidden="true" />{item.issuer}</dd></div>}
+          {item.date && <div><dt>{item.dateLabel || 'Date'}</dt><dd><CalendarDays aria-hidden="true" />{item.date}</dd></div>}
+        </dl>
+        {(item.trainingDuration || item.grade) && (
+          <p className="certificate-extra">
+            {item.trainingDuration && <span>{item.trainingDuration}</span>}
+            {item.trainingDuration && item.grade && <span aria-hidden="true"> · </span>}
+            {item.grade && <span>{item.grade}</span>}
+          </p>
+        )}
       </div>
-
-      <div className="mt-auto flex flex-wrap gap-2 border-t border-[#D6B574]/15 pt-4">
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${viewLabel}: ${item.title} (opens in a new tab)`}
-          className="inline-flex min-h-10 flex-1 items-center justify-center gap-2 rounded-full border border-[#D6B574]/50 bg-[#D6B574]/20 px-3 py-2.5 text-xs font-semibold text-[#263238] transition-colors hover:bg-[#D6B574]/35 focus-visible:ring-2 focus-visible:ring-[#D6B574]"
-        >
-          <span>{viewLabel}</span>
-          <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+      <div className="certificate-actions">
+        <a data-hover-text={viewLabel} href={url} target="_blank" rel="noopener noreferrer" aria-label={`${viewLabel}: ${item.title} (opens in a new tab)`}>
+          <span>{viewLabel}</span><ExternalLink aria-hidden="true" />
         </a>
-        <a
-          href={url}
-          download={item.pdfPath.split('/').pop()}
-          className="inline-flex min-h-10 items-center justify-center gap-2 rounded-full border border-[#D6B574]/25 bg-white px-3 py-2.5 text-xs font-semibold text-[#5B646B] transition-colors hover:border-[#D6B574]/60 hover:text-[#263238] focus-visible:ring-2 focus-visible:ring-[#D6B574]"
-          aria-label={`Download ${item.title} PDF`}
-        >
-          <Download className="h-3.5 w-3.5" aria-hidden="true" />
-          <span>Download</span>
+        <a data-hover-text="Download" href={url} download={item.pdfPath.split('/').pop()} aria-label={`Download ${item.title} PDF`}>
+          <Download aria-hidden="true" /><span>Download</span>
         </a>
       </div>
     </article>
@@ -110,46 +76,31 @@ const certificateCards: DocumentCardItem[] = certificates.map((certificate) => (
   kind: 'certificate',
 }));
 
-export const Certifications: React.FC = () => (
-  <section
-    id="certifications"
-    className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 md:py-32"
-    aria-labelledby="certifications-heading"
-  >
-    <div className="mb-10 max-w-3xl sm:mb-12">
-      <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#D6B574]/35 bg-white/80 px-3.5 py-1.5 shadow-xs">
-        <Award className="h-3.5 w-3.5 text-[#B89246]" aria-hidden="true" />
-        <span className="text-[11px] font-bold uppercase tracking-widest text-[#5B646B]">
-          Certificate Library
-        </span>
-      </div>
-      <h2
-        id="certifications-heading"
-        className="text-3xl font-serif leading-tight tracking-tight text-[#263238] sm:text-4xl md:text-5xl"
-      >
-        Certifications <span className="champagne-gradient-text">&amp; Achievements</span>
-      </h2>
-      <p className="mt-3 text-sm leading-relaxed text-[#5B646B] sm:text-base">
-        Certificates and achievements with direct access to each original PDF.
-      </p>
-    </div>
+export const Certifications: React.FC = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  useScrollReveal(sectionRef);
 
-    <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
-      {certificateCards.map((item) => <CertificateCard key={item.id} item={item} />)}
-    </div>
-
-    <div className="mt-14 border-t border-[#D6B574]/20 pt-10 sm:mt-16 sm:pt-12">
-      <div className="mb-6 flex items-center gap-2.5">
-        <BriefcaseBusiness className="h-4 w-4 text-[#B89246]" aria-hidden="true" />
-        <h3 className="text-xl font-serif font-bold text-[#263238] sm:text-2xl">
-          Professional Document
-        </h3>
+  return (
+    <section id="certifications" data-nav-theme="light" ref={sectionRef} className="certifications-section" aria-labelledby="certifications-heading">
+      <div className="certifications-inner">
+        <div className="certifications-heading" data-scroll-reveal>
+          <p className="eyebrow">CERTIFICATE LIBRARY</p>
+          <h2 id="certifications-heading">Certificates <em>&amp; Documents</em></h2>
+          <p>Certificates and professional documents with direct access to each original PDF.</p>
+        </div>
+        <div className="certificate-grid">
+          {certificateCards.map((item) => <CertificateCard key={item.id} item={item} />)}
+        </div>
+        <section className="professional-documents" aria-labelledby="professional-documents-heading">
+          <div className="professional-documents-heading" data-scroll-reveal>
+            <BriefcaseBusiness aria-hidden="true" />
+            <h3 id="professional-documents-heading">Professional document</h3>
+          </div>
+          <div className="professional-documents-grid">
+            {professionalDocuments.map((document) => <CertificateCard key={document.id} item={toProfessionalCard(document)} />)}
+          </div>
+        </section>
       </div>
-      <div className="grid grid-cols-1 items-stretch gap-4 sm:max-w-xl sm:gap-5">
-        {professionalDocuments.map((document) => (
-          <CertificateCard key={document.id} item={toProfessionalCard(document)} />
-        ))}
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};

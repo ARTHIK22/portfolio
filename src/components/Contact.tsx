@@ -1,79 +1,40 @@
-// src/components/Contact.tsx
-import React from 'react';
-import { ArrowUpRight, Mail, MessageSquare } from 'lucide-react';
+import React, { useRef } from 'react';
+import { ArrowDownRight, ArrowUpRight, Mail } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
+import { developerProfiles } from '../data/profiles';
 import { GithubIcon, LinkedinIcon } from './icons/BrandIcons';
+import { useScrollReveal } from '../lib/useScrollReveal';
+
+const resumeUrl = `${import.meta.env.BASE_URL}documents/Arthik_Dwivedi_Resume.pdf`;
 
 export const Contact: React.FC = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  useScrollReveal(sectionRef);
+
   return (
-    <section
-      id="contact"
-      className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto relative"
-      aria-labelledby="contact-heading"
-    >
-      <div
-        className="absolute inset-0 rounded-full blur-[110px] pointer-events-none -z-10"
-        style={{
-          background:
-            'radial-gradient(circle, rgba(130,218,209,0.2) 0%, rgba(214,181,116,0.18) 50%, rgba(248,247,242,0) 75%)',
-        }}
-      />
-
-      <div className="glass-panel-elevated p-8 sm:p-14 rounded-3xl border border-[#D6B574]/40 bg-white/90 shadow-2xl text-center relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#D6B574]/20 via-[#82DAD1]/10 to-transparent rounded-bl-full pointer-events-none" />
-
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#D6B574]/35 shadow-xs mb-4">
-          <MessageSquare className="w-3.5 h-3.5 text-[#B89246]" />
-          <span className="text-[11px] font-bold uppercase tracking-widest text-[#5B646B]">
-            Initiate Conversation
-          </span>
+    <section id="contact" data-nav-theme="light" ref={sectionRef} className="contact-section" aria-labelledby="contact-heading">
+      <div className="contact-inner">
+        <div className="contact-topline" data-scroll-reveal>
+          <p className="eyebrow">OPEN CHANNEL</p>
+          <h2 id="contact-heading"><span>Let's Build</span><em>Something Meaningful</em></h2>
         </div>
-
-        <h2
-          id="contact-heading"
-          className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#263238] tracking-tight leading-tight max-w-2xl mx-auto mb-4"
-        >
-          Let's Build Something Meaningful
-        </h2>
-
-        <p className="text-base sm:text-lg text-[#5B646B] max-w-xl mx-auto leading-relaxed mb-10">
-          Interested in AI, machine learning, and building practical technology solutions? Let's connect.
-        </p>
-
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href={siteConfig.profiles.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-white bg-[#0A66C2] hover:bg-[#084e96] transition-all shadow-md hover:scale-105 group"
-          >
-            <LinkedinIcon className="w-4 h-4 fill-white" />
-            <span>Connect on LinkedIn</span>
-            <ArrowUpRight className="w-4 h-4 text-white/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
-
-          <a
-            href={siteConfig.profiles.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-[#263238] bg-white hover:bg-[#FFFDF8] border border-[#D6B574]/50 hover:border-[#D6B574] transition-all shadow-xs hover:scale-105 group"
-          >
-            <GithubIcon className="w-4 h-4 fill-[#263238]" />
-            <span>Explore Repositories</span>
-            <ArrowUpRight className="w-4 h-4 text-[#B89246] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
-
-          <a
-            href={`mailto:${siteConfig.profiles.email}`}
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-[#263238] bg-white hover:bg-[#FFFDF8] border border-[#D6B574]/50 hover:border-[#D6B574] transition-all shadow-xs hover:scale-105 group"
-          >
-            <Mail className="w-4 h-4 text-[#B89246]" />
-            <span>Email Me</span>
+        <div className="contact-closer" data-scroll-reveal>
+          <p>Interested in AI, machine learning, and building practical technology solutions? Let's connect.</p>
+          <a className="contact-primary-pill" data-hover-text="Start a conversation" href={`mailto:${siteConfig.profiles.email}`}>
+            <span>Start a conversation</span><ArrowDownRight aria-hidden="true" />
           </a>
         </div>
-
-        <div className="mt-10 pt-6 border-t border-[#D6B574]/20 text-xs text-[#5B646B]">
-          <span>Open to internships, research collaborations, and impactful AI/ML projects.</span>
+        <nav className="contact-actions" aria-label="Contact and resume links">
+          <a data-hover-text="LinkedIn" href={siteConfig.profiles.linkedin} target="_blank" rel="noopener noreferrer"><LinkedinIcon aria-hidden="true" /><span>LinkedIn</span><ArrowUpRight aria-hidden="true" /></a>
+          <a data-hover-text="Email" href={`mailto:${siteConfig.profiles.email}`}><Mail aria-hidden="true" /><span>Email</span><ArrowUpRight aria-hidden="true" /></a>
+          <a data-hover-text="Repositories" href={siteConfig.profiles.github} target="_blank" rel="noopener noreferrer"><GithubIcon aria-hidden="true" /><span>Repositories</span><ArrowUpRight aria-hidden="true" /></a>
+          <a data-hover-text="View Resume" href={resumeUrl} target="_blank" rel="noopener noreferrer"><span>View Resume</span><ArrowUpRight aria-hidden="true" /></a>
+          <a data-hover-text="Download Resume" href={resumeUrl} download="Arthik_Dwivedi_Resume.pdf"><span>Download Resume</span><ArrowDownRight aria-hidden="true" /></a>
+        </nav>
+        <div className="contact-footer-row">
+          <span>ARTHIK DWIVEDI</span>
+          <div>{developerProfiles.map((profile) => <a key={profile.id} href={profile.url} target="_blank" rel="noopener noreferrer">{profile.platform}<ArrowUpRight aria-hidden="true" /></a>)}</div>
+          <a href={`mailto:${siteConfig.profiles.email}`}>{siteConfig.profiles.email}</a>
         </div>
       </div>
     </section>

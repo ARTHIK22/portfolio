@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Download, ExternalLink, FileText } from 'lucide-react';
+import { useScrollReveal } from '../lib/useScrollReveal';
 
 const resumePath = '/documents/Arthik_Dwivedi_Resume.pdf';
 const resumeUrl = `${import.meta.env.BASE_URL}${resumePath
@@ -8,13 +9,19 @@ const resumeUrl = `${import.meta.env.BASE_URL}${resumePath
   .map(encodeURIComponent)
   .join('/')}`;
 
-export const Resume: React.FC = () => (
+export const Resume: React.FC = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  useScrollReveal(sectionRef);
+
+  return (
   <section
     id="resume"
+    data-nav-theme="light"
+    ref={sectionRef}
     className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 md:py-24"
     aria-labelledby="resume-heading"
   >
-    <div className="mb-8 max-w-3xl sm:mb-10">
+    <div className="mb-8 max-w-3xl sm:mb-10" data-scroll-reveal>
       <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#D6B574]/35 bg-white/80 px-3.5 py-1.5 shadow-xs">
         <FileText className="h-3.5 w-3.5 text-[#B89246]" aria-hidden="true" />
         <span className="text-[11px] font-bold uppercase tracking-widest text-[#5B646B]">
@@ -32,7 +39,7 @@ export const Resume: React.FC = () => (
       </p>
     </div>
 
-    <article className="pearl-card flex min-w-0 flex-col gap-5 rounded-3xl p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+    <article data-scroll-reveal className="pearl-card flex min-w-0 flex-col gap-5 rounded-3xl p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
       <div className="flex min-w-0 items-center gap-4">
         <div
           role="img"
@@ -74,4 +81,5 @@ export const Resume: React.FC = () => (
       </div>
     </article>
   </section>
-);
+  );
+};

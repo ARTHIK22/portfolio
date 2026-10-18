@@ -1,0 +1,4754 @@
+[
+  {
+    "width": 360,
+    "documentWidth": 360,
+    "height": 23234,
+    "overflowing": [
+      {
+        "selector": "span.number",
+        "left": 331,
+        "right": 363,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "span.number",
+        "left": 331,
+        "right": 363,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-book-open",
+        "left": 379,
+        "right": 400,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 381,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 516,
+        "clipped": false
+      },
+      {
+        "selector": "span.number",
+        "left": 331,
+        "right": 363,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 595,
+        "clipped": false
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 595,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-flask-conical",
+        "left": 379,
+        "right": 400,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 383,
+        "right": 397,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 595,
+        "clipped": false
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 595,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 595,
+        "clipped": false
+      },
+      {
+        "selector": "span.number",
+        "left": 331,
+        "right": 363,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 505,
+        "clipped": false
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 505,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-hammer",
+        "left": 379,
+        "right": 400,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 381,
+        "right": 392,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 395,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 387,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 505,
+        "clipped": false
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 505,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 505,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-track",
+        "left": 0,
+        "right": 1576,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 416,
+        "right": 523,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 462,
+        "right": 477,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 335,
+        "right": 464,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 319,
+        "right": 501,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-hidden-dependency-discovery",
+        "left": 319,
+        "right": 501,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 319,
+        "right": 501,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 517,
+        "right": 621,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 319,
+        "right": 375,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 381,
+        "right": 447,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 453,
+        "right": 490,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 496,
+        "right": 577,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 319,
+        "right": 621,
+        "clipped": true
+      },
+      {
+        "selector": "button",
+        "left": 319,
+        "right": 375,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 391,
+        "right": 461,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 391,
+        "right": 404,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 391,
+        "right": 404,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 448,
+        "right": 461,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 452,
+        "right": 458,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 452,
+        "right": 458,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 637,
+        "right": 939,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 653,
+        "right": 666,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 735,
+        "right": 842,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 781,
+        "right": 796,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 653,
+        "right": 717,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 637,
+        "right": 863,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 637,
+        "right": 863,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 637,
+        "right": 863,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 879,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 637,
+        "right": 684,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 690,
+        "right": 766,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 771,
+        "right": 818,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 824,
+        "right": 866,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 637,
+        "right": 939,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 637,
+        "right": 693,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 637,
+        "right": 650,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 638,
+        "right": 649,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 709,
+        "right": 776,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 709,
+        "right": 722,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 717,
+        "right": 721,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 715,
+        "right": 721,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 711,
+        "right": 719,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 792,
+        "right": 863,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 792,
+        "right": 805,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 792,
+        "right": 805,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 850,
+        "right": 863,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 853,
+        "right": 859,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 853,
+        "right": 859,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 955,
+        "right": 1258,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 971,
+        "right": 984,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1064,
+        "right": 1149,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1099,
+        "right": 1114,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 971,
+        "right": 1113,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 955,
+        "right": 1181,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 955,
+        "right": 1181,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 955,
+        "right": 1181,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1197,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 955,
+        "right": 1002,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1008,
+        "right": 1084,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1090,
+        "right": 1137,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1142,
+        "right": 1184,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 955,
+        "right": 1258,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 955,
+        "right": 1012,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 955,
+        "right": 968,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 956,
+        "right": 967,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1028,
+        "right": 1095,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1028,
+        "right": 1041,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1036,
+        "right": 1039,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1033,
+        "right": 1039,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1029,
+        "right": 1037,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1111,
+        "right": 1181,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1111,
+        "right": 1124,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1111,
+        "right": 1124,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1168,
+        "right": 1181,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1172,
+        "right": 1177,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1172,
+        "right": 1177,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1274,
+        "right": 1576,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1290,
+        "right": 1303,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1375,
+        "right": 1475,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1417,
+        "right": 1432,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1290,
+        "right": 1386,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1274,
+        "right": 1485,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 1274,
+        "right": 1485,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1274,
+        "right": 1485,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1501,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1274,
+        "right": 1326,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1331,
+        "right": 1378,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1384,
+        "right": 1455,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1461,
+        "right": 1527,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1274,
+        "right": 1576,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1274,
+        "right": 1330,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1274,
+        "right": 1287,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1275,
+        "right": 1286,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1346,
+        "right": 1417,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1346,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1346,
+        "right": 1359,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1404,
+        "right": 1417,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1407,
+        "right": 1413,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1407,
+        "right": 1413,
+        "clipped": true
+      },
+      {
+        "selector": "h2",
+        "left": 19,
+        "right": 457,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 19,
+        "right": 457,
+        "clipped": true
+      },
+      {
+        "selector": "em",
+        "left": 19,
+        "right": 457,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 107,
+        "right": 367,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "documentWidth": 390,
+    "height": 22740,
+    "overflowing": [
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-book-open",
+        "left": 379,
+        "right": 400,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 381,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 516,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 595,
+        "clipped": true
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 595,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-flask-conical",
+        "left": 379,
+        "right": 400,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 383,
+        "right": 397,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 595,
+        "clipped": true
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 595,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 595,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 379,
+        "right": 505,
+        "clipped": true
+      },
+      {
+        "selector": "div.about-swap-title",
+        "left": 379,
+        "right": 505,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-hammer",
+        "left": 379,
+        "right": 400,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 381,
+        "right": 392,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 395,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 387,
+        "right": 398,
+        "clipped": true
+      },
+      {
+        "selector": "p.eyebrow",
+        "left": 379,
+        "right": 505,
+        "clipped": true
+      },
+      {
+        "selector": "h3",
+        "left": 379,
+        "right": 505,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 379,
+        "right": 505,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-track",
+        "left": 0,
+        "right": 1702,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 450,
+        "right": 566,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 500,
+        "right": 515,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 360,
+        "right": 489,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 344,
+        "right": 551,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-hidden-dependency-discovery",
+        "left": 344,
+        "right": 551,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 344,
+        "right": 551,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 567,
+        "right": 671,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 344,
+        "right": 401,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 406,
+        "right": 472,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 478,
+        "right": 515,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 521,
+        "right": 602,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 344,
+        "right": 671,
+        "clipped": true
+      },
+      {
+        "selector": "button",
+        "left": 344,
+        "right": 400,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 416,
+        "right": 487,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 416,
+        "right": 429,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 416,
+        "right": 429,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 474,
+        "right": 487,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 477,
+        "right": 483,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 477,
+        "right": 483,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 687,
+        "right": 1015,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 703,
+        "right": 716,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 793,
+        "right": 909,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 844,
+        "right": 859,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 703,
+        "right": 768,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 687,
+        "right": 938,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 687,
+        "right": 938,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 687,
+        "right": 938,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 954,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 687,
+        "right": 734,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 740,
+        "right": 816,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 822,
+        "right": 869,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 874,
+        "right": 916,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 687,
+        "right": 1015,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 687,
+        "right": 744,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 687,
+        "right": 700,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 688,
+        "right": 699,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 760,
+        "right": 827,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 760,
+        "right": 773,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 768,
+        "right": 771,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 765,
+        "right": 771,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 761,
+        "right": 769,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 843,
+        "right": 913,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 843,
+        "right": 856,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 843,
+        "right": 856,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 900,
+        "right": 913,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 904,
+        "right": 909,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 904,
+        "right": 909,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1031,
+        "right": 1359,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1047,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1148,
+        "right": 1241,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1187,
+        "right": 1202,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1047,
+        "right": 1189,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1031,
+        "right": 1282,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 1031,
+        "right": 1282,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1031,
+        "right": 1282,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1298,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1031,
+        "right": 1078,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1084,
+        "right": 1160,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1165,
+        "right": 1212,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1218,
+        "right": 1260,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1031,
+        "right": 1359,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1031,
+        "right": 1087,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1031,
+        "right": 1044,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1032,
+        "right": 1043,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1103,
+        "right": 1170,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1103,
+        "right": 1116,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1111,
+        "right": 1115,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1109,
+        "right": 1115,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1105,
+        "right": 1113,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1186,
+        "right": 1257,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1186,
+        "right": 1199,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1186,
+        "right": 1199,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1244,
+        "right": 1257,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1247,
+        "right": 1253,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1247,
+        "right": 1253,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1375,
+        "right": 1702,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1391,
+        "right": 1403,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1484,
+        "right": 1593,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1531,
+        "right": 1546,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1391,
+        "right": 1487,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1375,
+        "right": 1611,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 1375,
+        "right": 1611,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1375,
+        "right": 1611,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1627,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1375,
+        "right": 1426,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1432,
+        "right": 1479,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1485,
+        "right": 1556,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1561,
+        "right": 1628,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1375,
+        "right": 1702,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1375,
+        "right": 1431,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1375,
+        "right": 1388,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1376,
+        "right": 1386,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1447,
+        "right": 1517,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1447,
+        "right": 1460,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1447,
+        "right": 1460,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1504,
+        "right": 1517,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1508,
+        "right": 1514,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1508,
+        "right": 1514,
+        "clipped": true
+      },
+      {
+        "selector": "h2",
+        "left": 19,
+        "right": 494,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 19,
+        "right": 494,
+        "clipped": true
+      },
+      {
+        "selector": "em",
+        "left": 19,
+        "right": 494,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 116,
+        "right": 398,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "documentWidth": 768,
+    "height": 18255,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 54,
+        "right": 1935,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 691,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 434,
+        "right": 795,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 814,
+        "right": 1175,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 830,
+        "right": 843,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 925,
+        "right": 1064,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 987,
+        "right": 1002,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 830,
+        "right": 895,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 814,
+        "right": 1098,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 814,
+        "right": 1098,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 814,
+        "right": 1098,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1114,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 814,
+        "right": 861,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 867,
+        "right": 943,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 948,
+        "right": 995,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1001,
+        "right": 1043,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 814,
+        "right": 1175,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 814,
+        "right": 870,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 814,
+        "right": 827,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 815,
+        "right": 826,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 886,
+        "right": 953,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 886,
+        "right": 899,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 895,
+        "right": 898,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 892,
+        "right": 898,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 888,
+        "right": 896,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 969,
+        "right": 1040,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 969,
+        "right": 982,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 969,
+        "right": 982,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1027,
+        "right": 1040,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1031,
+        "right": 1036,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1031,
+        "right": 1036,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1194,
+        "right": 1555,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1210,
+        "right": 1223,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1319,
+        "right": 1431,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1367,
+        "right": 1382,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1210,
+        "right": 1352,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1194,
+        "right": 1479,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 1194,
+        "right": 1479,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1194,
+        "right": 1479,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1495,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1194,
+        "right": 1241,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1247,
+        "right": 1323,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1328,
+        "right": 1375,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1381,
+        "right": 1423,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1194,
+        "right": 1555,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1194,
+        "right": 1251,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1194,
+        "right": 1207,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1195,
+        "right": 1206,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1267,
+        "right": 1333,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1267,
+        "right": 1280,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1275,
+        "right": 1278,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1272,
+        "right": 1278,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1268,
+        "right": 1276,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1349,
+        "right": 1420,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1349,
+        "right": 1362,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1349,
+        "right": 1362,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1407,
+        "right": 1420,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1411,
+        "right": 1416,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1411,
+        "right": 1416,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1574,
+        "right": 1935,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1590,
+        "right": 1603,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1690,
+        "right": 1820,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1747,
+        "right": 1762,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1590,
+        "right": 1687,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1574,
+        "right": 1844,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 1574,
+        "right": 1844,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1574,
+        "right": 1844,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1860,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1574,
+        "right": 1626,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1632,
+        "right": 1679,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1684,
+        "right": 1756,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1761,
+        "right": 1828,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1574,
+        "right": 1935,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1574,
+        "right": 1631,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1574,
+        "right": 1587,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1575,
+        "right": 1586,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1647,
+        "right": 1717,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1647,
+        "right": 1660,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1647,
+        "right": 1660,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1704,
+        "right": 1717,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1708,
+        "right": 1713,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1708,
+        "right": 1713,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 229,
+        "right": 783,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "documentWidth": 1024,
+    "height": 18841,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 72,
+        "right": 2580,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 956,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 579,
+        "right": 1060,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1085,
+        "right": 1567,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1101,
+        "right": 1114,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1233,
+        "right": 1419,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1319,
+        "right": 1334,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1101,
+        "right": 1166,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1085,
+        "right": 1408,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 1085,
+        "right": 1408,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1085,
+        "right": 1408,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1506,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1085,
+        "right": 1132,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1138,
+        "right": 1214,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1220,
+        "right": 1267,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1272,
+        "right": 1315,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1085,
+        "right": 1567,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1085,
+        "right": 1142,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1085,
+        "right": 1098,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1086,
+        "right": 1097,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1158,
+        "right": 1225,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1158,
+        "right": 1171,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1166,
+        "right": 1169,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1163,
+        "right": 1169,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1159,
+        "right": 1167,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1241,
+        "right": 1311,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1241,
+        "right": 1254,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1241,
+        "right": 1254,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1298,
+        "right": 1311,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1302,
+        "right": 1307,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1302,
+        "right": 1307,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1592,
+        "right": 2074,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1608,
+        "right": 1621,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1758,
+        "right": 1907,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1825,
+        "right": 1840,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1608,
+        "right": 1750,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1592,
+        "right": 1924,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 1592,
+        "right": 1924,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1592,
+        "right": 1924,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2013,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1592,
+        "right": 1639,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1645,
+        "right": 1721,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1727,
+        "right": 1774,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1779,
+        "right": 1821,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1592,
+        "right": 2074,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1592,
+        "right": 1649,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1592,
+        "right": 1605,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1593,
+        "right": 1604,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1665,
+        "right": 1732,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1665,
+        "right": 1678,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1673,
+        "right": 1676,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1670,
+        "right": 1676,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1666,
+        "right": 1674,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1748,
+        "right": 1818,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1748,
+        "right": 1761,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1748,
+        "right": 1761,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1805,
+        "right": 1818,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1809,
+        "right": 1814,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1809,
+        "right": 1814,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2099,
+        "right": 2580,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2115,
+        "right": 2128,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 2253,
+        "right": 2427,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 2332,
+        "right": 2347,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2115,
+        "right": 2212,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 2099,
+        "right": 2429,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 2099,
+        "right": 2429,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 2099,
+        "right": 2429,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2505,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2099,
+        "right": 2151,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2157,
+        "right": 2204,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2209,
+        "right": 2280,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2286,
+        "right": 2352,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2099,
+        "right": 2580,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 2099,
+        "right": 2155,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 2099,
+        "right": 2112,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 2100,
+        "right": 2111,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2171,
+        "right": 2242,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2171,
+        "right": 2184,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2171,
+        "right": 2184,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2229,
+        "right": 2242,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2233,
+        "right": 2238,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2233,
+        "right": 2238,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 305,
+        "right": 1044,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "documentWidth": 1440,
+    "height": 20707,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 101,
+        "right": 3545,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 1353,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 797,
+        "right": 1457,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1493,
+        "right": 2153,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1509,
+        "right": 1522,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1704,
+        "right": 1942,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 1815,
+        "right": 1830,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1509,
+        "right": 1573,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 1493,
+        "right": 1816,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 1493,
+        "right": 1816,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 1493,
+        "right": 1816,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2092,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1493,
+        "right": 2093,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1493,
+        "right": 1540,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1545,
+        "right": 1621,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1627,
+        "right": 1674,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 1680,
+        "right": 1722,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1493,
+        "right": 2153,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 1493,
+        "right": 1549,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 1493,
+        "right": 1506,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 1494,
+        "right": 1505,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1565,
+        "right": 1632,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1565,
+        "right": 1578,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1573,
+        "right": 1577,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1571,
+        "right": 1577,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1567,
+        "right": 1575,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1648,
+        "right": 1719,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1648,
+        "right": 1661,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1648,
+        "right": 1661,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1706,
+        "right": 1719,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 1709,
+        "right": 1715,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1709,
+        "right": 1715,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2189,
+        "right": 2849,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2205,
+        "right": 2218,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 2423,
+        "right": 2614,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 2511,
+        "right": 2526,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2205,
+        "right": 2347,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 2189,
+        "right": 2622,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 2189,
+        "right": 2622,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 2189,
+        "right": 2622,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2788,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2189,
+        "right": 2789,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2189,
+        "right": 2236,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2241,
+        "right": 2317,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2323,
+        "right": 2370,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2376,
+        "right": 2418,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2189,
+        "right": 2849,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 2189,
+        "right": 2245,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 2189,
+        "right": 2202,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 2190,
+        "right": 2201,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2261,
+        "right": 2328,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 2261,
+        "right": 2274,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2269,
+        "right": 2273,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2267,
+        "right": 2273,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2263,
+        "right": 2271,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2344,
+        "right": 2415,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2344,
+        "right": 2357,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2344,
+        "right": 2357,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2402,
+        "right": 2415,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2405,
+        "right": 2411,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2405,
+        "right": 2411,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2885,
+        "right": 3545,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2901,
+        "right": 2914,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 3104,
+        "right": 3326,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 3207,
+        "right": 3222,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2901,
+        "right": 2998,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 2885,
+        "right": 3215,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 2885,
+        "right": 3215,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 2885,
+        "right": 3215,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 3470,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2885,
+        "right": 3485,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2885,
+        "right": 2937,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2942,
+        "right": 2989,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2995,
+        "right": 3066,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 3072,
+        "right": 3138,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2885,
+        "right": 3545,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 2885,
+        "right": 2941,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 2885,
+        "right": 2898,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 2886,
+        "right": 2897,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2957,
+        "right": 3028,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2957,
+        "right": 2970,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2957,
+        "right": 2970,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3015,
+        "right": 3028,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 3018,
+        "right": 3024,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3018,
+        "right": 3024,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 429,
+        "right": 1469,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "documentWidth": 1920,
+    "height": 21290,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 112,
+        "right": 3572,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 1723,
+        "right": 1961,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2111,
+        "right": 2172,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1512,
+        "right": 2112,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1512,
+        "right": 2172,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2212,
+        "right": 2872,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2228,
+        "right": 2241,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 2447,
+        "right": 2637,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 2535,
+        "right": 2550,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2228,
+        "right": 2370,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 2212,
+        "right": 2672,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 2212,
+        "right": 2672,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 2212,
+        "right": 2672,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 2811,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2212,
+        "right": 2812,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2212,
+        "right": 2259,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2265,
+        "right": 2341,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2346,
+        "right": 2393,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2399,
+        "right": 2441,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2212,
+        "right": 2872,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 2212,
+        "right": 2268,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 2212,
+        "right": 2225,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 2213,
+        "right": 2224,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2284,
+        "right": 2351,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 2284,
+        "right": 2297,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2292,
+        "right": 2296,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2290,
+        "right": 2296,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2286,
+        "right": 2294,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2367,
+        "right": 2438,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2367,
+        "right": 2380,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2367,
+        "right": 2380,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2425,
+        "right": 2438,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2428,
+        "right": 2434,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2428,
+        "right": 2434,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2912,
+        "right": 3572,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2928,
+        "right": 2941,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 3131,
+        "right": 3353,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-orbit",
+        "left": 3235,
+        "right": 3250,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2928,
+        "right": 3025,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "div",
+        "left": 2912,
+        "right": 3242,
+        "clipped": false
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 2912,
+        "right": 3242,
+        "clipped": false
+      },
+      {
+        "selector": "p",
+        "left": 2912,
+        "right": 3242,
+        "clipped": false
+      },
+      {
+        "selector": "span.status-pill",
+        "left": 3497,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2912,
+        "right": 3512,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2912,
+        "right": 2964,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 2969,
+        "right": 3017,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 3022,
+        "right": 3093,
+        "clipped": false
+      },
+      {
+        "selector": "span",
+        "left": 3099,
+        "right": 3165,
+        "clipped": false
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2912,
+        "right": 3572,
+        "clipped": false
+      },
+      {
+        "selector": "button",
+        "left": 2912,
+        "right": 2968,
+        "clipped": false
+      },
+      {
+        "selector": "svg.lucide.lucide-info",
+        "left": 2912,
+        "right": 2925,
+        "clipped": false
+      },
+      {
+        "selector": "circle",
+        "left": 2913,
+        "right": 2924,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2984,
+        "right": 3055,
+        "clipped": false
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2984,
+        "right": 2997,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 2984,
+        "right": 2997,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3042,
+        "right": 3055,
+        "clipped": false
+      },
+      {
+        "selector": "path",
+        "left": 3046,
+        "right": 3051,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3046,
+        "right": 3051,
+        "clipped": true
+      },
+      {
+        "selector": "span.statement-mark",
+        "left": 572,
+        "right": 1958,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "headerContrast": [
+      {
+        "section": "hero",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "about",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(19, 19, 22)",
+        "theme": "unset",
+        "ratio": 18.544293329636417
+      },
+      {
+        "section": "projects",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(16, 16, 18)",
+        "theme": "unset",
+        "ratio": 19.00654183678299
+      },
+      {
+        "section": "statement",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(9, 9, 11)",
+        "theme": "unset",
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(233, 230, 228)",
+        "theme": "unset",
+        "ratio": 1.2423285732283602
+      },
+      {
+        "section": "github",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "resume",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(243, 241, 239)",
+        "theme": "unset",
+        "ratio": 1.126642378709088
+      },
+      {
+        "section": "contact",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "background": "rgb(246, 141, 166)",
+        "theme": "unset",
+        "ratio": 2.263137988575027
+      }
+    ]
+  }
+]

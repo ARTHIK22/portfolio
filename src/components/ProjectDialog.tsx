@@ -41,6 +41,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
       role="dialog"
       aria-modal="true"
       aria-labelledby="dialog-title"
+      data-lenis-prevent
       className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-10 bg-black/40 backdrop-blur-md overflow-y-auto animate-fadeIn"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();

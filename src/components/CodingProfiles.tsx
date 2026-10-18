@@ -1,16 +1,22 @@
 // src/components/CodingProfiles.tsx
-import React from 'react';
+import React, { useRef } from 'react';
 import { ArrowUpRight, Share2 } from 'lucide-react';
 import { developerProfiles } from '../data/profiles';
+import { useScrollReveal } from '../lib/useScrollReveal';
 
 export const CodingProfiles: React.FC = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  useScrollReveal(sectionRef);
+
   return (
     <section
       id="profiles"
+      data-nav-theme="light"
+      ref={sectionRef}
       className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative"
       aria-labelledby="profiles-heading"
     >
-      <div className="max-w-2xl mb-12">
+      <div className="max-w-2xl mb-12" data-scroll-reveal>
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-[#D6B574]/35 shadow-xs mb-3">
           <Share2 className="w-3.5 h-3.5 text-[#B89246]" />
           <span className="text-[11px] font-bold uppercase tracking-widest text-[#5B646B]">
@@ -32,6 +38,7 @@ export const CodingProfiles: React.FC = () => {
         {developerProfiles.map((p) => (
           <a
             key={p.id}
+            data-scroll-reveal
             href={p.url}
             target="_blank"
             rel="noopener noreferrer"

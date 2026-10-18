@@ -1,8 +1,7 @@
-// src/components/Hero.tsx
+﻿// src/components/Hero.tsx
 import React, { useEffect, useRef, useCallback } from 'react';
-import { ArrowDownRight, Compass, Cpu, Network } from 'lucide-react';
+import { ArrowDownRight, Compass, Cpu } from 'lucide-react';
 import { siteConfig } from '../data/site.config';
-import { animate, createTimeline, stagger } from '../lib/motion';
 
 // ─── Neural-Network Canvas Visualization ────────────────────────────────────
 interface NNNode {
@@ -26,10 +25,10 @@ interface NNEdge {
 }
 
 const COLORS = {
-  nodes: ['#D6B574', '#82DAD1', '#B89246', '#4FA399', '#F2BFA7', '#DCD7F5'],
-  glows: ['rgba(214,181,116,0.7)', 'rgba(130,218,209,0.7)', 'rgba(184,146,70,0.7)', 'rgba(79,163,153,0.7)', 'rgba(242,191,167,0.6)', 'rgba(220,215,245,0.6)'],
-  lines: 'rgba(214,181,116,0.22)',
-  pulse: ['rgba(214,181,116,', 'rgba(130,218,209,', 'rgba(184,146,70,'],
+  nodes: ['#FF98A2', '#FFC0C5', '#DC8BC3', '#F8D1D4', '#D9C7FF', '#FFB2BA'],
+  glows: ['rgba(255,152,162,0.7)', 'rgba(255,192,197,0.7)', 'rgba(220,139,195,0.7)', 'rgba(248,209,212,0.7)', 'rgba(217,199,255,0.6)', 'rgba(255,178,186,0.6)'],
+  lines: 'rgba(255,152,162,0.24)',
+  pulse: ['rgba(255,152,162,', 'rgba(220,139,195,', 'rgba(255,192,197,'],
 };
 
 const NODE_COUNT = 28;
@@ -43,7 +42,7 @@ function buildGraph(w: number, h: number): { nodes: NNNode[]; edges: NNEdge[] } 
   // Central hub node
   nodes.push({
     x: cx, y: cy, vx: 0, vy: 0,
-    r: 8, color: '#D6B574', glowColor: 'rgba(214,181,116,0.8)',
+    r: 8, color: '#FF98A2', glowColor: 'rgba(255,152,162,0.8)',
     pulsePhase: 0, pulseSpeed: 0.018,
   });
 
@@ -141,9 +140,9 @@ const NeuralOrb: React.FC = () => {
 
     // ── Background ambient glow ──────────────────────────────────────────────
     const bgGrad = ctx.createRadialGradient(cx, cy, 0, cx, cy, w * 0.52);
-    bgGrad.addColorStop(0, 'rgba(130,218,209,0.10)');
-    bgGrad.addColorStop(0.45, 'rgba(214,181,116,0.08)');
-    bgGrad.addColorStop(0.75, 'rgba(200,233,215,0.05)');
+    bgGrad.addColorStop(0, 'rgba(255,152,162,0.11)');
+    bgGrad.addColorStop(0.45, 'rgba(220,139,195,0.08)');
+    bgGrad.addColorStop(0.75, 'rgba(217,199,255,0.05)');
     bgGrad.addColorStop(1, 'transparent');
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, w, h);
@@ -156,7 +155,7 @@ const NeuralOrb: React.FC = () => {
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(ringAngle1);
-    ctx.strokeStyle = 'rgba(214,181,116,0.18)';
+    ctx.strokeStyle = 'rgba(255,152,162,0.24)';
     ctx.lineWidth = 1;
     ctx.setLineDash([4, 8]);
     ctx.beginPath();
@@ -168,7 +167,7 @@ const NeuralOrb: React.FC = () => {
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(ringAngle2);
-    ctx.strokeStyle = 'rgba(130,218,209,0.20)';
+    ctx.strokeStyle = 'rgba(217,199,255,0.2)';
     ctx.lineWidth = 1;
     ctx.setLineDash([3, 10]);
     ctx.beginPath();
@@ -266,7 +265,7 @@ const NeuralOrb: React.FC = () => {
       const py = na.y + (nb.y - na.y) * progress;
       const pulseGlow = ctx.createRadialGradient(px, py, 0, px, py, 8);
       pulseGlow.addColorStop(0, 'rgba(255,255,255,0.9)');
-      pulseGlow.addColorStop(0.4, 'rgba(130,218,209,0.6)');
+      pulseGlow.addColorStop(0.4, 'rgba(255,152,162,0.65)');
       pulseGlow.addColorStop(1, 'transparent');
       ctx.fillStyle = pulseGlow;
       ctx.beginPath();
@@ -278,6 +277,7 @@ const NeuralOrb: React.FC = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const resize = () => {
       const dpr = window.devicePixelRatio || 1;
@@ -288,8 +288,9 @@ const NeuralOrb: React.FC = () => {
       canvas.style.width = `${size}px`;
       canvas.style.height = `${size}px`;
       const ctx2 = canvas.getContext('2d');
-      if (ctx2) ctx2.scale(dpr, dpr);
+      if (ctx2) ctx2.setTransform(dpr, 0, 0, dpr, 0, 0);
       graphRef.current = buildGraph(size, size);
+      if (ctx2 && reducedMotion) draw(ctx2, 0);
     };
 
     resize();
@@ -298,6 +299,7 @@ const NeuralOrb: React.FC = () => {
 
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
+    if (reducedMotion) return () => ro.disconnect();
 
     const loop = (ts: number) => {
       timeRef.current = ts;
@@ -322,329 +324,51 @@ const NeuralOrb: React.FC = () => {
 };
 
 // ─── Hero Section ────────────────────────────────────────────────────────────
-export const Hero: React.FC = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const orbRef = useRef<HTMLDivElement>(null);
-  const kickerRef = useRef<HTMLDivElement>(null);
-  const headlineRef = useRef<HTMLHeadingElement>(null);
-  const introRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
-  const tagsRef = useRef<HTMLDivElement>(null);
-  const floatCard1Ref = useRef<HTMLDivElement>(null);
-  const floatCard2Ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Anime.js coordinated entrance timeline
-    const tl = createTimeline({
-      defaults: {
-        ease: 'outQuart',
-        duration: 900,
-      },
-    });
-
-    if (kickerRef.current) {
-      tl.add(kickerRef.current, {
-        opacity: [0, 1],
-        translateY: [-15, 0],
-        duration: 600,
-      });
-    }
-
-    if (headlineRef.current) {
-      tl.add(headlineRef.current, {
-        opacity: [0, 1],
-        translateY: [25, 0],
-        duration: 800,
-      }, '-=400');
-    }
-
-    if (introRef.current) {
-      tl.add(introRef.current, {
-        opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 700,
-      }, '-=500');
-    }
-
-    if (ctaRef.current) {
-      tl.add(ctaRef.current, {
-        opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 700,
-      }, '-=500');
-    }
-
-    if (tagsRef.current) {
-      const pills = tagsRef.current.children;
-      tl.add(pills, {
-        opacity: [0, 1],
-        translateY: [15, 0],
-        delay: stagger(60),
-        duration: 600,
-      }, '-=400');
-    }
-
-    if (orbRef.current) {
-      tl.add(orbRef.current, {
-        opacity: [0, 1],
-        scale: [0.85, 1],
-        duration: 1000,
-        ease: 'outExpo',
-      }, '-=800');
-    }
-
-    if (floatCard1Ref.current) {
-      tl.add(floatCard1Ref.current, {
-        opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 700,
-      }, '-=600');
-    }
-
-    if (floatCard2Ref.current) {
-      tl.add(floatCard2Ref.current, {
-        opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 700,
-      }, '-=500');
-    }
-
-    // Ambient floating animation for glass panels
-    let float1: any = null;
-    let float2: any = null;
-
-    if (floatCard1Ref.current) {
-      float1 = animate(floatCard1Ref.current, {
-        translateY: ['-6px', '6px'],
-        duration: 3200,
-        direction: 'alternate',
-        loop: true,
-        ease: 'inOutSine',
-      });
-    }
-
-    if (floatCard2Ref.current) {
-      float2 = animate(floatCard2Ref.current, {
-        translateY: ['6px', '-6px'],
-        duration: 3600,
-        direction: 'alternate',
-        loop: true,
-        ease: 'inOutSine',
-      });
-    }
-
-    return () => {
-      float1?.pause();
-      float2?.pause();
-    };
-  }, []);
-
-  return (
-    <section
-      id="hero"
-      ref={heroRef}
-      className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden"
-      aria-label="Hero Introduction"
-    >
-      <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        {/* LEFT COLUMN: Narrative & Primary CTAs */}
-        <div className="lg:col-span-7 flex flex-col justify-center z-10">
-          <div ref={kickerRef} className="mb-4 inline-flex items-center">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-[#D6B574]/40 shadow-xs backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-[#D6B574] animate-pulse" />
-              <span className="text-[11px] sm:text-xs font-semibold tracking-widest uppercase text-[#5B646B]">
-                {siteConfig.heroKicker}
-              </span>
-            </div>
-          </div>
-
-          <h1
-            ref={headlineRef}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif tracking-tight leading-[1.08] text-[#263238] mb-6"
-          >
-            <span className="block">{siteConfig.headlineLine1}</span>
-            <span className="block mt-1 aurora-gradient-text font-serif italic">
-              {siteConfig.headlineLine2}
-            </span>
-          </h1>
-
-          <p
-            ref={introRef}
-            className="text-base sm:text-lg md:text-xl text-[#5B646B] max-w-2xl font-normal leading-relaxed mb-8"
-          >
-            {siteConfig.introduction}
-          </p>
-
-          <div
-            ref={ctaRef}
-            className="flex flex-wrap items-center gap-4 mb-10"
-          >
-            <a
-              href={siteConfig.primaryCta.href}
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-[#263238] via-[#37474F] to-[#263238] hover:from-[#1E272C] hover:to-[#1E272C] shadow-md hover:shadow-lg transition-all duration-300 border border-[#D6B574]/30 hover:scale-[1.02] group"
-            >
-              <span>{siteConfig.primaryCta.label}</span>
-              <ArrowDownRight className="w-4 h-4 text-[#D6B574] group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
-            </a>
-
-            <a
-              href={siteConfig.secondaryCta.href}
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide text-[#263238] bg-white/80 hover:bg-white border border-[#D6B574]/50 hover:border-[#D6B574] shadow-xs hover:shadow-sm transition-all duration-300 hover:scale-[1.02]"
-            >
-              <span>{siteConfig.secondaryCta.label}</span>
-              <Compass className="w-4 h-4 text-[#B89246]" />
-            </a>
-          </div>
-
-          <div ref={tagsRef} className="pt-4 border-t border-[#D6B574]/20">
-            <p className="text-xs uppercase font-medium tracking-wider text-[#5B646B] mb-3">
-              Verified Focus Areas &amp; Systems
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {siteConfig.verifiedTechnicalInterests.map((interest, idx) => (
-                <span
-                  key={idx}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium text-[#263238] bg-white/70 border border-[#D6B574]/30 backdrop-blur-sm"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#82DAD1]" />
-                  {interest}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT COLUMN: Neural-Network Orb & Spatial Panels */}
-        <div className="lg:col-span-5 relative flex items-center justify-center min-h-[420px] sm:min-h-[500px]">
-          {/* Ambient glow behind orb */}
-          <div
-            className="absolute w-[360px] sm:w-[460px] h-[360px] sm:h-[460px] rounded-full blur-[80px] pointer-events-none"
-            style={{
-              background:
-                'radial-gradient(circle, rgba(130,218,209,0.22) 0%, rgba(214,181,116,0.2) 45%, rgba(200,233,215,0.12) 70%, transparent 85%)',
-            }}
-          />
-
-          <div
-            ref={orbRef}
-            className="relative flex items-center justify-center"
-          >
-            {/* ── Neural-network canvas orb ── */}
-            <div
-              className="relative rounded-full overflow-visible flex items-center justify-center"
-              style={{
-                width: 'clamp(300px, 38vw, 420px)',
-                height: 'clamp(300px, 38vw, 420px)',
-              }}
-              aria-label="Animated AI neural-network visualization"
-              role="img"
-            >
-              {/* Soft circular clip + border glow */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  background: 'radial-gradient(circle at 38% 35%, rgba(255,255,255,0.18) 0%, rgba(248,247,242,0.10) 60%, transparent 80%)',
-                  border: '1.5px solid rgba(214,181,116,0.28)',
-                  boxShadow: '0 0 60px rgba(130,218,209,0.18), 0 0 30px rgba(214,181,116,0.14), inset 0 0 40px rgba(248,247,242,0.08)',
-                }}
-              />
-
-              {/* Canvas neural network */}
-              <NeuralOrb />
-
-              {/* SVG decorative orbital arcs layered over canvas */}
-              <svg
-                className="absolute inset-0 w-full h-full pointer-events-none"
-                aria-hidden="true"
-                viewBox="0 0 420 420"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Outer dashed arc */}
-                <ellipse
-                  cx="210" cy="210" rx="195" ry="105"
-                  stroke="rgba(214,181,116,0.14)"
-                  strokeWidth="1"
-                  strokeDasharray="5 10"
-                  transform="rotate(15 210 210)"
-                />
-                {/* Inner dashed arc */}
-                <ellipse
-                  cx="210" cy="210" rx="130" ry="68"
-                  stroke="rgba(130,218,209,0.16)"
-                  strokeWidth="1"
-                  strokeDasharray="3 9"
-                  transform="rotate(-10 210 210)"
-                />
-                {/* Central cross-hair hint */}
-                <circle cx="210" cy="210" r="6"
-                  fill="rgba(214,181,116,0.25)"
-                  stroke="rgba(214,181,116,0.5)"
-                  strokeWidth="1.5"
-                />
-                <circle cx="210" cy="210" r="3"
-                  fill="#D6B574"
-                />
-              </svg>
-            </div>
-
-            {/* Aqua accent dot top-right */}
-            <div
-              className="absolute -top-2.5 -right-2.5 w-5 h-5 rounded-full bg-white border-2 border-[#82DAD1] z-10"
-              style={{ boxShadow: '0 0 12px rgba(130,218,209,0.6)' }}
-            />
-            {/* Gold accent dot bottom-left */}
-            <div
-              className="absolute -bottom-2 -left-2 w-3.5 h-3.5 rounded-full bg-[#D6B574] z-10"
-              style={{ boxShadow: '0 0 10px rgba(214,181,116,0.65)' }}
-            />
-
-            {/* FLOATING GLASS PANEL 1 — Model Pipeline */}
-            <div
-              ref={floatCard1Ref}
-              className="absolute -top-6 -left-6 sm:-left-10 glass-panel-elevated p-3.5 rounded-2xl shadow-lg border border-[#D6B574]/40 max-w-[190px] sm:max-w-[210px] pointer-events-auto z-20"
-            >
-              <div className="flex items-center gap-2 mb-1.5">
-                <div className="p-1 rounded-md bg-[#82DAD1]/20 text-[#263238]">
-                  <Cpu className="w-3.5 h-3.5 text-[#263238]" />
-                </div>
-                <span className="text-[11px] font-bold text-[#263238] uppercase tracking-wider">
-                  Model Pipeline
-                </span>
-              </div>
-              <p className="text-[11px] text-[#5B646B] leading-tight font-mono">
-                f(x) = σ(Wᵀ·x + b)
-              </p>
-              <div className="mt-2 flex items-center justify-between text-[10px] text-[#5B646B]">
-                <span>Inference</span>
-                <span className="text-emerald-700 font-semibold">Ready</span>
-              </div>
-            </div>
-
-            {/* FLOATING GLASS PANEL 2 — Graph Topology */}
-            <div
-              ref={floatCard2Ref}
-              className="absolute -bottom-8 -right-4 sm:-right-10 glass-panel-elevated p-3.5 rounded-2xl shadow-lg border border-[#D6B574]/40 max-w-[200px] sm:max-w-[220px] pointer-events-auto z-20"
-            >
-              <div className="flex items-center gap-2 mb-1.5">
-                <div className="p-1 rounded-md bg-[#D6B574]/20 text-[#263238]">
-                  <Network className="w-3.5 h-3.5 text-[#B89246]" />
-                </div>
-                <span className="text-[11px] font-bold text-[#263238] uppercase tracking-wider">
-                  Graph Topology
-                </span>
-              </div>
-              <p className="text-[11px] text-[#5B646B] leading-tight font-mono">
-                min Σ ||xᵢ - μₖ||²
-              </p>
-              <div className="mt-2 flex items-center justify-between text-[10px] text-[#5B646B]">
-                <span>Clusters</span>
-                <span className="text-[#263238] font-semibold">K-Means Optimal</span>
-              </div>
-            </div>
-          </div>
-        </div>
+export const Hero: React.FC = () => (
+  <section id="hero" className="hero-section" aria-labelledby="hero-title">
+    <div className="intro-wipe" aria-hidden="true">
+      <span>ARTHIK</span><span>DWIVEDI</span>
+    </div>
+    <div className="hero-wordmark" aria-hidden="true">
+      <span>{siteConfig.name}</span>
+    </div>
+    <p className="hero-subtitle">{siteConfig.headlineLine1}</p>
+    <div className="hero-stage">
+      <div className="hero-copy">
+        <p className="hero-kicker"><Compass aria-hidden="true" />{siteConfig.heroKicker}</p>
+        <h1 id="hero-title">
+          {siteConfig.headlineLine1}<br />
+          <span>{siteConfig.headlineLine2}</span>
+        </h1>
+        <p className="hero-intro">{siteConfig.introduction}</p>
       </div>
-    </section>
-  );
-};
+      <div className="hero-visual" aria-label="Animated neural network visualization">
+        <svg className="hero-streak-hand" viewBox="0 0 620 500" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="streak-pink" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#f68da6" stopOpacity="0"/><stop offset=".42" stopColor="#f68da6" stopOpacity=".95"/><stop offset="1" stopColor="#ffc4d2" stopOpacity="0"/></linearGradient>
+            <radialGradient id="streak-glow"><stop stopColor="#f68da6" stopOpacity=".46"/><stop offset="1" stopColor="#f68da6" stopOpacity="0"/></radialGradient>
+          </defs>
+          <ellipse cx="355" cy="410" rx="245" ry="120" fill="url(#streak-glow)" />
+          <g fill="none" stroke="url(#streak-pink)" strokeWidth="1.4" strokeLinecap="round">
+            <path d="M184 412c-40-25-55-59-49-102l18-123c4-25 20-43 36-39 15 3 21 19 17 39l-12 76 29-178c4-24 22-39 38-35 16 4 21 20 17 43l-25 183 49-221c6-24 23-37 39-31 15 6 19 22 13 45l-40 212 63-186c8-22 25-32 40-24 15 8 16 24 8 45L375 331c-25 72-74 109-134 107-23-1-42-10-57-26z" />
+            <path d="M165 392c-25-22-35-48-29-80l20-125c3-17 13-28 23-26 12 3 14 13 12 27l-14 91 33-205c3-16 13-27 24-24 12 3 15 14 12 30l-28 209 52-251c4-17 15-25 26-21 12 5 14 16 10 32l-44 245 69-214c5-16 16-22 26-16 11 6 12 17 6 33l-61 193c-24 74-65 114-122 110-18-1-31-9-45-22z" />
+            <path d="M144 371c-13-18-17-39-12-65l24-111m42 148 21-200m24 179 41-221m11 231 52-175m-183 197c39 31 90 33 127 9" opacity=".56" />
+          </g>
+          <g fill="#ffd2dc">
+            <circle cx="178" cy="190" r="2"/><circle cx="195" cy="151" r="1.7"/><circle cx="247" cy="103" r="1.8"/><circle cx="290" cy="77" r="1.5"/><circle cx="348" cy="70" r="2"/><circle cx="399" cy="110" r="1.7"/><circle cx="440" cy="146" r="1.5"/><circle cx="153" cy="297" r="1.6"/><circle cx="200" cy="255" r="1.4"/><circle cx="321" cy="186" r="1.5"/><circle cx="372" cy="246" r="1.8"/><circle cx="421" cy="219" r="1.5"/><circle cx="458" cy="273" r="1.6"/><circle cx="166" cy="375" r="1.6"/><circle cx="248" cy="414" r="1.7"/><circle cx="332" cy="395" r="1.8"/><circle cx="399" cy="346" r="1.4"/>
+          </g>
+        </svg>
+        <div className="hero-orb"><NeuralOrb /></div>
+        <span className="orb-caption"><Cpu aria-hidden="true" />AI systems · connected ideas</span>
+      </div>
+    </div>
+    <div className="hero-footer">
+      <a href="#about" className="scroll-cue"><span className="scroll-line" />SCROLL TO EXPLORE</a>
+      <p>{siteConfig.role}</p>
+      <div className="hero-footer-actions">
+        <a className="pill-link" data-hover-text={siteConfig.primaryCta.label} href={siteConfig.primaryCta.href}><span>{siteConfig.primaryCta.label}</span><ArrowDownRight aria-hidden="true" /></a>
+        <a className="pill-link pill-link--quiet" data-hover-text={siteConfig.secondaryCta.label} href={siteConfig.secondaryCta.href}><span>{siteConfig.secondaryCta.label}</span><ArrowDownRight aria-hidden="true" /></a>
+      </div>
+    </div>
+  </section>
+);
