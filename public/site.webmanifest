@@ -1,0 +1,14 @@
+{
+  "name": "Arthik Dwivedi — AI/ML Engineer",
+  "short_name": "Arthik Dwivedi",
+  "description": "AI/ML projects, verified technical skills, and engineering work by Arthik Dwivedi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090B",
+  "theme_color": "#09090B",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

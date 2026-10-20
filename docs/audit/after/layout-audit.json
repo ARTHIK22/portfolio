@@ -3,54 +3,462 @@
     "width": 390,
     "height": 844,
     "documentWidth": 390,
-    "documentHeight": 22726,
+    "documentHeight": 24865,
     "overflowing": [
       {
+        "selector": "div.showcase-track",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--projectsense-ai",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 233,
+        "right": 399,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 560,
+        "right": 602,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 573,
+        "right": 590,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 226,
+        "right": 406,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 560,
+        "right": 602,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 573,
+        "right": 590,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 225,
+        "right": 407,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 560,
+        "right": 602,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 573,
+        "right": 590,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 560,
+        "right": 602,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 573,
+        "right": 590,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 17,
+        "right": 615,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-initial",
+        "left": 230,
+        "right": 403,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 560,
+        "right": 602,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 573,
+        "right": 590,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 578,
+        "right": 585,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 16,
+        "right": 616,
+        "clipped": true
+      },
+      {
         "selector": "div.velocity-marquee-track",
-        "left": -133,
-        "right": 1262,
+        "left": -161,
+        "right": 1322,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -133,
-        "right": 170,
+        "left": -161,
+        "right": 164,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 221,
-        "right": 524,
+        "left": 216,
+        "right": 540,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 547,
-        "right": 553,
+        "left": 562,
+        "right": 570,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 576,
-        "right": 879,
+        "left": 592,
+        "right": 916,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 901,
-        "right": 908,
+        "left": 939,
+        "right": 946,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 930,
-        "right": 1233,
+        "left": 968,
+        "right": 1293,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1255,
-        "right": 1262,
+        "left": 1315,
+        "right": 1322,
         "clipped": true
       }
     ],
@@ -62,8 +470,8 @@
         "section": "light-story",
         "foreground": "rgb(247, 243, 241)",
         "theme": "dark",
-        "headerAlpha": 0.72,
-        "headerBlur": 16,
+        "headerAlpha": 0.82,
+        "headerBlur": 14,
         "background": "#09090b",
         "ratios": [
           18.043424761095732
@@ -74,20 +482,20 @@
         "section": "skills",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
-        "background": "rgb(243, 241, 239)",
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
+        "background": "rgb(242, 241, 239)",
         "ratios": [
-          16.11172788935867
+          16.081052308353545
         ],
-        "ratio": 16.11172788935867
+        "ratio": 16.081052308353545
       },
       {
         "section": "certifications",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
         "background": "rgb(233, 230, 228)",
         "ratios": [
           14.611396554463647
@@ -98,8 +506,8 @@
         "section": "github",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -110,8 +518,8 @@
         "section": "profiles",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -122,8 +530,8 @@
         "section": "resume",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -134,8 +542,8 @@
         "section": "contact",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.84,
+        "headerBlur": 14,
         "background": "#f2f1ef",
         "ratios": [
           16.081052308353545
@@ -174,7 +582,7 @@
       {
         "progress": 0,
         "stage": "skills",
-        "activeSkill": 0,
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -183,7 +591,7 @@
       {
         "progress": 0.5,
         "stage": "skills",
-        "activeSkill": 4,
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -192,7 +600,88 @@
       {
         "progress": 0.99,
         "stage": "skills",
-        "activeSkill": 8,
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "about",
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -204,696 +693,684 @@
     "width": 1366,
     "height": 768,
     "documentWidth": 1366,
-    "documentHeight": 22319,
+    "documentHeight": 24797,
     "overflowing": [
       {
         "selector": "div.showcase-track",
         "left": 82,
-        "right": 3770,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 826,
-        "right": 1537,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
-        "left": 826,
-        "right": 1537,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 827,
-        "right": 1536,
+        "left": 752,
+        "right": 1392,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 1481,
-        "right": 1523,
-        "clipped": true
-      },
-      {
-        "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1493,
-        "right": 1510,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1498,
-        "right": 1505,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1498,
-        "right": 1505,
+        "left": 1338,
+        "right": 1380,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 826,
-        "right": 1537,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 826,
-        "right": 1537,
-        "clipped": true
-      },
-      {
-        "selector": "p.showcase-description",
-        "left": 826,
-        "right": 1426,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 826,
-        "right": 1537,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 826,
-        "right": 1537,
+        "left": 751,
+        "right": 1393,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 1422,
+        "right": 2062,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 1572,
-        "right": 2280,
+        "left": 1422,
+        "right": 2062,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 1588,
-        "right": 1601,
+        "left": 1438,
+        "right": 1452,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 1805,
-        "right": 2047,
+        "left": 1554,
+        "right": 1929,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 1919,
-        "right": 1934,
+        "left": 1734,
+        "right": 1749,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 1588,
-        "right": 1652,
+        "left": 1438,
+        "right": 1507,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 1585,
-        "right": 1642,
+        "left": 1434,
+        "right": 1495,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 2225,
-        "right": 2267,
+        "left": 2007,
+        "right": 2049,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2238,
-        "right": 2255,
+        "left": 2019,
+        "right": 2036,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2243,
-        "right": 2250,
+        "left": 2024,
+        "right": 2031,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2243,
-        "right": 2250,
+        "left": 2024,
+        "right": 2031,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 1571,
-        "right": 1894,
+        "left": 1421,
+        "right": 1713,
         "clipped": true
       },
       {
         "selector": "#project-title-neoestate-ai",
-        "left": 1571,
-        "right": 1894,
+        "left": 1421,
+        "right": 1713,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 1571,
-        "right": 1894,
+        "left": 1421,
+        "right": 1713,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 1571,
-        "right": 2171,
+        "left": 1421,
+        "right": 2021,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1571,
-        "right": 1615,
+        "left": 1421,
+        "right": 1464,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1619,
-        "right": 1692,
+        "left": 1468,
+        "right": 1539,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1696,
-        "right": 1739,
+        "left": 1543,
+        "right": 1586,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1743,
-        "right": 1782,
+        "left": 1590,
+        "right": 1628,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 1571,
-        "right": 2281,
+        "left": 1421,
+        "right": 2063,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1571,
-        "right": 1638,
+        "left": 1421,
+        "right": 1492,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 1571,
-        "right": 1584,
+        "left": 1421,
+        "right": 1434,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1579,
-        "right": 1582,
+        "left": 1429,
+        "right": 1432,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1576,
-        "right": 1582,
+        "left": 1426,
+        "right": 1432,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1572,
-        "right": 1581,
+        "left": 1422,
+        "right": 1430,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1652,
-        "right": 1723,
+        "left": 1505,
+        "right": 1578,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 1652,
-        "right": 1665,
+        "left": 1505,
+        "right": 1518,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1652,
-        "right": 1665,
+        "left": 1505,
+        "right": 1518,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1710,
-        "right": 1723,
+        "left": 1565,
+        "right": 1578,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1713,
-        "right": 1719,
+        "left": 1569,
+        "right": 1574,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1713,
-        "right": 1719,
+        "left": 1569,
+        "right": 1574,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 2091,
+        "right": 2731,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 2316,
-        "right": 3025,
+        "left": 2091,
+        "right": 2731,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 2332,
-        "right": 2345,
+        "left": 2107,
+        "right": 2121,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 2566,
-        "right": 2775,
+        "left": 2259,
+        "right": 2563,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2663,
-        "right": 2678,
+        "left": 2403,
+        "right": 2418,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 2332,
-        "right": 2474,
+        "left": 2107,
+        "right": 2260,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 2329,
-        "right": 2386,
+        "left": 2104,
+        "right": 2164,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 2970,
-        "right": 3012,
+        "left": 2676,
+        "right": 2718,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2982,
-        "right": 2999,
+        "left": 2689,
+        "right": 2706,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2987,
-        "right": 2994,
+        "left": 2694,
+        "right": 2701,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2987,
-        "right": 2994,
+        "left": 2694,
+        "right": 2701,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 2315,
-        "right": 2757,
+        "left": 2090,
+        "right": 2391,
         "clipped": true
       },
       {
         "selector": "#project-title-student-performance-clustering",
-        "left": 2315,
-        "right": 2757,
+        "left": 2090,
+        "right": 2391,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 2315,
-        "right": 2757,
+        "left": 2090,
+        "right": 2391,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 2315,
-        "right": 2915,
+        "left": 2090,
+        "right": 2690,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2315,
-        "right": 2359,
+        "left": 2090,
+        "right": 2133,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2363,
-        "right": 2436,
+        "left": 2137,
+        "right": 2209,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2440,
-        "right": 2484,
+        "left": 2213,
+        "right": 2256,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2488,
-        "right": 2527,
+        "left": 2260,
+        "right": 2298,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 2315,
-        "right": 3026,
+        "left": 2090,
+        "right": 2732,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2315,
-        "right": 2382,
+        "left": 2090,
+        "right": 2161,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 2315,
-        "right": 2328,
+        "left": 2090,
+        "right": 2103,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2323,
-        "right": 2327,
+        "left": 2098,
+        "right": 2101,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2321,
-        "right": 2327,
+        "left": 2095,
+        "right": 2101,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2317,
-        "right": 2325,
+        "left": 2092,
+        "right": 2100,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2397,
-        "right": 2467,
+        "left": 2174,
+        "right": 2247,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 2397,
-        "right": 2410,
+        "left": 2174,
+        "right": 2187,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2397,
-        "right": 2410,
+        "left": 2174,
+        "right": 2187,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2454,
-        "right": 2467,
+        "left": 2234,
+        "right": 2247,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2458,
-        "right": 2463,
+        "left": 2238,
+        "right": 2244,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2458,
-        "right": 2463,
+        "left": 2238,
+        "right": 2244,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--rxpilot-ai",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 3061,
-        "right": 3769,
+        "left": 2760,
+        "right": 3400,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 3077,
-        "right": 3090,
+        "left": 2776,
+        "right": 2790,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 3302,
-        "right": 3528,
+        "left": 2903,
+        "right": 3258,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 3407,
-        "right": 3422,
+        "left": 3073,
+        "right": 3088,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 3077,
-        "right": 3173,
+        "left": 2776,
+        "right": 2880,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 3074,
-        "right": 3144,
+        "left": 2773,
+        "right": 2849,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3714,
-        "right": 3756,
+        "left": 3345,
+        "right": 3387,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3727,
-        "right": 3744,
+        "left": 3358,
+        "right": 3375,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3732,
-        "right": 3739,
+        "left": 3363,
+        "right": 3370,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3732,
-        "right": 3739,
+        "left": 3363,
+        "right": 3370,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 3060,
-        "right": 3390,
+        "left": 2759,
+        "right": 3059,
         "clipped": true
       },
       {
         "selector": "#project-title-rxpilot-ai",
-        "left": 3060,
-        "right": 3390,
+        "left": 2759,
+        "right": 3059,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 3060,
-        "right": 3390,
+        "left": 2759,
+        "right": 3059,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 3060,
-        "right": 3660,
+        "left": 2759,
+        "right": 3359,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3060,
-        "right": 3108,
+        "left": 2759,
+        "right": 2807,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3112,
-        "right": 3156,
+        "left": 2811,
+        "right": 2854,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3160,
-        "right": 3228,
+        "left": 2858,
+        "right": 2925,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3232,
-        "right": 3295,
+        "left": 2929,
+        "right": 2991,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 3060,
-        "right": 3770,
+        "left": 2759,
+        "right": 3401,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 3060,
-        "right": 3130,
+        "left": 2759,
+        "right": 2833,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 3060,
-        "right": 3073,
+        "left": 2759,
+        "right": 2772,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3060,
-        "right": 3073,
+        "left": 2759,
+        "right": 2772,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3117,
-        "right": 3130,
+        "left": 2820,
+        "right": 2833,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3121,
-        "right": 3126,
+        "left": 2823,
+        "right": 2829,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3121,
-        "right": 3126,
+        "left": 2823,
+        "right": 2829,
         "clipped": true
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -117,
-        "right": 1278,
+        "left": -149,
+        "right": 1334,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -117,
-        "right": 186,
+        "left": -149,
+        "right": 176,
         "clipped": true
       }
     ],
@@ -906,7 +1383,7 @@
         "foreground": "rgb(247, 243, 241)",
         "theme": "dark",
         "headerAlpha": 0.72,
-        "headerBlur": 16,
+        "headerBlur": 14,
         "background": "#09090b",
         "ratios": [
           18.043424761095732
@@ -917,20 +1394,20 @@
         "section": "skills",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
-        "background": "rgb(243, 241, 239)",
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
+        "background": "rgb(242, 241, 239)",
         "ratios": [
-          16.11172788935867
+          16.081052308353545
         ],
-        "ratio": 16.11172788935867
+        "ratio": 16.081052308353545
       },
       {
         "section": "certifications",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(233, 230, 228)",
         "ratios": [
           14.611396554463647
@@ -941,8 +1418,8 @@
         "section": "github",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -953,8 +1430,8 @@
         "section": "profiles",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -965,8 +1442,8 @@
         "section": "resume",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -977,8 +1454,8 @@
         "section": "contact",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "#f2f1ef",
         "ratios": [
           16.081052308353545
@@ -1036,6 +1513,87 @@
         "progress": 0.99,
         "stage": "skills",
         "activeSkill": 8,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "about",
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -1047,672 +1605,636 @@
     "width": 1440,
     "height": 700,
     "documentWidth": 1440,
-    "documentHeight": 21614,
+    "documentHeight": 23744,
     "overflowing": [
       {
         "selector": "div.showcase-track",
         "left": 86,
-        "right": 3930,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "span.cover-grid",
-        "left": 863,
-        "right": 1601,
-        "clipped": true
-      },
-      {
-        "selector": "button.project-open-button",
-        "left": 1547,
-        "right": 1589,
-        "clipped": true
-      },
-      {
-        "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1559,
-        "right": 1576,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1564,
-        "right": 1571,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1564,
-        "right": 1571,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-meta",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-titleline",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-tech",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-links",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "article.showcase-card",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 1465,
+        "right": 2123,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 1639,
-        "right": 2377,
+        "left": 1465,
+        "right": 2123,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 1655,
-        "right": 1668,
+        "left": 1481,
+        "right": 1495,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 1888,
-        "right": 2129,
+        "left": 1607,
+        "right": 1981,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2001,
-        "right": 2016,
+        "left": 1786,
+        "right": 1801,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 1655,
-        "right": 1720,
+        "left": 1481,
+        "right": 1550,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 1652,
-        "right": 1709,
+        "left": 1478,
+        "right": 1538,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 2323,
-        "right": 2365,
+        "left": 2068,
+        "right": 2110,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2335,
-        "right": 2352,
+        "left": 2081,
+        "right": 2098,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2340,
-        "right": 2347,
+        "left": 2086,
+        "right": 2093,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2340,
-        "right": 2347,
+        "left": 2086,
+        "right": 2093,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
         "clipped": true
       },
       {
         "selector": "#project-title-neoestate-ai",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1464,
+        "right": 2064,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1638,
-        "right": 1682,
+        "left": 1464,
+        "right": 1507,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1686,
-        "right": 1759,
+        "left": 1511,
+        "right": 1583,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1763,
-        "right": 1807,
+        "left": 1587,
+        "right": 1630,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1811,
-        "right": 1850,
+        "left": 1634,
+        "right": 1672,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1638,
-        "right": 1705,
+        "left": 1464,
+        "right": 1535,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 1638,
-        "right": 1651,
+        "left": 1464,
+        "right": 1477,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1647,
-        "right": 1650,
+        "left": 1472,
+        "right": 1475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1644,
-        "right": 1650,
+        "left": 1469,
+        "right": 1475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1640,
-        "right": 1648,
+        "left": 1466,
+        "right": 1474,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1720,
-        "right": 1790,
+        "left": 1548,
+        "right": 1621,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 1720,
-        "right": 1733,
+        "left": 1548,
+        "right": 1561,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1720,
-        "right": 1733,
+        "left": 1548,
+        "right": 1561,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1777,
-        "right": 1790,
+        "left": 1608,
+        "right": 1621,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1781,
-        "right": 1786,
+        "left": 1612,
+        "right": 1618,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1781,
-        "right": 1786,
+        "left": 1612,
+        "right": 1618,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
+        "clipped": true
+      },
+      {
+        "selector": "img.project-screenshot",
+        "left": 2154,
+        "right": 2812,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 2415,
-        "right": 3153,
+        "left": 2154,
+        "right": 2812,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 2431,
-        "right": 2444,
+        "left": 2170,
+        "right": 2184,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 2680,
-        "right": 2889,
+        "left": 2330,
+        "right": 2635,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2777,
-        "right": 2792,
+        "left": 2475,
+        "right": 2490,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 2431,
-        "right": 2573,
+        "left": 2170,
+        "right": 2323,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 2428,
-        "right": 2485,
+        "left": 2167,
+        "right": 2227,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3099,
-        "right": 3141,
+        "left": 2757,
+        "right": 2799,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3111,
-        "right": 3128,
+        "left": 2769,
+        "right": 2786,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3116,
-        "right": 3123,
+        "left": 2774,
+        "right": 2782,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3116,
-        "right": 3123,
+        "left": 2774,
+        "right": 2782,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
         "clipped": true
       },
       {
         "selector": "#project-title-student-performance-clustering",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2153,
+        "right": 2753,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2414,
-        "right": 2458,
+        "left": 2153,
+        "right": 2196,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2462,
-        "right": 2535,
+        "left": 2200,
+        "right": 2272,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2539,
-        "right": 2583,
+        "left": 2276,
+        "right": 2318,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2587,
-        "right": 2626,
+        "left": 2322,
+        "right": 2361,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2414,
-        "right": 2481,
+        "left": 2153,
+        "right": 2224,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 2414,
-        "right": 2427,
+        "left": 2153,
+        "right": 2166,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2423,
-        "right": 2426,
+        "left": 2161,
+        "right": 2164,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2420,
-        "right": 2426,
+        "left": 2158,
+        "right": 2164,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2416,
-        "right": 2424,
+        "left": 2154,
+        "right": 2163,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2496,
-        "right": 2566,
+        "left": 2237,
+        "right": 2310,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 2496,
-        "right": 2509,
+        "left": 2237,
+        "right": 2250,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2496,
-        "right": 2509,
+        "left": 2237,
+        "right": 2250,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2553,
-        "right": 2566,
+        "left": 2297,
+        "right": 2310,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2557,
-        "right": 2562,
+        "left": 2301,
+        "right": 2306,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2557,
-        "right": 2562,
+        "left": 2301,
+        "right": 2306,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--rxpilot-ai",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 3191,
-        "right": 3929,
+        "left": 2843,
+        "right": 3501,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 3207,
-        "right": 3220,
+        "left": 2859,
+        "right": 2872,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 3448,
-        "right": 3673,
+        "left": 2994,
+        "right": 3349,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 3553,
-        "right": 3568,
+        "left": 3164,
+        "right": 3179,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 3207,
-        "right": 3304,
+        "left": 2859,
+        "right": 2963,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 3204,
-        "right": 3275,
+        "left": 2855,
+        "right": 2931,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3875,
-        "right": 3917,
+        "left": 3446,
+        "right": 3488,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3887,
-        "right": 3904,
+        "left": 3458,
+        "right": 3475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3892,
-        "right": 3899,
+        "left": 3463,
+        "right": 3470,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3892,
-        "right": 3899,
+        "left": 3463,
+        "right": 3470,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
         "clipped": true
       },
       {
         "selector": "#project-title-rxpilot-ai",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2842,
+        "right": 3442,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3190,
-        "right": 3239,
+        "left": 2842,
+        "right": 2889,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3243,
-        "right": 3287,
+        "left": 2893,
+        "right": 2936,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3291,
-        "right": 3359,
+        "left": 2940,
+        "right": 3007,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3363,
-        "right": 3426,
+        "left": 3011,
+        "right": 3073,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 3190,
-        "right": 3261,
+        "left": 2842,
+        "right": 2915,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 3190,
-        "right": 3203,
+        "left": 2842,
+        "right": 2855,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3190,
-        "right": 3203,
+        "left": 2842,
+        "right": 2855,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3248,
-        "right": 3261,
+        "left": 2902,
+        "right": 2915,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3252,
-        "right": 3257,
+        "left": 2906,
+        "right": 2911,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3252,
-        "right": 3257,
+        "left": 2906,
+        "right": 2911,
         "clipped": true
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -134,
-        "right": 1261,
+        "left": -167,
+        "right": 1316,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -134,
-        "right": 169,
+        "left": -167,
+        "right": 158,
         "clipped": true
       }
     ],
@@ -1725,7 +2247,7 @@
         "foreground": "rgb(247, 243, 241)",
         "theme": "dark",
         "headerAlpha": 0.72,
-        "headerBlur": 16,
+        "headerBlur": 14,
         "background": "#09090b",
         "ratios": [
           18.043424761095732
@@ -1736,20 +2258,20 @@
         "section": "skills",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
-        "background": "rgb(243, 241, 239)",
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
+        "background": "rgb(242, 241, 239)",
         "ratios": [
-          16.11172788935867
+          16.081052308353545
         ],
-        "ratio": 16.11172788935867
+        "ratio": 16.081052308353545
       },
       {
         "section": "certifications",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(233, 230, 228)",
         "ratios": [
           14.611396554463647
@@ -1760,8 +2282,8 @@
         "section": "github",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -1772,8 +2294,8 @@
         "section": "profiles",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -1784,8 +2306,8 @@
         "section": "resume",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -1796,8 +2318,8 @@
         "section": "contact",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "#f2f1ef",
         "ratios": [
           16.081052308353545
@@ -1855,6 +2377,87 @@
         "progress": 0.99,
         "stage": "skills",
         "activeSkill": 8,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "about",
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -1866,708 +2469,636 @@
     "width": 1440,
     "height": 900,
     "documentWidth": 1440,
-    "documentHeight": 24662,
+    "documentHeight": 27529,
     "overflowing": [
       {
         "selector": "div.showcase-track",
         "left": 86,
-        "right": 3930,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "span.cover-grid",
-        "left": 863,
-        "right": 1601,
-        "clipped": true
-      },
-      {
-        "selector": "button.project-open-button",
-        "left": 1547,
-        "right": 1589,
-        "clipped": true
-      },
-      {
-        "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1559,
-        "right": 1576,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1564,
-        "right": 1571,
-        "clipped": true
-      },
-      {
-        "selector": "path",
-        "left": 1564,
-        "right": 1571,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-meta",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-titleline",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "p.showcase-description",
-        "left": 862,
-        "right": 1462,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-tech",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "div.showcase-links",
-        "left": 862,
-        "right": 1602,
-        "clipped": true
-      },
-      {
-        "selector": "article.showcase-card",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "img.project-screenshot",
-        "left": 1639,
-        "right": 2377,
+        "left": 1465,
+        "right": 2123,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 1639,
-        "right": 2377,
+        "left": 1465,
+        "right": 2123,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 1655,
-        "right": 1668,
+        "left": 1481,
+        "right": 1495,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 1888,
-        "right": 2129,
+        "left": 1607,
+        "right": 1981,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2001,
-        "right": 2016,
+        "left": 1786,
+        "right": 1801,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 1655,
-        "right": 1720,
+        "left": 1481,
+        "right": 1550,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 1652,
-        "right": 1709,
+        "left": 1478,
+        "right": 1538,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 2323,
-        "right": 2365,
+        "left": 2068,
+        "right": 2110,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2335,
-        "right": 2352,
+        "left": 2081,
+        "right": 2098,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2340,
-        "right": 2347,
+        "left": 2086,
+        "right": 2093,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2340,
-        "right": 2347,
+        "left": 2086,
+        "right": 2093,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
         "clipped": true
       },
       {
         "selector": "#project-title-neoestate-ai",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 1638,
-        "right": 1961,
+        "left": 1464,
+        "right": 1757,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 1638,
-        "right": 2238,
+        "left": 1464,
+        "right": 2064,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1638,
-        "right": 1682,
+        "left": 1464,
+        "right": 1507,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1686,
-        "right": 1759,
+        "left": 1511,
+        "right": 1583,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1763,
-        "right": 1807,
+        "left": 1587,
+        "right": 1630,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 1811,
-        "right": 1850,
+        "left": 1634,
+        "right": 1672,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 1638,
-        "right": 2378,
+        "left": 1464,
+        "right": 2124,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1638,
-        "right": 1705,
+        "left": 1464,
+        "right": 1535,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 1638,
-        "right": 1651,
+        "left": 1464,
+        "right": 1477,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1647,
-        "right": 1650,
+        "left": 1472,
+        "right": 1475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1644,
-        "right": 1650,
+        "left": 1469,
+        "right": 1475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1640,
-        "right": 1648,
+        "left": 1466,
+        "right": 1474,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 1720,
-        "right": 1790,
+        "left": 1548,
+        "right": 1621,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 1720,
-        "right": 1733,
+        "left": 1548,
+        "right": 1561,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1720,
-        "right": 1733,
+        "left": 1548,
+        "right": 1561,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 1777,
-        "right": 1790,
+        "left": 1608,
+        "right": 1621,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1781,
-        "right": 1786,
+        "left": 1612,
+        "right": 1618,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 1781,
-        "right": 1786,
+        "left": 1612,
+        "right": 1618,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "img.project-screenshot",
-        "left": 2415,
-        "right": 3153,
+        "left": 2154,
+        "right": 2812,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 2415,
-        "right": 3153,
+        "left": 2154,
+        "right": 2812,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 2431,
-        "right": 2444,
+        "left": 2170,
+        "right": 2184,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 2680,
-        "right": 2889,
+        "left": 2330,
+        "right": 2635,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2777,
-        "right": 2792,
+        "left": 2475,
+        "right": 2490,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 2431,
-        "right": 2573,
+        "left": 2170,
+        "right": 2323,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 2428,
-        "right": 2485,
+        "left": 2167,
+        "right": 2227,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3099,
-        "right": 3141,
+        "left": 2757,
+        "right": 2799,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3111,
-        "right": 3128,
+        "left": 2769,
+        "right": 2786,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3116,
-        "right": 3123,
+        "left": 2774,
+        "right": 2782,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3116,
-        "right": 3123,
+        "left": 2774,
+        "right": 2782,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
         "clipped": true
       },
       {
         "selector": "#project-title-student-performance-clustering",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 2414,
-        "right": 2880,
+        "left": 2153,
+        "right": 2462,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 2414,
-        "right": 3014,
+        "left": 2153,
+        "right": 2753,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2414,
-        "right": 2458,
+        "left": 2153,
+        "right": 2196,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2462,
-        "right": 2535,
+        "left": 2200,
+        "right": 2272,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2539,
-        "right": 2583,
+        "left": 2276,
+        "right": 2318,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2587,
-        "right": 2626,
+        "left": 2322,
+        "right": 2361,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 2414,
-        "right": 3154,
+        "left": 2153,
+        "right": 2813,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2414,
-        "right": 2481,
+        "left": 2153,
+        "right": 2224,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 2414,
-        "right": 2427,
+        "left": 2153,
+        "right": 2166,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2423,
-        "right": 2426,
+        "left": 2161,
+        "right": 2164,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2420,
-        "right": 2426,
+        "left": 2158,
+        "right": 2164,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2416,
-        "right": 2424,
+        "left": 2154,
+        "right": 2163,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2496,
-        "right": 2566,
+        "left": 2237,
+        "right": 2310,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 2496,
-        "right": 2509,
+        "left": 2237,
+        "right": 2250,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2496,
-        "right": 2509,
+        "left": 2237,
+        "right": 2250,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2553,
-        "right": 2566,
+        "left": 2297,
+        "right": 2310,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2557,
-        "right": 2562,
+        "left": 2301,
+        "right": 2306,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2557,
-        "right": 2562,
+        "left": 2301,
+        "right": 2306,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--rxpilot-ai",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 3191,
-        "right": 3929,
+        "left": 2843,
+        "right": 3501,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 3207,
-        "right": 3220,
+        "left": 2859,
+        "right": 2872,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 3448,
-        "right": 3673,
+        "left": 2994,
+        "right": 3349,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 3553,
-        "right": 3568,
+        "left": 3164,
+        "right": 3179,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 3207,
-        "right": 3304,
+        "left": 2859,
+        "right": 2963,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 3204,
-        "right": 3275,
+        "left": 2855,
+        "right": 2931,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3875,
-        "right": 3917,
+        "left": 3446,
+        "right": 3488,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3887,
-        "right": 3904,
+        "left": 3458,
+        "right": 3475,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3892,
-        "right": 3899,
+        "left": 3463,
+        "right": 3470,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3892,
-        "right": 3899,
+        "left": 3463,
+        "right": 3470,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
         "clipped": true
       },
       {
         "selector": "#project-title-rxpilot-ai",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 3190,
-        "right": 3521,
+        "left": 2842,
+        "right": 3141,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 3190,
-        "right": 3790,
+        "left": 2842,
+        "right": 3442,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3190,
-        "right": 3239,
+        "left": 2842,
+        "right": 2889,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3243,
-        "right": 3287,
+        "left": 2893,
+        "right": 2936,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3291,
-        "right": 3359,
+        "left": 2940,
+        "right": 3007,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3363,
-        "right": 3426,
+        "left": 3011,
+        "right": 3073,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 3190,
-        "right": 3930,
+        "left": 2842,
+        "right": 3502,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 3190,
-        "right": 3261,
+        "left": 2842,
+        "right": 2915,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 3190,
-        "right": 3203,
+        "left": 2842,
+        "right": 2855,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3190,
-        "right": 3203,
+        "left": 2842,
+        "right": 2855,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3248,
-        "right": 3261,
+        "left": 2902,
+        "right": 2915,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3252,
-        "right": 3257,
+        "left": 2906,
+        "right": 2911,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3252,
-        "right": 3257,
+        "left": 2906,
+        "right": 2911,
         "clipped": true
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -134,
-        "right": 1261,
+        "left": -164,
+        "right": 1319,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -134,
-        "right": 169,
+        "left": -164,
+        "right": 160,
         "clipped": true
       }
     ],
@@ -2580,7 +3111,7 @@
         "foreground": "rgb(247, 243, 241)",
         "theme": "dark",
         "headerAlpha": 0.72,
-        "headerBlur": 16,
+        "headerBlur": 14,
         "background": "#09090b",
         "ratios": [
           18.043424761095732
@@ -2591,20 +3122,20 @@
         "section": "skills",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
-        "background": "rgb(243, 241, 239)",
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
+        "background": "rgb(242, 241, 239)",
         "ratios": [
-          16.11172788935867
+          16.081052308353545
         ],
-        "ratio": 16.11172788935867
+        "ratio": 16.081052308353545
       },
       {
         "section": "certifications",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(233, 230, 228)",
         "ratios": [
           14.611396554463647
@@ -2615,8 +3146,8 @@
         "section": "github",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -2627,8 +3158,8 @@
         "section": "profiles",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -2639,8 +3170,8 @@
         "section": "resume",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -2651,8 +3182,8 @@
         "section": "contact",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "#f2f1ef",
         "ratios": [
           16.081052308353545
@@ -2710,6 +3241,87 @@
         "progress": 0.99,
         "stage": "skills",
         "activeSkill": 8,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "about",
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],
@@ -2721,528 +3333,504 @@
     "width": 1920,
     "height": 900,
     "documentWidth": 1920,
-    "documentHeight": 24376,
+    "documentHeight": 26719,
     "overflowing": [
       {
         "selector": "div.showcase-track",
         "left": 104,
-        "right": 3964,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 1664,
-        "right": 2404,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--neoestate-ai",
-        "left": 1664,
-        "right": 2404,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "img.project-screenshot",
-        "left": 1665,
-        "right": 2403,
+        "left": 1489,
+        "right": 2147,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 1665,
-        "right": 2403,
+        "left": 1489,
+        "right": 2147,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 1913,
-        "right": 2155,
-        "clipped": true
-      },
-      {
-        "selector": "span.cover-orbit",
-        "left": 2027,
-        "right": 2042,
+        "left": 1631,
+        "right": 2005,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 2348,
-        "right": 2390,
+        "left": 2092,
+        "right": 2134,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2361,
-        "right": 2378,
+        "left": 2105,
+        "right": 2122,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2366,
-        "right": 2373,
+        "left": 2110,
+        "right": 2117,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2366,
-        "right": 2373,
+        "left": 2110,
+        "right": 2117,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 1664,
-        "right": 2404,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 1664,
-        "right": 2404,
-        "clipped": true
-      },
-      {
-        "selector": "div",
-        "left": 1664,
-        "right": 1987,
-        "clipped": true
-      },
-      {
-        "selector": "#project-title-neoestate-ai",
-        "left": 1664,
-        "right": 1987,
-        "clipped": true
-      },
-      {
-        "selector": "p",
-        "left": 1664,
-        "right": 1987,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 1664,
-        "right": 2264,
+        "left": 1488,
+        "right": 2088,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 1664,
-        "right": 2404,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 1664,
-        "right": 2404,
+        "left": 1488,
+        "right": 2148,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--student-performance-clustering",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "img.project-screenshot",
-        "left": 2445,
-        "right": 3183,
+        "left": 2181,
+        "right": 2839,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 2445,
-        "right": 3183,
+        "left": 2181,
+        "right": 2839,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 2461,
-        "right": 2474,
+        "left": 2197,
+        "right": 2211,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 2709,
-        "right": 2919,
+        "left": 2358,
+        "right": 2662,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 2807,
-        "right": 2822,
+        "left": 2503,
+        "right": 2518,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 2461,
-        "right": 2603,
+        "left": 2197,
+        "right": 2350,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 2458,
-        "right": 2515,
+        "left": 2194,
+        "right": 2254,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3128,
-        "right": 3170,
+        "left": 2784,
+        "right": 2826,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3141,
-        "right": 3158,
+        "left": 2797,
+        "right": 2814,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3146,
-        "right": 3153,
+        "left": 2802,
+        "right": 2809,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3146,
-        "right": 3153,
+        "left": 2802,
+        "right": 2809,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 2444,
-        "right": 2961,
+        "left": 2180,
+        "right": 2493,
         "clipped": true
       },
       {
         "selector": "#project-title-student-performance-clustering",
-        "left": 2444,
-        "right": 2961,
+        "left": 2180,
+        "right": 2493,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 2444,
-        "right": 2961,
+        "left": 2180,
+        "right": 2493,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 2444,
-        "right": 3044,
+        "left": 2180,
+        "right": 2780,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2444,
-        "right": 2488,
+        "left": 2180,
+        "right": 2223,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2492,
-        "right": 2565,
+        "left": 2227,
+        "right": 2299,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2569,
-        "right": 2612,
+        "left": 2303,
+        "right": 2346,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 2616,
-        "right": 2655,
+        "left": 2350,
+        "right": 2388,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 2444,
-        "right": 3184,
+        "left": 2180,
+        "right": 2840,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2444,
-        "right": 2511,
+        "left": 2180,
+        "right": 2251,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-external-link",
-        "left": 2444,
-        "right": 2457,
+        "left": 2180,
+        "right": 2193,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2452,
-        "right": 2455,
+        "left": 2188,
+        "right": 2191,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2449,
-        "right": 2455,
+        "left": 2185,
+        "right": 2191,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2446,
-        "right": 2454,
+        "left": 2182,
+        "right": 2190,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 2525,
-        "right": 2596,
+        "left": 2264,
+        "right": 2337,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 2525,
-        "right": 2538,
+        "left": 2264,
+        "right": 2277,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2525,
-        "right": 2538,
+        "left": 2264,
+        "right": 2277,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 2583,
-        "right": 2596,
+        "left": 2324,
+        "right": 2337,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2587,
-        "right": 2592,
+        "left": 2328,
+        "right": 2334,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 2587,
-        "right": 2592,
+        "left": 2328,
+        "right": 2334,
         "clipped": true
       },
       {
         "selector": "article.showcase-card",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "div.project-cover.project-cover--rxpilot-ai",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "span.cover-grid",
-        "left": 3225,
-        "right": 3963,
+        "left": 2873,
+        "right": 3531,
         "clipped": true
       },
       {
         "selector": "span.cover-index",
-        "left": 3241,
-        "right": 3254,
+        "left": 2889,
+        "right": 2903,
         "clipped": true
       },
       {
         "selector": "span.cover-initial",
-        "left": 3481,
-        "right": 3707,
+        "left": 3025,
+        "right": 3379,
         "clipped": true
       },
       {
         "selector": "span.cover-orbit",
-        "left": 3587,
-        "right": 3602,
+        "left": 3195,
+        "right": 3210,
         "clipped": true
       },
       {
         "selector": "span.cover-bottom",
-        "left": 3241,
-        "right": 3338,
+        "left": 2889,
+        "right": 2993,
         "clipped": true
       },
       {
         "selector": "span.project-cover-status",
-        "left": 3238,
-        "right": 3309,
+        "left": 2886,
+        "right": 2961,
         "clipped": true
       },
       {
         "selector": "button.project-open-button",
-        "left": 3908,
-        "right": 3950,
+        "left": 3476,
+        "right": 3518,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3921,
-        "right": 3938,
+        "left": 3489,
+        "right": 3506,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3926,
-        "right": 3933,
+        "left": 3494,
+        "right": 3501,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3926,
-        "right": 3933,
+        "left": 3494,
+        "right": 3501,
         "clipped": true
       },
       {
         "selector": "div.showcase-meta",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "div.showcase-titleline",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "div",
-        "left": 3224,
-        "right": 3554,
+        "left": 2872,
+        "right": 3171,
         "clipped": true
       },
       {
         "selector": "#project-title-rxpilot-ai",
-        "left": 3224,
-        "right": 3554,
+        "left": 2872,
+        "right": 3171,
         "clipped": true
       },
       {
         "selector": "p",
-        "left": 3224,
-        "right": 3554,
+        "left": 2872,
+        "right": 3171,
         "clipped": true
       },
       {
         "selector": "p.showcase-description",
-        "left": 3224,
-        "right": 3824,
+        "left": 2872,
+        "right": 3472,
         "clipped": true
       },
       {
         "selector": "div.showcase-tech",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3224,
-        "right": 3273,
+        "left": 2872,
+        "right": 2920,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3277,
-        "right": 3320,
+        "left": 2924,
+        "right": 2967,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3324,
-        "right": 3392,
+        "left": 2971,
+        "right": 3038,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": 3396,
-        "right": 3460,
+        "left": 3042,
+        "right": 3104,
         "clipped": true
       },
       {
         "selector": "div.showcase-links",
-        "left": 3224,
-        "right": 3964,
+        "left": 2872,
+        "right": 3532,
         "clipped": true
       },
       {
         "selector": "a",
-        "left": 3224,
-        "right": 3294,
+        "left": 2872,
+        "right": 2945,
         "clipped": true
       },
       {
         "selector": "svg.w-4.h-4",
-        "left": 3224,
-        "right": 3237,
+        "left": 2872,
+        "right": 2885,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3224,
-        "right": 3237,
+        "left": 2872,
+        "right": 2885,
         "clipped": true
       },
       {
         "selector": "svg.lucide.lucide-arrow-up-right",
-        "left": 3281,
-        "right": 3294,
+        "left": 2932,
+        "right": 2945,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3285,
-        "right": 3291,
+        "left": 2936,
+        "right": 2942,
         "clipped": true
       },
       {
         "selector": "path",
-        "left": 3285,
-        "right": 3291,
+        "left": 2936,
+        "right": 2942,
         "clipped": true
       },
       {
         "selector": "div.velocity-marquee-track",
-        "left": -134,
-        "right": 1261,
+        "left": -166,
+        "right": 1317,
         "clipped": true
       },
       {
         "selector": "span",
-        "left": -134,
-        "right": 169,
+        "left": -166,
+        "right": 159,
         "clipped": true
       }
     ],
@@ -3255,7 +3843,7 @@
         "foreground": "rgb(247, 243, 241)",
         "theme": "dark",
         "headerAlpha": 0.72,
-        "headerBlur": 16,
+        "headerBlur": 14,
         "background": "#09090b",
         "ratios": [
           18.043424761095732
@@ -3266,20 +3854,20 @@
         "section": "skills",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
-        "background": "rgb(243, 241, 239)",
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
+        "background": "rgb(242, 241, 239)",
         "ratios": [
-          16.11172788935867
+          16.081052308353545
         ],
-        "ratio": 16.11172788935867
+        "ratio": 16.081052308353545
       },
       {
         "section": "certifications",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(233, 230, 228)",
         "ratios": [
           14.611396554463647
@@ -3290,8 +3878,8 @@
         "section": "github",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -3302,8 +3890,8 @@
         "section": "profiles",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -3314,8 +3902,8 @@
         "section": "resume",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "rgb(240, 238, 236)",
         "ratios": [
           15.68527148640371
@@ -3326,8 +3914,8 @@
         "section": "contact",
         "foreground": "rgb(23, 21, 24)",
         "theme": "light",
-        "headerAlpha": 0.76,
-        "headerBlur": 16,
+        "headerAlpha": 0.72,
+        "headerBlur": 14,
         "background": "#f2f1ef",
         "ratios": [
           16.081052308353545
@@ -3385,6 +3973,87 @@
         "progress": 0.99,
         "stage": "skills",
         "activeSkill": 8,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "statement",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "light-story",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.5,
+        "stage": "about",
+        "activeSkill": null,
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "headerOpaque": true
+      },
+      {
+        "progress": 0.99,
+        "stage": "about",
+        "activeSkill": null,
         "clipped": [],
         "navOverlaps": [],
         "siblingHeadingOverlaps": [],

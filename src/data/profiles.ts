@@ -15,7 +15,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "GitHub",
     handle: "ARTHIK22",
     url: "https://github.com/ARTHIK22",
-    description: "Open-source ML repositories, full-stack systems & experimental architectures",
+    description: "Project source code and experiments",
     brandColor: "#263238",
   },
   {
@@ -23,7 +23,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "LinkedIn",
     handle: "arthik-dwivedi",
     url: "https://www.linkedin.com/in/arthik-dwivedi",
-    description: "Professional networking, technical discussions & engineering milestones",
+    description: "Professional profile and updates",
     brandColor: "#0A66C2",
   },
   {
@@ -31,7 +31,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "LeetCode",
     handle: "8417996304",
     url: "https://leetcode.com/u/8417996304/",
-    description: "Algorithmic problem-solving, data structures & computational efficiency",
+    description: "Problem solving and data structures",
     brandColor: "#FFA116",
   },
   {
@@ -39,7 +39,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "HackerRank",
     handle: "at_dvd123",
     url: "https://www.hackerrank.com/profile/at_dvd123",
-    description: "Competitive coding problem solutions and algorithmic benchmarks",
+    description: "Coding practice",
     brandColor: "#00EA64",
   },
   {
@@ -47,7 +47,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "GeeksforGeeks",
     handle: "atdvdk0dh",
     url: "https://www.geeksforgeeks.org/profile/atdvdk0dh?tab=activity",
-    description: "Computer science theory, core fundamentals & coding practice",
+    description: "Computer science and coding practice",
     brandColor: "#2F8D46",
   },
   {
@@ -55,7 +55,7 @@ export const developerProfiles: DeveloperProfile[] = [
     platform: "Instagram",
     handle: "_arthik_22",
     url: "https://www.instagram.com/_arthik_22/",
-    description: "Creative perspectives, university milestones & developer life",
+    description: "Personal profile",
     brandColor: "#E4405F",
   },
 ];

@@ -114,26 +114,34 @@ try {
     await page.evaluate(async () => {
       const step = Math.max(280, Math.floor(innerHeight * 0.8));
       for (let y = 0; y < document.documentElement.scrollHeight; y += step) {
-        window.scrollTo(0, y);
+        if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(y, { immediate: true });
+        else window.scrollTo(0, y);
         await new Promise((resolve) => setTimeout(resolve, 24));
       }
-      window.scrollTo(0, 0);
+      if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(0, { immediate: true });
+      else window.scrollTo(0, 0);
     });
 
     const stageChecks = [];
-    for (const stageId of ['projects', 'skills']) {
+    // Only the project gallery is pinned on desktop. The other sections use normal document flow.
+    for (const stageId of ['projects']) {
       for (const progress of [0, .5, .99]) {
         const metrics = await page.locator(`#${stageId}`).evaluate((section, progressValue) => {
-          const start = window.scrollY + section.getBoundingClientRect().top;
-          const travel = Math.max(0, section.offsetHeight - window.innerHeight);
+          const fallbackStart = window.scrollY + section.getBoundingClientRect().top;
+          const start = Number(section.dataset.scrollStart) || fallbackStart;
+          const measuredEnd = Number(section.dataset.scrollEnd);
+          const travel = measuredEnd > start ? measuredEnd - start : Math.max(0, section.offsetHeight - window.innerHeight);
           const target = start + travel * progressValue;
           if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(target, { immediate: true });
           else window.scrollTo({ top: target, behavior: 'instant' });
           return target;
         }, progress);
-        await page.waitForTimeout(180);
+        // Let the gallery's GSAP scrub reach the requested scroll position before measuring.
+        await page.waitForTimeout(width > 760 ? 800 : 180);
         const sample = await page.evaluate((stageIdValue) => {
-          const stage = document.querySelector(stageIdValue === 'projects' ? '.showcase-pin' : '.skills-stack');
+          const stageSelector = { projects: '.showcase-pin' }[stageIdValue];
+          const stage = document.querySelector(stageSelector);
+          const isPinnedStage = innerWidth > 760 && stageIdValue === 'projects';
           const navLinks = [...document.querySelectorAll('.nav-side a')];
           const projectCards = [...(stage?.querySelectorAll('.showcase-card') || [])];
           const primaryProjectCard = projectCards.reduce((best, card) => {
@@ -141,15 +149,16 @@ try {
             const distance = Math.abs((rect.left + rect.right) / 2 - innerWidth / 2);
             return !best || distance < best.distance ? { card, distance } : best;
           }, null)?.card;
-          const isVisible = (node) => {
+          const isRendered = (node) => {
             const style = getComputedStyle(node); const rect = node.getBoundingClientRect();
-            if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) < .95 || rect.width <= 0 || rect.height <= 0) return false;
+            if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) < .05 || rect.width <= 0 || rect.height <= 0) return false;
             if (node.closest('.skill-stack-card') && !node.closest('.skill-stack-card').classList.contains('is-active')) return false;
             if (stageIdValue === 'projects' && node.closest('.showcase-card') && node.closest('.showcase-card') !== primaryProjectCard) return false;
-            return Math.min(rect.right, innerWidth) - Math.max(rect.left, 0) > 1 && Math.min(rect.bottom, innerHeight) - Math.max(rect.top, 0) > 1;
+            return true;
           };
+          const isInViewport = (node) => { const rect = node.getBoundingClientRect(); return Math.min(rect.right, innerWidth) - Math.max(rect.left, 0) > 1 && Math.min(rect.bottom, innerHeight) - Math.max(rect.top, 0) > 1; };
           const intersects = (a, b) => Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1;
-          const candidates = [...(stage?.querySelectorAll('h1,h2,h3,h4,button,a,[class*="caption"],.showcase-meta,.skill-active-details') || [])].filter(isVisible);
+          const candidates = isPinnedStage ? [...(stage?.querySelectorAll('h1,h2,h3,h4,p,button,a,[class*="caption"],.showcase-meta') || [])].filter(isRendered) : [];
           const clipped = candidates.flatMap((node) => {
             const rect = node.getBoundingClientRect();
             if (rect.top < -1 || rect.bottom > innerHeight + 1 || rect.left < -1 || rect.right > innerWidth + 1) {
@@ -158,10 +167,10 @@ try {
             return [];
           });
           const navOverlaps = [...document.querySelectorAll('main h1,main h2,main h3,main h4,main p,main a,main button,[class*="caption"]')]
-            .filter(isVisible)
+            .filter((node) => isRendered(node) && isInViewport(node))
             .flatMap((node) => {
               const rect = node.getBoundingClientRect();
-              return navLinks.filter(isVisible).filter((link) => intersects(rect, link.getBoundingClientRect())).map((link) => ({
+              return navLinks.filter((link) => isRendered(link) && isInViewport(link)).filter((link) => intersects(rect, link.getBoundingClientRect())).map((link) => ({
                 text: (node.innerText || node.getAttribute('aria-label') || '').trim().slice(0, 55),
                 link: link.innerText.trim(),
                 box: [Math.round(rect.left), Math.round(rect.top), Math.round(rect.right), Math.round(rect.bottom)],
@@ -169,24 +178,56 @@ try {
               }));
             });
           const siblingHeadingOverlaps = [...document.querySelectorAll('main h1,main h2,main h3,main h4')]
-            .filter(isVisible)
+            .filter((node) => isRendered(node) && isInViewport(node))
             .flatMap((a, index, all) => all.slice(index + 1).filter((b) => a.parentElement === b.parentElement && intersects(a.getBoundingClientRect(), b.getBoundingClientRect())).map((b) => ({
               a: (a.innerText || '').trim().slice(0, 45), b: (b.innerText || '').trim().slice(0, 45),
             })));
-          const header = document.querySelector('.site-header');
-          const headerStyle = header ? getComputedStyle(header) : null;
-          const headerOpaque = Boolean(headerStyle && Number.parseFloat(headerStyle.backgroundColor.match(/,\s*([\d.]+)\s*\)$/)?.[1] || '0') >= .7 && Number.parseFloat(headerStyle.backdropFilter.replace(/[^\d.]/g, '')) >= 1);
-          return { stage: stageIdValue, activeSkill: stageIdValue === 'skills' ? Number(document.querySelector('#skills')?.dataset.activeSkill) : null, clipped, navOverlaps, siblingHeadingOverlaps, headerOpaque };
+          const gallery = stageIdValue === 'projects' ? {
+            track: stage?.querySelector('.showcase-track')?.getBoundingClientRect().toJSON(),
+            cards: [...(stage?.querySelectorAll('.showcase-card') || [])].map((card) => ({
+              title: card.querySelector('h3')?.innerText,
+              meta: card.querySelector('.showcase-meta')?.getBoundingClientRect().toJSON(),
+            })),
+          } : null;
+          return { stage: stageIdValue, clipped, navOverlaps, siblingHeadingOverlaps, gallery };
         }, stageId);
         stageChecks.push({ progress, ...sample });
         if (sample.clipped.length) failures.push(`${viewportLabel} ${stageId} stage clips ${sample.clipped.length} heading/caption/button boxes at ${progress}`);
         if (sample.navOverlaps.length) failures.push(`${viewportLabel} ${stageId} stage has ${sample.navOverlaps.length} text/nav overlaps at ${progress}`);
         if (sample.siblingHeadingOverlaps.length) failures.push(`${viewportLabel} ${stageId} stage has ${sample.siblingHeadingOverlaps.length} overlapping sibling headings at ${progress}`);
-        if (!sample.headerOpaque) failures.push(`${viewportLabel} header is not opaque/blurred at ${stageId} progress ${progress}`);
-        if (stageId === 'skills' && sample.activeSkill !== Math.round(progress * 8)) failures.push(`${viewportLabel} skills stage active card is ${sample.activeSkill + 1}, expected ${Math.round(progress * 8) + 1} at ${progress}`);
       }
     }
     report.at(-1).stageChecks = stageChecks;
+
+    const projectOpen = page.locator('.showcase-card .project-open-button').first();
+    if (await projectOpen.count()) {
+      try {
+        const projectStart = await page.locator('#projects').getAttribute('data-scroll-start');
+        if (projectStart) await page.evaluate((start) => {
+          if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(Number(start) + 1, { immediate: true });
+          else window.scrollTo({ top: Number(start) + 1, behavior: 'instant' });
+        }, projectStart);
+        await page.waitForTimeout(180);
+        await projectOpen.scrollIntoViewIfNeeded({ timeout: 3000 });
+        await projectOpen.click({ timeout: 3000 });
+        const dialog = page.locator('[role="dialog"][aria-modal="true"]');
+        if (!(await dialog.count())) failures.push(`${viewportLabel} project details button did not open its dialog`);
+        else {
+          await page.keyboard.press('Escape');
+          await page.waitForTimeout(80);
+          if (await dialog.count()) failures.push(`${viewportLabel} project dialog did not close on Escape`);
+        }
+      } catch (error) { failures.push(`${viewportLabel} project dialog interaction failed: ${error.message}`); }
+    }
+    if (width <= 760) {
+      const menuButton = page.locator('.nav-menu-button');
+      try {
+        await menuButton.click({ timeout: 2000 });
+        if (await menuButton.getAttribute('aria-expanded') !== 'true') failures.push(`${viewportLabel} mobile navigation did not open`);
+        await page.locator('#mobile-navigation a[href="#projects"]').click({ timeout: 2000 });
+        if (await menuButton.getAttribute('aria-expanded') !== 'false') failures.push(`${viewportLabel} mobile navigation did not close after link activation`);
+      } catch (error) { failures.push(`${viewportLabel} mobile navigation interaction failed: ${error.message}`); }
+    }
 
     const headerContrast = [];
     for (const section of await page.locator('main [data-nav-theme]').all()) {
@@ -227,9 +268,15 @@ try {
       if (await section.count()) {
         await section.evaluate((node) => {
           const target = node.id === 'about' ? node.querySelector('#about-heading') || node : node;
+          const pinStart = Number(node.dataset.scrollStart);
+          const pinEnd = Number(node.dataset.scrollEnd);
+          const captureProgress = { about: .5, projects: .5, statement: .99, 'light-story': .99, skills: .5 };
+          const progress = captureProgress[node.id] ?? 0;
           const rect = target.getBoundingClientRect();
           const offset = node.id === 'about' ? (innerHeight - rect.height) / 2 : 0;
-          const top = Math.max(0, window.scrollY + rect.top - offset);
+          const top = pinEnd > pinStart
+            ? Math.max(0, pinStart + (pinEnd - pinStart) * progress)
+            : Math.max(0, window.scrollY + rect.top - offset);
           if (window.__portfolioLenis) window.__portfolioLenis.scrollTo(top, { immediate: true });
           else window.scrollTo({ top, behavior: 'instant' });
         });

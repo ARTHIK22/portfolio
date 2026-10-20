@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "ProjectSense AI",
     subtitle: "AI-Powered Academic Capstone Evaluation & Viva Generation",
     description:
-      "Automated evaluation platform that parses student project artifacts (PDF reports, presentations, code repositories) using xAI Grok and OpenAI LLMs to generate rubric-based grading, code clone detection, and contextual viva voce questions.",
+      "A capstone review platform that processes project reports and code repositories for LLM-assisted rubric feedback and viva question drafts.",
     status: "Complete",
     category: "Generative AI",
     technologies: [
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     title: "Hidden Dependency Discovery",
     subtitle: "Supply-Chain Intelligence & Explainable Risk Graph System",
     description:
-      "Enterprise software supply-chain security application for planning bounded investigative research, mapping multi-tier dependency topology, verifying evidence provenance, and computing explainable multi-factor risk scores.",
+      "A supply-chain security workspace for exploring multi-tier package dependencies, reviewing source evidence, and examining transparent risk scores.",
     status: "Working Prototype",
     category: "Graph & Risk Systems",
     technologies: [
@@ -143,7 +143,7 @@ export const projects: Project[] = [
     title: "NeoEstate AI",
     subtitle: "Property Valuation & Market Analytics via Random Forest ML",
     description:
-      "End-to-end real estate price valuation platform for Indian property markets. Uses a trained Scikit-Learn Random Forest Regressor to provide instant price estimations, feature importance insights, and local comparative tier analysis.",
+      "A Flask app that uses a Scikit-Learn Random Forest model to estimate property values and show which features influence a prediction.",
     status: "Complete",
     category: "Applied ML",
     technologies: [
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     title: "Student Performance Clustering",
     subtitle: "Unsupervised K-Means Analytics & Academic Persona Profiling",
     description:
-      "Educational data mining platform that groups students into actionable behavioral personas using K-Means clustering. Features an algorithmic Optimal-K Advisor utilizing the Elbow Method and Silhouette Analysis.",
+      "A Flask analytics app that groups student records with K-Means and compares cluster counts using the elbow method and silhouette scores.",
     status: "Complete",
     category: "Unsupervised Analytics",
     technologies: [
@@ -246,7 +246,7 @@ export const projects: Project[] = [
     title: "RxPilot AI",
     subtitle: "Prescription Understanding Agent with Uncertainty Calibration",
     description:
-      "Autonomous clinical prescription understanding agent designed to extract medication dosages, schedules, and patient instructions with confidence scoring and human-in-the-loop verification loops.",
+      "A work-in-progress FastAPI prototype for structuring prescription details, flagging uncertainty, and requiring human review.",
     status: "In Progress",
     category: "Agentic Systems",
     technologies: [

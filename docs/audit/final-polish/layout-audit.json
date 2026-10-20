@@ -1,0 +1,4527 @@
+[
+  {
+    "width": 320,
+    "height": 844,
+    "documentWidth": 320,
+    "documentHeight": 16782,
+    "overflowing": [],
+    "textOverlaps": [],
+    "textClipped": [],
+    "excessiveRadii": [],
+    "headerContrast": [
+      {
+        "section": "light-story",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "theme": "dark",
+        "headerAlpha": 0.72,
+        "headerBlur": null,
+        "background": "#09090b",
+        "ratios": [
+          19.895357656776593
+        ],
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "github",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "resume",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "contact",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "#f2f1ef",
+        "ratios": [
+          12.563938480241683
+        ],
+        "ratio": 12.563938480241683
+      }
+    ],
+    "stageChecks": [
+      {
+        "progress": 0,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": 284.515625,
+            "width": 281.625,
+            "height": 2063.390625,
+            "top": 284.515625,
+            "right": 300.8125,
+            "bottom": 2347.90625,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 466.203125,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 466.203125,
+                "right": 300.8125,
+                "bottom": 671.59375,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": 885.28125,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 885.28125,
+                "right": 300.8125,
+                "bottom": 1090.671875,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 1304.359375,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 1304.359375,
+                "right": 300.8125,
+                "bottom": 1509.75,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 1723.4375,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 1723.4375,
+                "right": 300.8125,
+                "bottom": 1928.828125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 2142.515625,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 2142.515625,
+                "right": 300.8125,
+                "bottom": 2347.90625,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.5,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": -522.484375,
+            "width": 281.625,
+            "height": 2063.390625,
+            "top": -522.484375,
+            "right": 300.8125,
+            "bottom": 1540.90625,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -340.796875,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": -340.796875,
+                "right": 300.8125,
+                "bottom": -135.40625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": 78.28125,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 78.28125,
+                "right": 300.8125,
+                "bottom": 283.671875,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 497.359375,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 497.359375,
+                "right": 300.8125,
+                "bottom": 702.75,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 916.4375,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 916.4375,
+                "right": 300.8125,
+                "bottom": 1121.828125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 1335.515625,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 1335.515625,
+                "right": 300.8125,
+                "bottom": 1540.90625,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.99,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": -1312.484375,
+            "width": 281.625,
+            "height": 2063.390625,
+            "top": -1312.484375,
+            "right": 300.8125,
+            "bottom": 750.90625,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -1130.796875,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": -1130.796875,
+                "right": 300.8125,
+                "bottom": -925.40625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": -711.71875,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": -711.71875,
+                "right": 300.8125,
+                "bottom": -506.328125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -292.640625,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": -292.640625,
+                "right": 300.8125,
+                "bottom": -87.25,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 126.4375,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 126.4375,
+                "right": 300.8125,
+                "bottom": 331.828125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 545.515625,
+                "width": 281.625,
+                "height": 205.390625,
+                "top": 545.515625,
+                "right": 300.8125,
+                "bottom": 750.90625,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "documentWidth": 390,
+    "documentHeight": 16967,
+    "overflowing": [],
+    "textOverlaps": [],
+    "textClipped": [],
+    "excessiveRadii": [],
+    "headerContrast": [
+      {
+        "section": "light-story",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "theme": "dark",
+        "headerAlpha": 0.72,
+        "headerBlur": null,
+        "background": "#09090b",
+        "ratios": [
+          19.895357656776593
+        ],
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "github",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "resume",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "contact",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "#f2f1ef",
+        "ratios": [
+          12.563938480241683
+        ],
+        "ratio": 12.563938480241683
+      }
+    ],
+    "stageChecks": [
+      {
+        "progress": 0,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": 286.578125,
+            "width": 351.625,
+            "height": 2206.28125,
+            "top": 286.578125,
+            "right": 370.8125,
+            "bottom": 2492.859375,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 513.421875,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 513.421875,
+                "right": 370.8125,
+                "bottom": 702.234375,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": 961.078125,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 961.078125,
+                "right": 370.8125,
+                "bottom": 1149.890625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 1408.734375,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 1408.734375,
+                "right": 370.8125,
+                "bottom": 1597.546875,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 1856.390625,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 1856.390625,
+                "right": 370.8125,
+                "bottom": 2045.203125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 2304.046875,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 2304.046875,
+                "right": 370.8125,
+                "bottom": 2492.859375,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.5,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": -592.421875,
+            "width": 351.625,
+            "height": 2206.28125,
+            "top": -592.421875,
+            "right": 370.8125,
+            "bottom": 1613.859375,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -365.578125,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": -365.578125,
+                "right": 370.8125,
+                "bottom": -176.765625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": 82.078125,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 82.078125,
+                "right": 370.8125,
+                "bottom": 270.890625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 529.734375,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 529.734375,
+                "right": 370.8125,
+                "bottom": 718.546875,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 977.390625,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 977.390625,
+                "right": 370.8125,
+                "bottom": 1166.203125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 1425.046875,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 1425.046875,
+                "right": 370.8125,
+                "bottom": 1613.859375,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.99,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 19.1875,
+            "y": -1454.421875,
+            "width": 351.625,
+            "height": 2206.28125,
+            "top": -1454.421875,
+            "right": 370.8125,
+            "bottom": 751.859375,
+            "left": 19.1875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -1227.578125,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": -1227.578125,
+                "right": 370.8125,
+                "bottom": -1038.765625,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 19.1875,
+                "y": -779.921875,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": -779.921875,
+                "right": 370.8125,
+                "bottom": -591.109375,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 19.1875,
+                "y": -332.265625,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": -332.265625,
+                "right": 370.8125,
+                "bottom": -143.453125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 19.1875,
+                "y": 115.390625,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 115.390625,
+                "right": 370.8125,
+                "bottom": 304.203125,
+                "left": 19.1875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 19.1875,
+                "y": 563.046875,
+                "width": 351.625,
+                "height": 188.8125,
+                "top": 563.046875,
+                "right": 370.8125,
+                "bottom": 751.859375,
+                "left": 19.1875
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "documentWidth": 768,
+    "documentHeight": 13279,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 31,
+        "right": 2872,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 603,
+        "right": 1156,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 603,
+        "right": 1156,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 604,
+        "right": 1155,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--graph",
+        "left": 653,
+        "right": 1105,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line",
+        "left": 747,
+        "right": 1008,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 747,
+        "right": 1008,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 827,
+        "right": 855,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 918,
+        "right": 937,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 998,
+        "right": 1019,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 827,
+        "right": 844,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 919,
+        "right": 936,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1000,
+        "right": 1017,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 712,
+        "right": 928,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 1031,
+        "right": 1141,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 1099,
+        "right": 1141,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1108,
+        "right": 1132,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1115,
+        "right": 1125,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1115,
+        "right": 1125,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 603,
+        "right": 1156,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 603,
+        "right": 911,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 603,
+        "right": 911,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-hidden-dependency-discovery",
+        "left": 603,
+        "right": 911,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 603,
+        "right": 911,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 603,
+        "right": 1024,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 603,
+        "right": 848,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 771,
+        "right": 848,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1175,
+        "right": 1728,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1175,
+        "right": 1728,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1176,
+        "right": 1727,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1192,
+        "right": 1204,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--valuation",
+        "left": 1226,
+        "right": 1677,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 1303,
+        "right": 1602,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1315,
+        "right": 1342,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 1371,
+        "right": 1398,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1427,
+        "right": 1454,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 1483,
+        "right": 1510,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1539,
+        "right": 1565,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--strong",
+        "left": 1316,
+        "right": 1564,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1311,
+        "right": 1321,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1378,
+        "right": 1389,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1435,
+        "right": 1446,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 1491,
+        "right": 1504,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1559,
+        "right": 1570,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 1284,
+        "right": 1448,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1192,
+        "right": 1251,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 1651,
+        "right": 1713,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 1671,
+        "right": 1713,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1680,
+        "right": 1704,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1687,
+        "right": 1697,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1687,
+        "right": 1697,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1175,
+        "right": 1728,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1175,
+        "right": 1494,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 1175,
+        "right": 1494,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 1175,
+        "right": 1494,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 1175,
+        "right": 1494,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1175,
+        "right": 1596,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1175,
+        "right": 1391,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1175,
+        "right": 1219,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1225,
+        "right": 1297,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1303,
+        "right": 1347,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1352,
+        "right": 1391,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1175,
+        "right": 1335,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1175,
+        "right": 1246,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1175,
+        "right": 1188,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1183,
+        "right": 1186,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1180,
+        "right": 1186,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1177,
+        "right": 1185,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1262,
+        "right": 1335,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1262,
+        "right": 1275,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1262,
+        "right": 1275,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1322,
+        "right": 1335,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1326,
+        "right": 1332,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1326,
+        "right": 1332,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1747,
+        "right": 2300,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 1747,
+        "right": 2300,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1748,
+        "right": 2299,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1764,
+        "right": 1776,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--clusters",
+        "left": 1798,
+        "right": 2250,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-axis",
+        "left": 1871,
+        "right": 2179,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster",
+        "left": 1890,
+        "right": 2000,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--two",
+        "left": 2007,
+        "right": 2130,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--three",
+        "left": 2086,
+        "right": 2159,
+        "clipped": true
+      },
+      {
+        "selector": "g.art-points",
+        "left": 1910,
+        "right": 2142,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 1910,
+        "right": 1918,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 1929,
+        "right": 1938,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 1945,
+        "right": 1954,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 1968,
+        "right": 1976,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 1958,
+        "right": 1967,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2037,
+        "right": 2045,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2056,
+        "right": 2064,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2072,
+        "right": 2081,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2090,
+        "right": 2099,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2077,
+        "right": 2086,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2102,
+        "right": 2111,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2124,
+        "right": 2132,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2133,
+        "right": 2142,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 1856,
+        "right": 2013,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1764,
+        "right": 1895,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 2223,
+        "right": 2286,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 2244,
+        "right": 2286,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2253,
+        "right": 2277,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2260,
+        "right": 2270,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2260,
+        "right": 2270,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1747,
+        "right": 2300,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1747,
+        "right": 2075,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 1747,
+        "right": 2075,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 1747,
+        "right": 2075,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 1747,
+        "right": 2075,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1747,
+        "right": 2168,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1747,
+        "right": 1963,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1747,
+        "right": 1791,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1797,
+        "right": 1869,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1875,
+        "right": 1919,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1924,
+        "right": 1963,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1747,
+        "right": 1908,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1747,
+        "right": 1818,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1747,
+        "right": 1760,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1755,
+        "right": 1759,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1753,
+        "right": 1759,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1749,
+        "right": 1757,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1834,
+        "right": 1908,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1834,
+        "right": 1847,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1834,
+        "right": 1847,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1895,
+        "right": 1908,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1898,
+        "right": 1904,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1898,
+        "right": 1904,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2319,
+        "right": 2872,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 2319,
+        "right": 2872,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2320,
+        "right": 2871,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2336,
+        "right": 2348,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--prescription",
+        "left": 2370,
+        "right": 2822,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-panel",
+        "left": 2469,
+        "right": 2701,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 2497,
+        "right": 2700,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 2618,
+        "right": 2681,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line",
+        "left": 2682,
+        "right": 2727,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-panel.art-panel--accent",
+        "left": 2719,
+        "right": 2765,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 2730,
+        "right": 2754,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 2428,
+        "right": 2638,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2336,
+        "right": 2425,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 2779,
+        "right": 2858,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 2816,
+        "right": 2858,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2825,
+        "right": 2849,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2832,
+        "right": 2842,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2832,
+        "right": 2842,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2319,
+        "right": 2872,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2319,
+        "right": 2645,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 2319,
+        "right": 2645,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 2319,
+        "right": 2645,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 2319,
+        "right": 2645,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2319,
+        "right": 2741,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2319,
+        "right": 2559,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2319,
+        "right": 2368,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2374,
+        "right": 2418,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2423,
+        "right": 2491,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2496,
+        "right": 2559,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2319,
+        "right": 2393,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2319,
+        "right": 2393,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2319,
+        "right": 2332,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2319,
+        "right": 2332,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2380,
+        "right": 2393,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2383,
+        "right": 2389,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2383,
+        "right": 2389,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "textClipped": [],
+    "excessiveRadii": [],
+    "headerContrast": [
+      {
+        "section": "light-story",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "theme": "dark",
+        "headerAlpha": 0.72,
+        "headerBlur": null,
+        "background": "#09090b",
+        "ratios": [
+          19.895357656776593
+        ],
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "github",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "resume",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "contact",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "#f2f1ef",
+        "ratios": [
+          12.563938480241683
+        ],
+        "ratio": 12.563938480241683
+      }
+    ],
+    "stageChecks": [
+      {
+        "progress": 0,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 30.71875,
+            "y": 204.9375,
+            "width": 2841.515625,
+            "height": 612.78125,
+            "top": 204.9375,
+            "right": 2872.234375,
+            "bottom": 817.71875,
+            "left": 30.71875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 30.71875,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 583.671875,
+                "bottom": 817.71875,
+                "left": 30.71875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 602.859375,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 1155.8125,
+                "bottom": 817.71875,
+                "left": 602.859375
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 1175,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 1727.953125,
+                "bottom": 817.71875,
+                "left": 1175
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 1747.140625,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 2300.09375,
+                "bottom": 817.71875,
+                "left": 1747.140625
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 2319.28125,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 2872.234375,
+                "bottom": 817.71875,
+                "left": 2319.28125
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.5,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -1037.2808837890625,
+            "y": 204.9375,
+            "width": 2841.515625,
+            "height": 612.78125,
+            "top": 204.9375,
+            "right": 1804.2347412109375,
+            "bottom": 817.71875,
+            "left": -1037.2808837890625
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -1037.2808837890625,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": -484.3277587890625,
+                "bottom": 817.71875,
+                "left": -1037.2808837890625
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -465.1402587890625,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 87.8128662109375,
+                "bottom": 817.71875,
+                "left": -465.1402587890625
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 107.0003662109375,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 659.9534912109375,
+                "bottom": 817.71875,
+                "left": 107.0003662109375
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 679.1409912109375,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 1232.0941162109375,
+                "bottom": 817.71875,
+                "left": 679.1409912109375
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 1251.2816162109375,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 1804.2347412109375,
+                "bottom": 817.71875,
+                "left": 1251.2816162109375
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.99,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -2083.28125,
+            "y": 204.9375,
+            "width": 2841.515625,
+            "height": 612.78125,
+            "top": 204.9375,
+            "right": 758.234375,
+            "bottom": 817.71875,
+            "left": -2083.28125
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -2083.28125,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": -1530.328125,
+                "bottom": 817.71875,
+                "left": -2083.28125
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -1511.140625,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": -958.1875,
+                "bottom": 817.71875,
+                "left": -1511.140625
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": -939,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": -386.046875,
+                "bottom": 817.71875,
+                "left": -939
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": -366.859375,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 186.09375,
+                "bottom": 817.71875,
+                "left": -366.859375
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 205.28125,
+                "y": 647.984375,
+                "width": 552.953125,
+                "height": 169.734375,
+                "top": 647.984375,
+                "right": 758.234375,
+                "bottom": 817.71875,
+                "left": 205.28125
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "documentWidth": 1366,
+    "documentHeight": 12590,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 82,
+        "right": 3910,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 854,
+        "right": 1594,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 854,
+        "right": 1594,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 855,
+        "right": 1593,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--graph",
+        "left": 994,
+        "right": 1454,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 1469,
+        "right": 1579,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 1537,
+        "right": 1579,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1546,
+        "right": 1570,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1553,
+        "right": 1563,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1553,
+        "right": 1563,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 854,
+        "right": 1594,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1626,
+        "right": 2366,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1626,
+        "right": 2366,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1627,
+        "right": 2365,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1643,
+        "right": 1655,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--valuation",
+        "left": 1766,
+        "right": 2226,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 1878,
+        "right": 2116,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1887,
+        "right": 1909,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 1932,
+        "right": 1953,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1976,
+        "right": 1998,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 2021,
+        "right": 2042,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 2065,
+        "right": 2087,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--strong",
+        "left": 1888,
+        "right": 2086,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1884,
+        "right": 1893,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1938,
+        "right": 1946,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1983,
+        "right": 1992,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 2028,
+        "right": 2038,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 2081,
+        "right": 2090,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 1863,
+        "right": 1993,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1643,
+        "right": 1702,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 2289,
+        "right": 2351,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 2309,
+        "right": 2351,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2318,
+        "right": 2342,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2325,
+        "right": 2335,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2325,
+        "right": 2335,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1626,
+        "right": 2366,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1626,
+        "right": 1945,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 1626,
+        "right": 1945,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 1626,
+        "right": 1945,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 1626,
+        "right": 1945,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1626,
+        "right": 2047,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1626,
+        "right": 1842,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1626,
+        "right": 1670,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1676,
+        "right": 1748,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1754,
+        "right": 1798,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1803,
+        "right": 1842,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1626,
+        "right": 1786,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1626,
+        "right": 1697,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1626,
+        "right": 1639,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1634,
+        "right": 1637,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1631,
+        "right": 1637,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1628,
+        "right": 1636,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1713,
+        "right": 1786,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1713,
+        "right": 1726,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1713,
+        "right": 1726,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1773,
+        "right": 1786,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1777,
+        "right": 1783,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1777,
+        "right": 1783,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2398,
+        "right": 3138,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 2398,
+        "right": 3138,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2399,
+        "right": 3137,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2415,
+        "right": 2427,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--clusters",
+        "left": 2538,
+        "right": 2998,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-axis",
+        "left": 2647,
+        "right": 2891,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster",
+        "left": 2662,
+        "right": 2749,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--two",
+        "left": 2755,
+        "right": 2853,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--three",
+        "left": 2817,
+        "right": 2876,
+        "clipped": true
+      },
+      {
+        "selector": "g.art-points",
+        "left": 2677,
+        "right": 2862,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2677,
+        "right": 2684,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2693,
+        "right": 2700,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2706,
+        "right": 2712,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2724,
+        "right": 2730,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2716,
+        "right": 2723,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2778,
+        "right": 2785,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2794,
+        "right": 2800,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2806,
+        "right": 2813,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2821,
+        "right": 2828,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2811,
+        "right": 2817,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2830,
+        "right": 2837,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2847,
+        "right": 2854,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2855,
+        "right": 2862,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 2635,
+        "right": 2760,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2415,
+        "right": 2546,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 3061,
+        "right": 3123,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 3081,
+        "right": 3123,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3090,
+        "right": 3114,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3097,
+        "right": 3107,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3097,
+        "right": 3107,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2398,
+        "right": 3138,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2398,
+        "right": 2745,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 2398,
+        "right": 2745,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 2398,
+        "right": 2745,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 2398,
+        "right": 2745,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2398,
+        "right": 2819,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2398,
+        "right": 2614,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2398,
+        "right": 2442,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2448,
+        "right": 2520,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2526,
+        "right": 2570,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2575,
+        "right": 2614,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2398,
+        "right": 2558,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2398,
+        "right": 2469,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 2398,
+        "right": 2411,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2406,
+        "right": 2409,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2403,
+        "right": 2409,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2400,
+        "right": 2408,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2485,
+        "right": 2558,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2485,
+        "right": 2498,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2485,
+        "right": 2498,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2545,
+        "right": 2558,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2549,
+        "right": 2555,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2549,
+        "right": 2555,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 3170,
+        "right": 3910,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 3170,
+        "right": 3910,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 3171,
+        "right": 3909,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 3187,
+        "right": 3199,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--prescription",
+        "left": 3310,
+        "right": 3770,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-panel",
+        "left": 3439,
+        "right": 3624,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 3461,
+        "right": 3623,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 3558,
+        "right": 3607,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line",
+        "left": 3608,
+        "right": 3644,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-panel.art-panel--accent",
+        "left": 3638,
+        "right": 3674,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 3647,
+        "right": 3666,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 3407,
+        "right": 3573,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 3187,
+        "right": 3276,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 3817,
+        "right": 3895,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 3853,
+        "right": 3895,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3862,
+        "right": 3886,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3869,
+        "right": 3879,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3869,
+        "right": 3879,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 3170,
+        "right": 3910,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 3170,
+        "right": 3496,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 3170,
+        "right": 3496,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 3170,
+        "right": 3496,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 3170,
+        "right": 3496,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 3170,
+        "right": 3591,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 3170,
+        "right": 3410,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3170,
+        "right": 3219,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3224,
+        "right": 3268,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3274,
+        "right": 3342,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3347,
+        "right": 3410,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 3170,
+        "right": 3243,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 3170,
+        "right": 3243,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 3170,
+        "right": 3183,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3170,
+        "right": 3183,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3230,
+        "right": 3243,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3234,
+        "right": 3239,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3234,
+        "right": 3239,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "textClipped": [],
+    "excessiveRadii": [],
+    "headerContrast": [
+      {
+        "section": "light-story",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "theme": "dark",
+        "headerAlpha": 0.72,
+        "headerBlur": null,
+        "background": "#09090b",
+        "ratios": [
+          19.895357656776593
+        ],
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "github",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "resume",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "contact",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "#f2f1ef",
+        "ratios": [
+          12.563938480241683
+        ],
+        "ratio": 12.563938480241683
+      }
+    ],
+    "stageChecks": [
+      {
+        "progress": 0,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 81.953125,
+            "y": 249.765625,
+            "width": 3828,
+            "height": 436.09375,
+            "top": 249.765625,
+            "right": 3909.953125,
+            "bottom": 685.859375,
+            "left": 81.953125
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 81.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 821.953125,
+                "bottom": 685.859375,
+                "left": 81.953125
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 853.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 1593.953125,
+                "bottom": 685.859375,
+                "left": 853.953125
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 1625.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 2365.953125,
+                "bottom": 685.859375,
+                "left": 1625.953125
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 2397.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 3137.953125,
+                "bottom": 685.859375,
+                "left": 2397.953125
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 3169.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 3909.953125,
+                "bottom": 685.859375,
+                "left": 3169.953125
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.5,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -1231.046875,
+            "y": 249.765625,
+            "width": 3828,
+            "height": 436.09375,
+            "top": 249.765625,
+            "right": 2596.953125,
+            "bottom": 685.859375,
+            "left": -1231.046875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -1231.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": -491.046875,
+                "bottom": 685.859375,
+                "left": -1231.046875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -459.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 280.953125,
+                "bottom": 685.859375,
+                "left": -459.046875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 312.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 1052.953125,
+                "bottom": 685.859375,
+                "left": 312.953125
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 1084.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 1824.953125,
+                "bottom": 685.859375,
+                "left": 1084.953125
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 1856.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 2596.953125,
+                "bottom": 685.859375,
+                "left": 1856.953125
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.99,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -2518.046875,
+            "y": 249.765625,
+            "width": 3828,
+            "height": 436.09375,
+            "top": 249.765625,
+            "right": 1309.953125,
+            "bottom": 685.859375,
+            "left": -2518.046875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -2518.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": -1778.046875,
+                "bottom": 685.859375,
+                "left": -2518.046875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -1746.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": -1006.046875,
+                "bottom": 685.859375,
+                "left": -1746.046875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": -974.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": -234.046875,
+                "bottom": 685.859375,
+                "left": -974.046875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": -202.046875,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 537.953125,
+                "bottom": 685.859375,
+                "left": -202.046875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 569.953125,
+                "y": 509.921875,
+                "width": 740,
+                "height": 175.9375,
+                "top": 509.921875,
+                "right": 1309.953125,
+                "bottom": 685.859375,
+                "left": 569.953125
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "documentWidth": 1440,
+    "documentHeight": 12981,
+    "overflowing": [
+      {
+        "selector": "div.showcase-track",
+        "left": 86,
+        "right": 3914,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 858,
+        "right": 1598,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--hidden-dependency-discovery",
+        "left": 858,
+        "right": 1598,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 859,
+        "right": 1597,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--graph",
+        "left": 998,
+        "right": 1458,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 1474,
+        "right": 1584,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 1542,
+        "right": 1584,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1551,
+        "right": 1575,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1558,
+        "right": 1568,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1558,
+        "right": 1568,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 858,
+        "right": 1598,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 1630,
+        "right": 2370,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--neoestate-ai",
+        "left": 1630,
+        "right": 2370,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 1631,
+        "right": 2369,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 1647,
+        "right": 1659,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--valuation",
+        "left": 1770,
+        "right": 2230,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 1849,
+        "right": 2154,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1861,
+        "right": 1889,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 1918,
+        "right": 1946,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 1975,
+        "right": 2003,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar.art-bar--bright",
+        "left": 2032,
+        "right": 2060,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-bar",
+        "left": 2089,
+        "right": 2116,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--strong",
+        "left": 1862,
+        "right": 2115,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1857,
+        "right": 1868,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1926,
+        "right": 1937,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 1984,
+        "right": 1995,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 2041,
+        "right": 2054,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node",
+        "left": 2110,
+        "right": 2121,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 1830,
+        "right": 1996,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 1647,
+        "right": 1707,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 2294,
+        "right": 2356,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 2314,
+        "right": 2356,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2323,
+        "right": 2347,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2330,
+        "right": 2340,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2330,
+        "right": 2340,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 1630,
+        "right": 2370,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 1630,
+        "right": 1949,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 1630,
+        "right": 1949,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-neoestate-ai",
+        "left": 1630,
+        "right": 1949,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 1630,
+        "right": 1949,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 1630,
+        "right": 2052,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 1630,
+        "right": 1847,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1630,
+        "right": 1674,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1680,
+        "right": 1752,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1758,
+        "right": 1802,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 1808,
+        "right": 1847,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 1630,
+        "right": 1791,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1630,
+        "right": 1702,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 1630,
+        "right": 1643,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1639,
+        "right": 1642,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1636,
+        "right": 1642,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1632,
+        "right": 1640,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 1718,
+        "right": 1791,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 1718,
+        "right": 1731,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1718,
+        "right": 1731,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 1778,
+        "right": 1791,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1782,
+        "right": 1787,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 1782,
+        "right": 1787,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 2402,
+        "right": 3142,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--student-performance-clustering",
+        "left": 2402,
+        "right": 3142,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 2403,
+        "right": 3141,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 2419,
+        "right": 2431,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--clusters",
+        "left": 2542,
+        "right": 3002,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-axis",
+        "left": 2617,
+        "right": 2930,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster",
+        "left": 2637,
+        "right": 2748,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--two",
+        "left": 2756,
+        "right": 2881,
+        "clipped": true
+      },
+      {
+        "selector": "ellipse.art-cluster.art-cluster--three",
+        "left": 2836,
+        "right": 2910,
+        "clipped": true
+      },
+      {
+        "selector": "g.art-points",
+        "left": 2656,
+        "right": 2893,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2656,
+        "right": 2665,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2676,
+        "right": 2685,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2692,
+        "right": 2701,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2715,
+        "right": 2724,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2706,
+        "right": 2714,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2786,
+        "right": 2794,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2805,
+        "right": 2814,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2822,
+        "right": 2830,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2840,
+        "right": 2849,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2827,
+        "right": 2836,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2852,
+        "right": 2861,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2874,
+        "right": 2883,
+        "clipped": true
+      },
+      {
+        "selector": "circle",
+        "left": 2884,
+        "right": 2893,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 2602,
+        "right": 2762,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 2419,
+        "right": 2550,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 3066,
+        "right": 3128,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 3086,
+        "right": 3128,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3095,
+        "right": 3119,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3102,
+        "right": 3112,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3102,
+        "right": 3112,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 2402,
+        "right": 3142,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 2402,
+        "right": 2769,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 2402,
+        "right": 2769,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-student-performance-clustering",
+        "left": 2402,
+        "right": 2769,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 2402,
+        "right": 2769,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 2402,
+        "right": 2824,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 2402,
+        "right": 2619,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2402,
+        "right": 2446,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2452,
+        "right": 2524,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2530,
+        "right": 2574,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 2580,
+        "right": 2619,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 2402,
+        "right": 2563,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2402,
+        "right": 2474,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-external-link",
+        "left": 2402,
+        "right": 2415,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2411,
+        "right": 2414,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2408,
+        "right": 2414,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2404,
+        "right": 2412,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 2490,
+        "right": 2563,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 2490,
+        "right": 2503,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2490,
+        "right": 2503,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 2550,
+        "right": 2563,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2554,
+        "right": 2559,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 2554,
+        "right": 2559,
+        "clipped": true
+      },
+      {
+        "selector": "article.showcase-card",
+        "left": 3174,
+        "right": 3914,
+        "clipped": true
+      },
+      {
+        "selector": "div.project-cover.project-cover--rxpilot-ai",
+        "left": 3174,
+        "right": 3914,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-grid",
+        "left": 3175,
+        "right": 3913,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-index",
+        "left": 3191,
+        "right": 3203,
+        "clipped": true
+      },
+      {
+        "selector": "svg.project-artwork.project-artwork--prescription",
+        "left": 3314,
+        "right": 3774,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-panel",
+        "left": 3415,
+        "right": 3652,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 3444,
+        "right": 3651,
+        "clipped": true
+      },
+      {
+        "selector": "circle.art-node.art-node--bright",
+        "left": 3567,
+        "right": 3631,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line",
+        "left": 3632,
+        "right": 3678,
+        "clipped": true
+      },
+      {
+        "selector": "rect.art-panel.art-panel--accent",
+        "left": 3670,
+        "right": 3716,
+        "clipped": true
+      },
+      {
+        "selector": "path.art-line.art-line--soft",
+        "left": 3681,
+        "right": 3705,
+        "clipped": true
+      },
+      {
+        "selector": "text.art-label",
+        "left": 3374,
+        "right": 3587,
+        "clipped": true
+      },
+      {
+        "selector": "span.cover-bottom",
+        "left": 3191,
+        "right": 3280,
+        "clipped": true
+      },
+      {
+        "selector": "span.project-cover-status",
+        "left": 3822,
+        "right": 3900,
+        "clipped": true
+      },
+      {
+        "selector": "button.project-open-button",
+        "left": 3858,
+        "right": 3900,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3867,
+        "right": 3891,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3874,
+        "right": 3884,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3874,
+        "right": 3884,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-meta",
+        "left": 3174,
+        "right": 3914,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-titleline",
+        "left": 3174,
+        "right": 3500,
+        "clipped": true
+      },
+      {
+        "selector": "div",
+        "left": 3174,
+        "right": 3500,
+        "clipped": true
+      },
+      {
+        "selector": "#project-title-rxpilot-ai",
+        "left": 3174,
+        "right": 3500,
+        "clipped": true
+      },
+      {
+        "selector": "p",
+        "left": 3174,
+        "right": 3500,
+        "clipped": true
+      },
+      {
+        "selector": "p.showcase-description",
+        "left": 3174,
+        "right": 3596,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-tech",
+        "left": 3174,
+        "right": 3414,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3174,
+        "right": 3223,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3229,
+        "right": 3273,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3278,
+        "right": 3346,
+        "clipped": true
+      },
+      {
+        "selector": "span",
+        "left": 3352,
+        "right": 3414,
+        "clipped": true
+      },
+      {
+        "selector": "div.showcase-links",
+        "left": 3174,
+        "right": 3248,
+        "clipped": true
+      },
+      {
+        "selector": "a",
+        "left": 3174,
+        "right": 3248,
+        "clipped": true
+      },
+      {
+        "selector": "svg.w-4.h-4",
+        "left": 3174,
+        "right": 3187,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3174,
+        "right": 3187,
+        "clipped": true
+      },
+      {
+        "selector": "svg.lucide.lucide-arrow-up-right",
+        "left": 3235,
+        "right": 3248,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3238,
+        "right": 3244,
+        "clipped": true
+      },
+      {
+        "selector": "path",
+        "left": 3238,
+        "right": 3244,
+        "clipped": true
+      }
+    ],
+    "textOverlaps": [],
+    "textClipped": [],
+    "excessiveRadii": [],
+    "headerContrast": [
+      {
+        "section": "light-story",
+        "foreground": "rgba(255, 255, 255, 0.8)",
+        "theme": "dark",
+        "headerAlpha": 0.72,
+        "headerBlur": null,
+        "background": "#09090b",
+        "ratios": [
+          19.895357656776593
+        ],
+        "ratio": 19.895357656776593
+      },
+      {
+        "section": "skills",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "certifications",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "github",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(231, 225, 220)",
+        "ratios": [
+          10.941351187435997
+        ],
+        "ratio": 10.941351187435997
+      },
+      {
+        "section": "profiles",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "resume",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "rgb(243, 240, 237)",
+        "ratios": [
+          12.492278947145689
+        ],
+        "ratio": 12.492278947145689
+      },
+      {
+        "section": "contact",
+        "foreground": "rgb(48, 41, 45)",
+        "theme": "light",
+        "headerAlpha": 0.82,
+        "headerBlur": null,
+        "background": "#f2f1ef",
+        "ratios": [
+          12.563938480241683
+        ],
+        "ratio": 12.563938480241683
+      }
+    ],
+    "stageChecks": [
+      {
+        "progress": 0,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": 86.390625,
+            "y": 255.984375,
+            "width": 3828,
+            "height": 561.203125,
+            "top": 255.984375,
+            "right": 3914.390625,
+            "bottom": 817.1875,
+            "left": 86.390625
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": 86.390625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 826.390625,
+                "bottom": 817.1875,
+                "left": 86.390625
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": 858.390625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 1598.390625,
+                "bottom": 817.1875,
+                "left": 858.390625
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 1630.390625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 2370.390625,
+                "bottom": 817.1875,
+                "left": 1630.390625
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 2402.390625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 3142.390625,
+                "bottom": 817.1875,
+                "left": 2402.390625
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 3174.390625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 3914.390625,
+                "bottom": 817.1875,
+                "left": 3174.390625
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.5,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -1194.6087646484375,
+            "y": 255.984375,
+            "width": 3828,
+            "height": 561.203125,
+            "top": 255.984375,
+            "right": 2633.3912353515625,
+            "bottom": 817.1875,
+            "left": -1194.6087646484375
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -1194.6087646484375,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": -454.6087646484375,
+                "bottom": 817.1875,
+                "left": -1194.6087646484375
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -422.6087646484375,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 317.3912353515625,
+                "bottom": 817.1875,
+                "left": -422.6087646484375
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": 349.3912353515625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 1089.3912353515625,
+                "bottom": 817.1875,
+                "left": 349.3912353515625
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": 1121.3912353515625,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 1861.3912353515625,
+                "bottom": 817.1875,
+                "left": 1121.3912353515625
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 1893.3912353515625,
+                "y": 639.734375,
+                "width": 739.9998779296875,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 2633.39111328125,
+                "bottom": 817.1875,
+                "left": 1893.3912353515625
+              }
+            }
+          ]
+        }
+      },
+      {
+        "progress": 0.99,
+        "stage": "projects",
+        "clipped": [],
+        "navOverlaps": [],
+        "siblingHeadingOverlaps": [],
+        "gallery": {
+          "track": {
+            "x": -2448.610107421875,
+            "y": 255.984375,
+            "width": 3828,
+            "height": 561.203125,
+            "top": 255.984375,
+            "right": 1379.389892578125,
+            "bottom": 817.1875,
+            "left": -2448.610107421875
+          },
+          "cards": [
+            {
+              "title": "ProjectSense AI",
+              "meta": {
+                "x": -2448.610107421875,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": -1708.610107421875,
+                "bottom": 817.1875,
+                "left": -2448.610107421875
+              }
+            },
+            {
+              "title": "Hidden Dependency Discovery",
+              "meta": {
+                "x": -1676.610107421875,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": -936.610107421875,
+                "bottom": 817.1875,
+                "left": -1676.610107421875
+              }
+            },
+            {
+              "title": "NeoEstate AI",
+              "meta": {
+                "x": -904.610107421875,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": -164.610107421875,
+                "bottom": 817.1875,
+                "left": -904.610107421875
+              }
+            },
+            {
+              "title": "Student Performance Clustering",
+              "meta": {
+                "x": -132.610107421875,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 607.389892578125,
+                "bottom": 817.1875,
+                "left": -132.610107421875
+              }
+            },
+            {
+              "title": "RxPilot AI",
+              "meta": {
+                "x": 639.389892578125,
+                "y": 639.734375,
+                "width": 740,
+                "height": 177.453125,
+                "top": 639.734375,
+                "right": 1379.389892578125,
+                "bottom": 817.1875,
+                "left": 639.389892578125
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

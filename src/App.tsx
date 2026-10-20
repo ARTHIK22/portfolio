@@ -1,6 +1,7 @@
-// src/App.tsx
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Lenis from 'lenis';
+import Tempus from 'tempus';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Navbar } from './components/Navbar';
@@ -16,13 +17,20 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { StoryBreak } from './components/StoryBreak';
 
-declare global {
-  interface Window { __portfolioLenis?: Lenis }
-}
+declare global { interface Window { __portfolioLenis?: Lenis } }
 
 export const App: React.FC = () => {
-  useEffect(() => {
+  const appRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const root = appRef.current;
+    if (!root) return;
+
+    Tempus.patch();
     gsap.registerPlugin(ScrollTrigger);
+    gsap.ticker.remove(gsap.updateRoot);
+    gsap.ticker.lagSmoothing(0);
+
     const lenis = new Lenis({
       autoRaf: false,
       wheel: { lerp: 0.085, multiplier: 0.95 },
@@ -31,158 +39,103 @@ export const App: React.FC = () => {
       respectReducedMotion: true,
     });
     window.__portfolioLenis = lenis;
-    const animateLenis = (time: number) => lenis.raf(time * 1000);
-    const updateScrollTriggers = () => ScrollTrigger.update();
-    gsap.ticker.add(animateLenis);
-    gsap.ticker.lagSmoothing(0);
-    lenis.on('scroll', updateScrollTriggers);
 
-    const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const titleContext = gsap.context(() => {
-      if (!motionAllowed) return;
-      gsap.utils.toArray<HTMLElement>(
-        '#about-heading, #projects-heading, #light-story-heading, #certifications-heading, #contact-heading',
-      ).forEach((heading) => {
-        gsap.fromTo(heading, { y: 46, opacity: 0.35 }, {
-          y: 0,
-          opacity: 1,
-          ease: 'none',
-          scrollTrigger: { trigger: heading, start: 'top 88%', end: 'top 55%', scrub: 0.8 },
-        });
-      });
-    });
-    const projectSection = document.getElementById('projects');
-    const projectTrack = projectSection?.querySelector<HTMLElement>('.showcase-track');
-    const storySection = document.querySelector<HTMLElement>('.light-story');
-    const heroSection = document.getElementById('hero');
-    const siteHeader = document.querySelector<HTMLElement>('.site-header');
-    const lightSections = Array.from(document.querySelectorAll<HTMLElement>('[data-nav-theme="light"]'));
-    const activeLightSections = new Set<Element>();
+    // One shared frame loop keeps native scrolling, Lenis, GSAP, and ScrollTrigger in sync.
+    const stopLenis = Tempus.add(({ time }) => lenis.raf(time), { order: -100, label: 'lenis' });
+    const stopGsap = Tempus.add(({ time }) => gsap.updateRoot(time / 1000), { order: -25, label: 'gsap' });
+    const siteHeader = root.querySelector<HTMLElement>('.site-header');
+    const lightSections = Array.from(root.querySelectorAll<HTMLElement>('[data-nav-theme="light"]'));
+
     const applyHeaderTheme = () => {
       if (!siteHeader) return;
       siteHeader.dataset.scrolled = lenis.scroll > 6 ? 'true' : 'false';
-      const sectionLight = [...activeLightSections].some((section) => section !== storySection);
-      const storyRect = storySection?.getBoundingClientRect();
-      const storyClip = Number.parseFloat(storySection?.style.getPropertyValue('--light-clip') || '50');
-      const storyHasReachedHeader = Boolean(storyRect && storyRect.top + storyRect.height * storyClip / 100 <= 0 && storyRect.bottom > 0);
-      siteHeader.dataset.theme = sectionLight || storyHasReachedHeader ? 'light' : 'dark';
-    };
-    const themeObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.target === storySection) return;
-        if (entry.isIntersecting) activeLightSections.add(entry.target);
-        else activeLightSections.delete(entry.target);
+      const headerBottom = siteHeader.getBoundingClientRect().bottom;
+      const lightUnderHeader = lightSections.some((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= headerBottom && rect.bottom > 0;
       });
+      siteHeader.dataset.theme = lightUnderHeader ? 'light' : 'dark';
+    };
+    const syncScroll = () => {
+      document.documentElement.style.setProperty('--scroll-progress', `${lenis.progress * 100}%`);
       applyHeaderTheme();
-    }, { rootMargin: '0px 0px -78% 0px', threshold: 0 });
-    lightSections.forEach((section) => themeObserver.observe(section));
-    const cursorEnabled = window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const onPointerMove = (event: PointerEvent) => {
-      if (!cursorEnabled || event.pointerType !== 'mouse') return;
-      document.documentElement.style.setProperty('--cursor-x', `${event.clientX}px`);
-      document.documentElement.style.setProperty('--cursor-y', `${event.clientY}px`);
-      const heroRect = heroSection?.getBoundingClientRect();
-      if (heroRect && heroRect.width && heroRect.height) {
-        heroSection?.style.setProperty('--hero-mouse-x', String((event.clientX - heroRect.left) / heroRect.width - 0.5));
-        heroSection?.style.setProperty('--hero-mouse-y', String((event.clientY - heroRect.top) / heroRect.height - 0.5));
-      }
-      document.documentElement.dataset.cursorActive = 'true';
-      if (event.target instanceof Element && event.target.closest('a, button')) document.documentElement.dataset.cursorHover = 'true';
-      else delete document.documentElement.dataset.cursorHover;
     };
-    const onPointerLeave = () => { delete document.documentElement.dataset.cursorActive; };
-    if (cursorEnabled) {
-      window.addEventListener('pointermove', onPointerMove, { passive: true });
-      window.addEventListener('blur', onPointerLeave);
-    }
-    let projectStart = 0;
-    let projectTravel = 1;
-    let projectDistance = 0;
-    let storyStart = 0;
-    let storyTravel = 1;
-    const updateGeometry = () => {
-      projectStart = (projectSection?.getBoundingClientRect().top ?? 0) + window.scrollY;
-      projectTravel = Math.max(1, (projectSection?.offsetHeight ?? 1) - window.innerHeight);
-      projectDistance = Math.max(0, (projectTrack?.scrollWidth ?? 0) - window.innerWidth);
-      storyStart = (storySection?.getBoundingClientRect().top ?? 0) + window.scrollY;
-      storyTravel = Math.max(1, (storySection?.offsetHeight ?? window.innerHeight) - window.innerHeight);
-    };
-    updateGeometry();
-    const resizeObserver = new ResizeObserver(updateGeometry);
-    if (projectSection) resizeObserver.observe(projectSection);
-    if (projectTrack) resizeObserver.observe(projectTrack);
-    if (storySection) resizeObserver.observe(storySection);
-    window.addEventListener('resize', updateGeometry, { passive: true });
+    // Lenis emits after each scroll update; ScrollTrigger reads the same native scroll position.
+    lenis.on('scroll', ScrollTrigger.update);
+    lenis.on('scroll', syncScroll);
 
-    const syncScrollProgress = (instance: Lenis) => {
-      document.documentElement.style.setProperty('--scroll-progress', `${instance.progress * 100}%`);
-      const velocity = Math.min(1, Math.abs(instance.velocity) / 45);
-      document.documentElement.style.setProperty('--marquee-duration', `${24 - velocity * 15}s`);
-      const heroProgress = Math.min(1, Math.max(0, instance.scroll / Math.max(window.innerHeight, 1)));
-      document.documentElement.style.setProperty('--hero-progress', String(heroProgress));
-      const projectProgress = Math.min(1, Math.max(0, (instance.scroll - projectStart) / projectTravel));
-      projectSection?.style.setProperty('--project-progress', String(projectProgress));
-      projectSection?.style.setProperty('--project-x', `${-projectDistance * projectProgress}px`);
-      const storyProgress = Math.min(1, Math.max(0, (instance.scroll - storyStart) / storyTravel));
-      storySection?.style.setProperty('--light-clip', `${50 * (1 - storyProgress)}%`);
-      storySection?.style.setProperty('--hand-angle', `${storyProgress * 18 - 9}deg`);
-      applyHeaderTheme();
-    };
-    lenis.on('scroll', syncScrollProgress);
+    const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const context = gsap.context(() => {
+      const projects = root.querySelector<HTMLElement>('#projects');
+      const trackWindow = projects?.querySelector<HTMLElement>('.showcase-track-window');
+      const projectTrack = projects?.querySelector<HTMLElement>('.showcase-track');
+      if (motionAllowed && projects && trackWindow && projectTrack && window.matchMedia('(min-width: 761px)').matches) {
+        gsap.to(projectTrack, {
+          x: () => Math.min(0, trackWindow.clientWidth - projectTrack.scrollWidth),
+          ease: 'none',
+          scrollTrigger: {
+            trigger: projects,
+            start: 'top top',
+            end: () => `+=${Math.max(window.innerHeight, projectTrack.scrollWidth - trackWindow.clientWidth)}`,
+            scrub: 0.6,
+            pin: projects.querySelector('.showcase-pin'),
+            pinSpacing: true,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+            onRefresh: (self) => {
+              projects.dataset.scrollStart = String(self.start);
+              projects.dataset.scrollEnd = String(self.end);
+            },
+          },
+        });
+      }
+    }, root);
+
+    const refreshAfterAssets = () => { Promise.resolve().then(() => ScrollTrigger.refresh()); };
+    const fontsReady = document.fonts?.ready.then(refreshAfterAssets).catch(() => undefined);
+    const images = Array.from(root.querySelectorAll('img'));
+    images.forEach((image) => {
+      if (image.complete) return;
+      image.addEventListener('load', refreshAfterAssets, { once: true });
+      image.addEventListener('error', refreshAfterAssets, { once: true });
+    });
+    window.addEventListener('load', refreshAfterAssets, { once: true });
+
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener('resize', refresh, { passive: true });
+    window.addEventListener('pageshow', refreshAfterAssets);
+    syncScroll();
 
     return () => {
-      themeObserver.disconnect();
-      titleContext.revert();
-      if (siteHeader) {
-        delete siteHeader.dataset.theme;
-        delete siteHeader.dataset.scrolled;
-      }
-      lenis.off('scroll', syncScrollProgress);
-      lenis.off('scroll', updateScrollTriggers);
+      context.revert();
+      lenis.off('scroll', ScrollTrigger.update);
+      lenis.off('scroll', syncScroll);
       lenis.destroy();
       if (window.__portfolioLenis === lenis) delete window.__portfolioLenis;
-      gsap.ticker.remove(animateLenis);
-      gsap.ticker.lagSmoothing(500, 33);
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      resizeObserver.disconnect();
-      window.removeEventListener('resize', updateGeometry);
-      window.removeEventListener('pointermove', onPointerMove);
-      window.removeEventListener('blur', onPointerLeave);
-      delete document.documentElement.dataset.cursorActive;
-      delete document.documentElement.dataset.cursorHover;
+      stopLenis?.();
+      stopGsap?.();
+      Tempus.unpatch();
+      window.removeEventListener('resize', refresh);
+      window.removeEventListener('load', refreshAfterAssets);
+      window.removeEventListener('pageshow', refreshAfterAssets);
+      images.forEach((image) => {
+        image.removeEventListener('load', refreshAfterAssets);
+        image.removeEventListener('error', refreshAfterAssets);
+      });
+      if (siteHeader) { delete siteHeader.dataset.theme; delete siteHeader.dataset.scrolled; }
       document.documentElement.style.removeProperty('--scroll-progress');
-      document.documentElement.style.removeProperty('--hero-progress');
-      document.documentElement.style.removeProperty('--marquee-duration');
-      projectSection?.style.removeProperty('--project-progress');
-      projectSection?.style.removeProperty('--project-x');
-      storySection?.style.removeProperty('--light-clip');
-      storySection?.style.removeProperty('--hand-angle');
-      heroSection?.style.removeProperty('--hero-mouse-x');
-      heroSection?.style.removeProperty('--hero-mouse-y');
+      void fontsReady;
     };
   }, []);
 
   return (
-    <div className="portfolio-shell relative min-h-screen flex flex-col font-sans">
+    <div ref={appRef} className="portfolio-shell relative min-h-screen flex flex-col font-sans">
       <Navbar />
-
-      {/* Main Content Landmarks */}
       <main id="main-content" className="flex-1 relative z-10">
-        <Hero />
-        <About />
-        <FeaturedProjects />
-        <StoryBreak />
-        <Skills />
-        <Certifications />
-        <GitHubSection />
-        <CodingProfiles />
-        <Resume />
-        <Contact />
+        <Hero /><About /><FeaturedProjects /><StoryBreak /><Skills /><Certifications /><GitHubSection /><CodingProfiles /><Resume /><Contact />
       </main>
-
-      {/* Editorial Footer */}
       <Footer />
-      <span className="cursor-ring" aria-hidden="true" />
+      <Analytics />
     </div>
   );
 };

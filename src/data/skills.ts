@@ -431,7 +431,7 @@ export const skills: Skill[] = [
     repositories: [
       { name: "ProjectSense AI", repoName: "AI-Powered-Academic-Project-Evaluation-Platform", url: "https://github.com/ARTHIK22/AI-Powered-Academic-Project-Evaluation-Platform" },
       { name: "Hidden Dependency", repoName: "Hidden-Dependency-Discovery-Supply-Chain-Intelligence", url: "https://github.com/ARTHIK22/Hidden-Dependency-Discovery-Supply-Chain-Intelligence" },
-      { name: "Student Clustering", repoName: "-Student-Performance-Clustering-System", url: "-Student-Performance-Clustering-System" },
+      { name: "Student Clustering", repoName: "-Student-Performance-Clustering-System", url: "https://github.com/ARTHIK22/-Student-Performance-Clustering-System" },
     ],
   },
   {

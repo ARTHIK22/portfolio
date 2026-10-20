@@ -16,10 +16,10 @@ export const Contact: React.FC = () => {
       <div className="contact-inner">
         <div className="contact-topline" data-scroll-reveal>
           <p className="eyebrow">OPEN CHANNEL</p>
-          <h2 id="contact-heading"><span>Let's Build</span><em>Something Meaningful</em></h2>
+          <h2 id="contact-heading"><span>Have a question?</span><em>Let's talk.</em></h2>
         </div>
         <div className="contact-closer" data-scroll-reveal>
-          <p>Interested in AI, machine learning, and building practical technology solutions? Let's connect.</p>
+          <p>For project questions, collaboration, or a quick hello, send me an email.</p>
           <a className="contact-primary-pill" data-hover-text="Start a conversation" href={`mailto:${siteConfig.profiles.email}`}>
             <span>Start a conversation</span><ArrowDownRight aria-hidden="true" />
           </a>
@@ -32,8 +32,8 @@ export const Contact: React.FC = () => {
           <a data-hover-text="Download Resume" href={resumeUrl} download="Arthik_Dwivedi_Resume.pdf"><span>Download Resume</span><ArrowDownRight aria-hidden="true" /></a>
         </nav>
         <div className="contact-footer-row">
-          <span>ARTHIK DWIVEDI</span>
-          <div>{developerProfiles.map((profile) => <a key={profile.id} href={profile.url} target="_blank" rel="noopener noreferrer">{profile.platform}<ArrowUpRight aria-hidden="true" /></a>)}</div>
+          <span>CONTACT</span>
+          <div>{developerProfiles.filter((profile) => ['github', 'linkedin'].includes(profile.id)).map((profile) => <a key={profile.id} href={profile.url} target="_blank" rel="noopener noreferrer">{profile.platform}<ArrowUpRight aria-hidden="true" /></a>)}</div>
           <a href={`mailto:${siteConfig.profiles.email}`}>{siteConfig.profiles.email}</a>
         </div>
       </div>

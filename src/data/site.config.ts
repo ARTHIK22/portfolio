@@ -35,12 +35,12 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "Arthik Dwivedi",
-  role: "AI/ML Engineer | AI Developer | B.Tech Student",
-  heroKicker: "AI/ML ENGINEER IN THE MAKING",
+  role: "B.Tech Computer Science Student",
+  heroKicker: "COMPUTER SCIENCE · ARTIFICIAL INTELLIGENCE & MACHINE LEARNING",
   headlineLine1: "Engineering Intelligence.",
   headlineLine2: "Building What Comes Next.",
   introduction:
-    "I'm Arthik Dwivedi, an AI/ML student passionate about building intelligent applications, exploring machine learning, and transforming real-world problems into practical technology solutions.",
+    "I study computer science with a focus on AI and machine learning. My projects connect data, models, APIs, and interfaces into software people can use.",
   primaryCta: {
     label: "Explore My Projects",
     href: "#projects",
@@ -67,9 +67,9 @@ export const siteConfig: SiteConfig = {
     { label: "Contact", href: "#contact" },
   ],
   verifiedTechnicalInterests: [
-    "Machine Learning & Unsupervised Systems",
-    "Generative AI & LLM Rubric Evaluation",
-    "Dependency Graph & Supply Chain Intelligence",
-    "FastAPI & Full-Stack Systems",
+    "Machine learning & clustering",
+    "LLM-based rubric evaluation",
+    "Software supply-chain security",
+    "FastAPI and React applications",
   ],
 };

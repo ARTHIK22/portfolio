@@ -12,10 +12,13 @@ interface ProjectDialogProps {
 export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }) => {
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
 
   useEffect(() => {
     if (!project) return;
 
+    const previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     closeBtnRef.current?.focus();
 
     const originalStyle = window.getComputedStyle(document.body).overflow;
@@ -23,16 +26,25 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        onClose();
+        onCloseRef.current();
+        return;
       }
+      if (e.key !== 'Tab' || !dialogRef.current) return;
+      const focusable = Array.from(dialogRef.current.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     };
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       document.body.style.overflow = originalStyle;
       window.removeEventListener('keydown', handleKeyDown);
+      previouslyFocused?.focus();
     };
-  }, [project, onClose]);
+  }, [project]);
 
   if (!project) return null;
 
@@ -49,12 +61,12 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
     >
       <div
         ref={dialogRef}
-        className="relative w-full max-w-3xl glass-panel-elevated bg-[#FFFDF8] rounded-3xl p-6 sm:p-10 border border-[#D6B574]/40 shadow-2xl my-auto max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-3xl glass-panel-elevated bg-[#F7F3F0] rounded-3xl p-6 sm:p-10 border border-[#A6425E]/30 shadow-2xl my-auto max-h-[90vh] overflow-y-auto"
       >
-        <div className="flex items-start justify-between gap-4 pb-6 border-b border-[#D6B574]/20">
+        <div className="flex items-start justify-between gap-4 pb-6 border-b border-[#A6425E]/20">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#D6B574]/20 text-[#263238] border border-[#D6B574]/40">
+              <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#A6425E]/10 text-[#6F1D38] border border-[#A6425E]/30">
                 {project.category}
               </span>
               <span
@@ -69,7 +81,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
                 {project.status}
               </span>
             </div>
-            <h2 id="dialog-title" className="text-2xl sm:text-3xl font-serif font-bold text-[#263238]">
+            <h2 id="dialog-title" className="text-2xl sm:text-3xl font-serif font-bold text-[#211C20]">
               {project.title}
             </h2>
             <p className="text-sm font-medium text-[#5B646B] mt-1">{project.subtitle}</p>
@@ -79,7 +91,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
             ref={closeBtnRef}
             onClick={onClose}
             type="button"
-            className="p-2 rounded-full text-[#5B646B] hover:text-[#263238] hover:bg-black/[0.05] transition-all focus-visible:ring-2 focus-visible:ring-[#D6B574]"
+            className="p-2 rounded-full text-[#5B646B] hover:text-[#6F1D38] hover:bg-black/[0.05] transition-all focus-visible:ring-2 focus-visible:ring-[#A6425E]"
             aria-label="Close project modal"
           >
             <X className="w-5 h-5" />
@@ -88,8 +100,8 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
 
         <div className="py-6 space-y-7 text-sm text-[#263238]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="p-4 rounded-2xl bg-white border border-[#D6B574]/20">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#D6B574] mb-2 flex items-center gap-1.5">
+            <div className="p-4 rounded-2xl bg-white border border-[#A6425E]/20">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#6F1D38] mb-2 flex items-center gap-1.5">
                 <AlertTriangle className="w-3.5 h-3.5" />
                 Problem Statement
               </h3>
@@ -97,8 +109,8 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
                 {project.details.problem}
               </p>
             </div>
-            <div className="p-4 rounded-2xl bg-white border border-[#82DAD1]/30">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#368F83] mb-2 flex items-center gap-1.5">
+            <div className="p-4 rounded-2xl bg-white border border-[#A6425E]/20">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#6F1D38] mb-2 flex items-center gap-1.5">
                 <Compass className="w-3.5 h-3.5" />
                 Engineering Objective
               </h3>
@@ -128,7 +140,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
                   key={i}
                   className="flex items-start gap-2.5 text-xs sm:text-sm text-[#5B646B] p-2.5 rounded-xl bg-white/70 border border-black/[0.04]"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D6B574] mt-2 shrink-0" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A6425E] mt-2 shrink-0" />
                   <span>{arch}</span>
                 </li>
               ))}
@@ -144,7 +156,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
               {project.details.keyFeatures.map((feat, i) => (
                 <div
                   key={i}
-                  className="p-3 rounded-xl bg-white/80 border border-[#D6B574]/20 text-xs sm:text-sm text-[#5B646B]"
+                  className="p-3 rounded-xl bg-white/80 border border-[#A6425E]/20 text-xs sm:text-sm text-[#5B646B]"
                 >
                   {feat}
                 </div>
@@ -152,7 +164,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2 border-t border-[#D6B574]/20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2 border-t border-[#A6425E]/20">
             <div>
               <h3 className="text-xs font-bold uppercase tracking-wider text-[#263238] mb-2">
                 Technical Challenges
@@ -160,7 +172,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
               <ul className="space-y-2">
                 {project.details.challenges.map((chal, i) => (
                   <li key={i} className="text-xs text-[#5B646B] leading-relaxed flex items-start gap-2">
-                    <span className="text-[#D6B574] font-bold">•</span>
+                    <span className="text-[#A6425E] font-bold">•</span>
                     <span>{chal}</span>
                   </li>
                 ))}
@@ -173,7 +185,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
               <ul className="space-y-2">
                 {project.details.lessonsLearned.map((les, i) => (
                   <li key={i} className="text-xs text-[#5B646B] leading-relaxed flex items-start gap-2">
-                    <span className="text-[#82DAD1] font-bold">•</span>
+                    <span className="text-[#A6425E] font-bold">•</span>
                     <span>{les}</span>
                   </li>
                 ))}
@@ -189,7 +201,7 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
               {project.technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 rounded-full text-xs font-medium bg-white text-[#263238] border border-[#D6B574]/30 shadow-xs"
+                  className="px-3 py-1 rounded-full text-xs font-medium bg-white text-[#263238] border border-[#A6425E]/30 shadow-xs"
                 >
                   {tech}
                 </span>
@@ -198,13 +210,13 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
           </div>
         </div>
 
-        <div className="pt-6 border-t border-[#D6B574]/20 flex flex-wrap items-center justify-between gap-4">
+        <div className="pt-6 border-t border-[#A6425E]/20 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <a
               href={project.repositoryUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#263238] hover:bg-[#1E272C] transition-all shadow-xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-[#6F1D38] hover:bg-[#54152A] transition-all shadow-xs"
             >
               <GithubIcon className="w-4 h-4 fill-white" />
               <span>Explore Source Code</span>
@@ -215,9 +227,9 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({ project, onClose }
                 href={project.liveDemoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-[#263238] bg-[#D6B574]/25 hover:bg-[#D6B574]/40 border border-[#D6B574]/50 transition-all shadow-xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-[#6F1D38] bg-[#A6425E]/10 hover:bg-[#A6425E]/20 border border-[#A6425E]/30 transition-all shadow-xs"
               >
-                <ExternalLink className="w-4 h-4 text-[#B89246]" />
+                <ExternalLink className="w-4 h-4 text-[#A6425E]" />
                 <span>Open Live Deployment</span>
               </a>
             )}

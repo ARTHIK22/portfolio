@@ -5,12 +5,11 @@ import { developerProfiles } from '../data/profiles';
 
 export const Footer: React.FC = () => (
   <footer className="site-footer">
-    <div className="velocity-marquee" aria-hidden="true"><div className="velocity-marquee-track"><span>{siteConfig.role}</span><span>·</span><span>{siteConfig.role}</span><span>·</span><span>{siteConfig.role}</span><span>·</span><span>{siteConfig.role}</span><span>·</span></div></div>
     <div className="footer-top">
       <a className="footer-wordmark" href="#hero">Arthik Dwivedi</a>
-      <div className="footer-nav" aria-label="Footer navigation">
+      <nav className="footer-nav" aria-label="Footer navigation">
         <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certificates</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
-      </div>
+      </nav>
       <a href="#hero" className="back-to-top" aria-label="Back to top"><ArrowUp aria-hidden="true" /></a>
     </div>
     <div className="footer-bottom">
